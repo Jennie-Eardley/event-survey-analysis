@@ -1,0 +1,717 @@
+travel_method,event_travel,bus_days,accommodation_type,accommodation_cost,transport_cost,number_events_previously_attended,event_organisation_rating,course_planning_rating,social_programme_rating,quality_rating_livestream,website_info_rating,printed_programme_rating,daily_news_info,facebook_twitter_following,facebook_twitter_rating,residence,local_authority,overnight_stay_location
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,good,not interested in social programme,average,good,average,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,1800,60,14,excellent,good,excellent,excellent,good,good,yes,yes,excellent,other uk,NA,comrie croft
+hired vehicle,públic transport,0,event campsite (comrie croft),100,40,3,excellent,excellent,excellent,excellent,excellent,excellent,yes,yes,excellent,other uk,NA,bridge of allan
+own vehicle,own vehicle,0,self-catering accommodation,375,150,17,good,average,not interested in social programme,NA,excellent,average,no,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,event campsite (comrie croft),360,150,3,good,good,good,good,good,good,some days,no,NA,other uk,NA,dundee
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,excellent,good,excellent,excellent,some days,no,NA,other uk,NA,crieff
+rail,shared private vehicle,2,event campsite (comrie croft),500,30,4,excellent,excellent,good,NA,excellent,excellent,yes,no,NA,rest of the world,NA,barry buddon
+own vehicle,own vehicle,0,hotel,1600,200,8,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,near dunning
+own vehicle,own vehicle,0,event campsite (comrie croft),900,100,5,excellent,excellent,not interested in social programme,excellent,good,good,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,excellent,good,not interested in social programme,average,good,good,no,no,NA,scotland,mid lothian,comrie  crofy
+own vehicle,cycle,0,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,excellent,average,poor,some days,yes,excellent,scotland,highland,scone
+own vehicle,own vehicle,0,self-catering accommodation,250,150,1,good,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,1400,100,8,good,good,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,crieff
+own vehicle,event bus,5,event campsite (comrie croft),0,75,7,excellent,excellent,not interested in social programme,average,excellent,excellent,some days,yes,average,scotland,stirling,braco
+living there,shared private vehicle,0,at home,170,200,3,excellent,excellent,not interested in social programme,good,excellent,good,no,no,NA,other europe,NA,comrie
+own vehicle,own vehicle,0,hotel,500,30,4,excellent,good,not interested in social programme,average,average,excellent,some days,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,guest house / b+b,0,75,7,excellent,excellent,not interested in social programme,good,excellent,excellent,some days,no,NA,other uk,NA,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,280,200,0,good,good,good,NA,good,good,some days,yes,good,other uk,NA,event campsite
+air,hired vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,NA,good,average,yes,no,NA,other europe,NA,lochearnhead
+own vehicle,cycle,0,event campsite (comrie croft),90,100,16,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA,comrie and tummel bridge
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,good,excellent,not interested in social programme,average,good,average,some days,no,NA,other uk,NA,dunkeld
+own vehicle,event bus,6,event campsite (comrie croft),350,60,5,excellent,excellent,good,average,good,good,yes,yes,good,other uk,NA,comrie
+car lift from friend,shared private vehicle,1,self-catering accommodation,400,50,2,excellent,good,not interested in social programme,NA,excellent,excellent,some days,yes,good,scotland,fife,wigton
+own vehicle,own vehicle,0,self-catering accommodation,900,100,5,excellent,excellent,excellent,good,excellent,average,yes,yes,good,other europe,NA,killin
+own vehicle,event bus,5,event campsite (comrie croft),80,70,2,excellent,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,scotland,aberdeen city,tullibardine
+own vehicle,own vehicle,0,second home,140,150,4,excellent,excellent,not interested in social programme,good,good,excellent,some days,no,NA,other europe,NA,dunkeld
+air,hired vehicle,0,hotel,0,75,7,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,killin
+military car,event bus,6,self-catering accommodation,1200,100,7,excellent,good,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,comrie only
+own vehicle,cycle,0,event campsite (comrie croft),0,75,7,excellent,excellent,not interested in social programme,poor,excellent,excellent,yes,yes,excellent,scotland,grampian,glasgow
+own vehicle,own vehicle,0,hotel,0,75,7,excellent,good,excellent,good,excellent,excellent,yes,no,NA,rest of the world,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,NA,good,good,no,no,NA,other uk,NA,dunkeld
+own vehicle,event bus,4,event campsite (comrie croft),140,150,4,excellent,excellent,excellent,good,excellent,good,yes,yes,good,scotland,aberdeenshire,comrie
+own vehicle,own vehicle,0,hotel,150,150,3,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,other camping / caravan site,120,140,6,excellent,good,not interested in social programme,good,good,good,no,no,NA,scotland,perth & kinross,kinkell bridge
+own vehicle,own vehicle,0,other camping / caravan site,200,90,20,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA,perth
+own vehicle,own vehicle,0,other camping / caravan site,90,100,16,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,scotland,scottish borders,comrie
+hired vehicle,hired vehicle,0,hotel,900,100,5,excellent,good,not interested in social programme,very poor,excellent,excellent,yes,yes,excellent,other uk,NA,sterling university campus
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,excellent,excellent,excellent,NA,good,excellent,yes,no,NA,scotland,clackmannanshire,comrie
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,good,good,excellent,excellent,yes,no,NA,scotland,highland,perth
+own vehicle,event bus,4,event campsite (comrie croft),120,140,6,average,good,not interested in social programme,NA,average,poor,no,no,NA,scotland,east dunbartonshire,edinburgh
+own vehicle,event bus,5,event campsite (comrie croft),300,100,6,excellent,excellent,good,good,excellent,good,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,at home,140,150,4,excellent,excellent,not interested in social programme,good,excellent,average,no,no,NA,other uk,NA,stanley
+own vehicle,own vehicle,0,event campsite (comrie croft),144,60,6,excellent,excellent,good,NA,good,good,no,yes,excellent,scotland,aberdeen city,crieff
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,average,excellent,excellent,excellent,very poor,excellent,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,575,100,19,good,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,hotel,0,75,7,excellent,excellent,good,average,good,good,no,no,NA,other europe,NA,comrie
+hired vehicle,hired vehicle,0,hotel,70,6,0,excellent,good,not interested in social programme,good,good,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,375,150,17,excellent,excellent,not interested in social programme,NA,excellent,average,no,yes,good,scotland,clackmannanshire,crieff
+own vehicle,own vehicle,1,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,NA,good,poor,no,yes,good,scotland,south ayrshire,comrie
+own vehicle,own vehicle,0,guest house / b+b,250,150,1,excellent,excellent,good,good,excellent,good,some days,no,NA,other uk,NA,comrie
+own vehicle,shared private vehicle,0,guest house / b+b,0,75,7,excellent,excellent,excellent,good,excellent,excellent,some days,no,NA,scotland,aberdeenshire,muthill
+own vehicle,own vehicle,0,self-catering accommodation,2200,150,2,excellent,excellent,not interested in social programme,good,excellent,excellent,no,no,NA,other uk,NA,comrie
+own vehicle,shared private vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other europe,NA,comrie
+hired vehicle,shared private vehicle,0,guest house / b+b,600,200,22,excellent,good,not interested in social programme,good,good,excellent,yes,yes,good,other uk,NA,comrie
+rail,own vehicle,0,self-catering accommodation,450,250,1,average,good,not interested in social programme,NA,good,good,yes,yes,excellent,other uk,NA,crieff
+own vehicle,own vehicle,0,with friends / relatives,800,50,4,good,excellent,not interested in social programme,excellent,poor,good,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,average,NA,poor,average,yes,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,self-catering accommodation,570,65,13,poor,good,not interested in social programme,NA,excellent,excellent,some days,no,NA,scotland,highland,comrie
+rail,own vehicle,0,self-catering accommodation,1030,250,21,excellent,excellent,not interested in social programme,good,good,excellent,yes,no,NA,scotland,highland,comrie and perth
+rail,own vehicle,2,event campsite (comrie croft),288,50,5,excellent,excellent,excellent,average,good,excellent,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,100,40,3,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,lochlane & scone
+hired vehicle,event bus,6,event campsite (comrie croft),0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,scotland,edinburgh,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),400,50,2,average,good,not interested in social programme,good,good,excellent,no,yes,excellent,other uk,NA,killin
+air,hired vehicle,0,self-catering accommodation,500,30,4,good,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,with friends / relatives,560,60,14,excellent,good,excellent,NA,good,average,yes,no,NA,scotland,aberdeenshire,balquhidder
+hired vehicle,hired vehicle,0,hotel,900,100,5,excellent,good,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,900,100,5,excellent,excellent,excellent,good,excellent,good,yes,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,excellent,excellent,excellent,excellent,excellent,yes,yes,excellent,other uk,NA,st fillans
+hired vehicle,públic transport,0,self-catering accommodation,0,75,7,good,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+rail,event bus,3,event campsite (comrie croft),40,30,2,excellent,good,good,average,good,excellent,no,yes,excellent,rest of the world,NA,acharn
+own vehicle,own vehicle,0,hotel,126,50,2017,excellent,excellent,not interested in social programme,average,good,good,some days,yes,good,other uk,NA,stirling
+own vehicle,own vehicle,0,self-catering accommodation,2000,100,14,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,edinburgh,comrie
+own vehicle,shared private vehicle,0,hotel,420,100,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,at home,180,75,23,excellent,excellent,excellent,average,good,good,some days,no,NA,scotland,scottish borders,birnam
+own vehicle,own vehicle,0,event campsite (comrie croft),150,150,3,excellent,good,good,NA,excellent,excellent,no,no,NA,other uk,NA,"garrow, south of kenmore"
+own vehicle,event bus,4,event campsite (comrie croft),250,150,1,good,good,not interested in social programme,NA,average,average,some days,yes,good,other uk,NA,comrie
+hired vehicle + own vehicles,lift from station by fellow member,0,other camping / caravan site,100,40,3,excellent,excellent,excellent,good,excellent,excellent,some days,no,NA,scotland,tayside,"crieff, stanley"
+own vehicle,own vehicle,0,event campsite (comrie croft),152,80,12,excellent,excellent,good,NA,good,good,no,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,with friends / relatives,200,90,20,excellent,good,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,auchterarder
+living there,own vehicle,0,military camp,90,100,16,excellent,good,excellent,NA,good,good,no,no,NA,scotland,highland,comrie croft
+rail,hired vehicle,0,hotel and guest house,215,50,20,good,good,excellent,NA,good,excellent,yes,yes,good,other uk,NA,"edinburgh, perth, dundee, berwick."
+own vehicle,own vehicle,0,self-catering accommodation,280,200,0,excellent,good,good,NA,excellent,good,no,no,NA,other uk,NA,dunblane
+own vehicle,own vehicle,0,other camping / caravan site,250,150,1,excellent,excellent,not interested in social programme,NA,good,poor,some days,yes,good,other uk,NA,comrie
+own vehicle,own vehicle,0,at home,320,100,0,excellent,excellent,not interested in social programme,average,average,good,some days,no,NA,other uk,NA,amulree
+own vehicle,own vehicle,0,self-catering accommodation,550,150,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,scotland,colchester,home
+i live there.....,shared private vehicle,0,at home,70,6,0,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,322,55,15,excellent,excellent,not interested in social programme,NA,excellent,average,no,no,NA,other uk,NA,comrie crieff
+own vehicle,own vehicle,0,other camping / caravan site,60,60,6,good,average,not interested in social programme,good,very poor,excellent,yes,yes,excellent,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,good,excellent,good,no,no,NA,other uk,NA,lawera
+own vehicle,own vehicle,0,self-catering accommodation,550,150,4,excellent,excellent,not interested in social programme,average,average,good,yes,no,NA,scotland,aberdeen,crieff hydro hotel
+own vehicle,own vehicle,0,at home,250,150,1,good,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,glenalmond
+own vehicle,own vehicle,0,self-catering accommodation,1300,60,15,good,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other europe,NA,killan
+own vehicle,own vehicle,0,event campsite (comrie croft),30,100,5,excellent,excellent,excellent,average,excellent,good,some days,no,NA,scotland,moray,kenmore
+bus (multiple),event bus,7,other camping / caravan site,86,314.8,14,good,good,not interested in social programme,good,excellent,good,some days,yes,good,other uk,NA,aberfeldy
+own vehicle,own vehicle,0,hotel,0,75,7,good,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,wester fowlis
+own vehicle,own vehicle,0,hotel,160,80,4,good,good,not interested in social programme,NA,good,good,some days,yes,good,other europe,NA,st fillans
+rail,event bus,3,event campsite (comrie croft),420,100,2,good,good,good,NA,excellent,excellent,no,no,NA,scotland,east dunbartonshire,galashiels
+own vehicle,own vehicle,0,other camping / caravan site,400,50,2,excellent,excellent,not interested in social programme,average,excellent,excellent,some days,no,NA,other uk,NA,new county hotel in perth
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,good,good,not interested in social programme,average,average,average,no,no,NA,scotland,east lothian,dunkeld
+own vehicle,own vehicle,0,other camping / caravan site,120,140,6,good,good,not interested in social programme,NA,average,poor,no,no,NA,other uk,NA,comrie croft6
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,not interested in social programme,NA,good,average,yes,yes,good,other uk,NA,luncarty
+own vehicle,event bus,6,event campsite (comrie croft),160,80,4,excellent,excellent,good,NA,excellent,excellent,yes,yes,excellent,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,poor,good,good,some days,no,NA,other uk,NA,comrie croft and at home in edinburgh
+bus,event bus,7,other camping / caravan site,450,250,1,excellent,good,not interested in social programme,NA,good,excellent,yes,yes,excellent,scotland,dumfries and galloway,crieff
+own vehicle,own vehicle,0,self-catering accommodation,1200,100,7,excellent,excellent,good,excellent,excellent,excellent,some days,no,NA,other uk,NA,comrie
+own vehicle,shared private vehicle,0,event campsite (comrie croft),380,110,10,excellent,excellent,not interested in social programme,NA,average,good,no,no,NA,scotland,pkc,"crieff, dunkeld"
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,excellent,excellent,excellent,excellent,some days,yes,good,other europe,NA,callander
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,excellent,good,not interested in social programme,NA,average,average,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,event campsite (comrie croft),420,100,2,good,good,excellent,good,good,average,no,no,NA,other europe,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,good,NA,excellent,average,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,hotel,700,0,10,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,486,100,28,good,good,excellent,excellent,good,good,yes,no,NA,other uk,NA,hpb holiday resort tigh mor
+hired vehicle,shared private vehicle,2,event campsite (comrie croft),100,40,3,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other uk,NA,home (dunkeld)
+hired vehicle,hired vehicle,0,guest house / b+b,360,150,3,excellent,good,not interested in social programme,average,good,good,some days,yes,good,other uk,NA,fowlis wester
+own vehicle,event bus,5,event campsite (comrie croft),100,40,3,excellent,excellent,average,NA,good,average,yes,yes,average,other uk,NA,hexham
+own vehicle,event bus,6,event campsite (comrie croft),0,75,7,good,excellent,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,creiff
+hired vehicle,event bus,6,event campsite (comrie croft),70,6,0,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,gleneagles
+own vehicle,own vehicle,0,hotel,160,80,4,good,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA,comrie croft campsite
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,scotland,aberdeenshire,blair drummond
+own vehicle,own vehicle,0,hotel,1000,1000,2,good,good,excellent,excellent,good,excellent,no,no,NA,other uk,NA,gargunnock
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,not interested in social programme,poor,average,excellent,no,no,NA,scotland,aberdeenshire,bankfoot
+hired vehicle,hired vehicle,0,hostel,160,80,4,good,good,not interested in social programme,poor,good,good,no,no,NA,other uk,NA,st fillians
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,good,good,excellent,excellent,some days,yes,excellent,scotland,falkirk,scone
+own vehicle,own vehicle,0,self-catering accommodation,3000,720,13,good,good,average,NA,good,good,yes,yes,average,other uk,NA,pitlochry
+own vehicle,own vehicle,0,hostel,126,50,2017,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other uk,NA,near lochearnhead
+own vehicle,own vehicle,0,self-catering accommodation,2200,150,2,excellent,excellent,good,good,excellent,excellent,no,no,NA,other uk,NA,glen almond
+air,hired vehicle,0,self-catering accommodation,0,75,7,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,rest of the world,NA,perth
+own vehicle,own vehicle and cycle,0,event campsite (comrie croft),150,150,3,excellent,excellent,good,NA,average,good,no,no,NA,scotland,west lothian,houston comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,good,excellent,not interested in social programme,NA,excellent,average,no,no,NA,other uk,NA,"gauldry, fife"
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,yes,yes,good,scotland,edinburgh,stanley
+own vehicle,own vehicle,0,at home,450,250,1,good,good,not interested in social programme,average,good,good,some days,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,2000,100,14,excellent,good,very poor,good,excellent,good,no,no,NA,other uk,NA,glen eagles
+rail,event bus,7,other camping / caravan site,250,150,1,excellent,excellent,average,NA,good,excellent,some days,yes,good,other uk,NA,dull
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,excellent,excellent,good,good,good,yes,yes,good,other uk,NA,auchterarder
+own vehicle,own vehicle,0,at home,0,75,7,excellent,excellent,not interested in social programme,good,excellent,excellent,some days,no,NA,other europe,NA,killin
+air,hired vehicle,0,self-catering accommodation,1,1,5,excellent,excellent,excellent,excellent,excellent,excellent,yes,no,NA,other uk,NA,comrie croft
+own vehicle,event bus,4,other camping / caravan site,200,90,20,excellent,poor,average,NA,excellent,excellent,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,1700,300,10,excellent,good,not interested in social programme,NA,average,good,yes,no,NA,other uk,NA,dunkeld
+hired vehicle,event bus,3,event campsite (comrie croft),100,40,3,excellent,good,average,good,good,excellent,yes,yes,good,scotland,glasgow,acharn cottages. killin
+own vehicle,own vehicle,0,other camping / caravan site,126,50,2017,excellent,good,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,broughty ferry
+own vehicle,own vehicle,0,at home,200,90,20,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,good,other uk,NA,perth
+air,hired vehicle,0,self-catering accommodation,300,100,6,good,good,good,average,good,good,some days,yes,good,other uk,NA,"comrie croft, dunkeld, faskally (pitlochry)"
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,good,good,not interested in social programme,NA,good,average,some days,yes,excellent,scotland,east lothian,crieff
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,good,excellent,not interested in social programme,good,good,excellent,no,no,NA,other uk,NA,lochearnhead
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,NA,excellent,good,no,no,NA,other europe,NA,fortingall nr aberfeldy
+own vehicle,own vehicle,0,self-catering accommodation,842,140,4,good,average,excellent,excellent,excellent,excellent,some days,yes,average,scotland,city of edinburgh,balerno
+own vehicle,shared private vehicle,0,self-catering accommodation,2200,150,2,good,good,excellent,NA,good,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,comrie croft campsite
+own vehicle,event bus,3,event campsite (comrie croft),0,75,7,excellent,good,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,auchterarder
+own vehicle,event bus,6,other camping / caravan site,220,120,16,excellent,excellent,average,NA,good,average,no,no,NA,other uk,NA,comrie croft
+own vehicle,event bus,4,event campsite (comrie croft),0,75,7,excellent,good,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,logierait
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,excellent,average,good,no,no,NA,scotland,scottish borders,lochearnhead
+own vehicle,event bus,4,event campsite (comrie croft),70,6,0,excellent,excellent,excellent,average,excellent,excellent,yes,yes,excellent,rest of the world,NA,crieff
+own vehicle,own vehicle,0,event campsite (comrie croft),450,250,1,good,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA,fowlis wester
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,good,average,not interested in social programme,good,average,average,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,hotel,150,150,3,excellent,excellent,not interested in social programme,good,good,good,yes,no,NA,scotland,stirling,lochearnhead
+hired vehicle,hired vehicle,0,hotel,800,50,4,poor,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,scotland,edinburgh,comrie
+own vehicle,own vehicle,0,at home,70,6,0,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,lochearnhead
+hired vehicle,hired vehicle,0,self-catering accommodation,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,some days,no,NA,rest of the world,NA,"one night with friends in dunblane, otherwise commuted"
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,excellent,NA,excellent,good,yes,yes,good,other uk,NA,crieff
+own vehicle,cycle,0,event campsite (comrie croft),760,120,6,excellent,excellent,excellent,NA,excellent,good,some days,no,NA,other uk,NA,crieff and pitlochry
+hired vehicle,event bus,4,event campsite (comrie croft),140,150,4,good,average,average,NA,average,average,no,yes,average,other uk,NA,balquhidder
+own vehicle,own vehicle,0,self-catering accommodation,1800,60,14,excellent,good,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,stirling university
+hired vehicle,hired vehicle,0,hotel,70,6,0,good,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,at home,220,120,16,excellent,excellent,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,other camping / caravan site,350,60,5,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA,"balquidder, perth, grandtully"
+hired vehicle,own vehicle,0,self-catering accommodation,900,100,5,excellent,excellent,average,good,excellent,excellent,yes,yes,excellent,other uk,NA,crieff
+air,hired vehicle,0,guest house / b+b,176,100,12,excellent,excellent,excellent,average,good,good,some days,yes,good,other europe,NA,dollar
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,good,good,not interested in social programme,NA,excellent,good,no,no,NA,other uk,NA,perth
+own vehicle,shared private vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,good,excellent,excellent,some days,yes,good,other uk,NA,methven
+own vehicle,own vehicle,0,self-catering accommodation,380,110,10,excellent,good,excellent,good,excellent,excellent,yes,no,NA,other uk,NA,comrie croft campsite
+own vehicle,own vehicle,0,self-catering accommodation,1600,200,8,good,good,very poor,good,good,good,yes,no,NA,scotland,lothian,crieff   blair atholl
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,good,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,"rosie ochil, forgandenny"
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,good,average,NA,excellent,excellent,yes,no,NA,other uk,NA,st fillans
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,NA,good,excellent,yes,yes,excellent,other uk,NA,crief
+own vehicle,own vehicle,0,self-catering accommodation,850,40,4,excellent,good,not interested in social programme,NA,good,average,yes,no,NA,scotland,east ayrshire,whitemoss
+own vehicle,own vehicle,0,event campsite (comrie croft),200,90,20,excellent,excellent,not interested in social programme,average,good,good,some days,yes,good,scotland,west lothian,crieff
+own vehicle,own vehicle,0,self-catering accommodation,900,100,5,average,good,not interested in social programme,good,good,excellent,yes,no,NA,scotland,glasgow,comrie
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,good,other uk,NA,comrie
+rail,shared private vehicle,2,event campsite (comrie croft),350,60,5,average,good,good,NA,excellent,good,some days,yes,good,other uk,NA,comrie
+own vehicle,event bus,6,event campsite (comrie croft),500,30,4,excellent,excellent,not interested in social programme,NA,excellent,good,yes,yes,good,other europe,NA,auchterarder - pitlokry
+own vehicle,own vehicle,3,event campsite (comrie croft),900,100,5,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,scotland,fife,callander
+own vehicle,own vehicle,0,self-catering accommodation,2000,100,14,good,good,not interested in social programme,average,average,average,some days,no,NA,other uk,NA,loch tay
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,average,average,good,NA,average,good,no,yes,average,scotland,pkc,scone
+own vehicle,own vehicle,0,at home,70,6,0,excellent,excellent,good,poor,good,good,yes,no,NA,other uk,NA,braco
+rail,cycle,0,event campsite (comrie croft),700,0,10,average,good,excellent,good,good,good,no,no,NA,scotland,dumfries & galloway,lochearnhead and aberfeldy
+own vehicle,own vehicle,0,other camping / caravan site,155,150,3,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,good,average,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA,killin and scone
+hired vehicle,hired vehicle,0,self-catering accommodation,1100,200,0,average,average,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other europe,NA,luncarty
+own vehicle,own vehicle,0,self-catering accommodation,1400,100,8,excellent,excellent,not interested in social programme,excellent,good,good,no,no,NA,other europe,NA,comrie
+hired vehicle,hired vehicle,0,self-catering accommodation,600,200,22,good,good,good,NA,good,good,yes,no,NA,scotland,stirling,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,NA,excellent,average,yes,yes,good,other uk,NA,doune
+own vehicle,own vehicle,0,event campsite (comrie croft),560,60,14,good,good,good,good,good,good,some days,no,NA,scotland,east lothian,creiff
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,good,good,good,good,some days,no,NA,other uk,NA,blairgowrie
+own vehicle,own vehicle,0,event campsite (comrie croft),900,100,5,excellent,excellent,good,average,excellent,excellent,no,no,NA,rest of the world,NA,aberfeldy
+own vehicle,shared private vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,st fillans
+own vehicle,own vehicle,0,other camping / caravan site,800,50,4,excellent,excellent,good,NA,excellent,excellent,some days,yes,excellent,other uk,NA,comrie
+own vehicle,event bus,6,event campsite (comrie croft),0,75,7,excellent,excellent,good,average,good,good,some days,no,NA,scotland,moray,crieff
+own vehicle,shared private vehicle,0,guest house / b+b,250,150,1,average,good,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,"auchterader, perth"
+own vehicle,own vehicle,0,at home,860,120,6,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,other europe,NA,comrie
+own vehicle,event bus,6,event campsite (comrie croft),90,100,16,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,scotland,east lothian,perth
+own vehicle,event bus,3,event campsite (comrie croft),8000,100,2,good,average,not interested in social programme,NA,average,average,yes,no,NA,other europe,NA,comrie campsite
+own vehicle,event bus,4,self-catering accommodation,350,60,5,excellent,good,not interested in social programme,excellent,excellent,good,no,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,at home,800,50,4,good,excellent,excellent,NA,excellent,excellent,yes,yes,excellent,scotland,midlothian,fowlis wester
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,excellent,excellent,not interested in social programme,NA,excellent,average,some days,yes,good,other uk,NA,"kenmore, garrow"
+own vehicle,own vehicle,0,other camping / caravan site,250,150,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,yes,excellent,other uk,NA,st fillans
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA,stirling
+own vehicle,own vehicle,0,guest house / b+b,1000,1000,2,excellent,excellent,excellent,excellent,excellent,excellent,no,yes,good,other uk,NA,callander
+own vehicle,own vehicle,0,event campsite (comrie croft),103,80,7,excellent,excellent,good,NA,good,average,some days,yes,good,other uk,NA,callander
+hired vehicle,hired vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,excellent,good,good,excellent,yes,yes,good,other uk,NA,motala
+coach+train+bus,event bus,6,event campsite (comrie croft),70,6,0,excellent,excellent,good,good,average,excellent,yes,yes,excellent,other uk,NA,perth
+own vehicle,own vehicle,0,hotel,300,100,6,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,yes,good,other uk,NA,st fillans
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,good,other europe,NA,"loch earn, blair atholl, faskally"
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,NA,good,average,no,no,NA,other uk,NA,stirling
+own vehicle,own vehicle,0,self-catering accommodation,1084,200,10,excellent,good,average,NA,good,good,yes,yes,average,other uk,NA,"monzie, crieff"
+own vehicle,own vehicle,0,other camping / caravan site,70,6,0,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,yes,excellent,other uk,NA,crieff
+own vehicle,own vehicle,0,event campsite (comrie croft),103,80,7,good,good,average,NA,average,average,some days,no,NA,other uk,NA,monzie
+own vehicle,own vehicle,0,other camping / caravan site,140,150,4,excellent,good,not interested in social programme,NA,excellent,excellent,yes,yes,good,other uk,NA,stirling
+own vehicle,shared private vehicle,0,log cabin,100,40,3,excellent,good,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA,blair atholl
+own vehicle,own vehicle,0,with friends / relatives,250,150,1,excellent,excellent,excellent,excellent,excellent,excellent,yes,no,NA,other europe,NA,auchterarder
+own vehicle,own vehicle,0,other camping / caravan site,250,150,1,excellent,excellent,not interested in social programme,NA,excellent,good,yes,yes,good,other uk,NA,st fillans
+hired vehicle,event bus,6,event campsite (comrie croft),420,100,2,excellent,excellent,not interested in social programme,NA,good,good,some days,yes,good,scotland,highlands,dunkeld
+own vehicle,own vehicle,0,hotel,152,80,12,good,average,not interested in social programme,good,average,average,no,yes,average,other uk,NA,lochearn
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,scotland,scottish borders,crieff/comrie
+own vehicle,own vehicle,0,at home,700,0,10,good,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,average,good,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,other camping / caravan site,120,140,6,good,good,good,good,average,average,no,yes,good,other uk,NA,scone
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,average,NA,good,average,yes,yes,good,other europe,NA,lawers
+own vehicle,own vehicle,0,other camping / caravan site,300,100,6,excellent,good,not interested in social programme,NA,excellent,excellent,some days,no,NA,scotland,perth & kinross,nr crieff
+hired vehicle,hired vehicle,0,self-catering accommodation,1000,1000,2,good,average,not interested in social programme,good,average,average,some days,yes,good,other europe,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,good,good,not interested in social programme,good,average,excellent,yes,no,NA,other uk,NA,creiff
+own vehicle,own vehicle,0,event campsite (comrie croft),300,100,6,excellent,excellent,good,NA,good,good,some days,yes,good,other uk,NA,loch tay
+air,event bus,5,guest house / b+b,75,50,14,excellent,poor,excellent,NA,good,good,some days,yes,good,other uk,NA,dunning
+own vehicle,own vehicle,0,guest house / b+b,230,100,5,excellent,excellent,excellent,average,good,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,NA,excellent,good,yes,no,NA,other uk,NA,abernyte - camping in friend's garden
+own vehicle,shared private vehicle,0,self-catering accommodation,1000,1000,2,excellent,average,not interested in social programme,NA,excellent,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,with friends / relatives,1200,100,7,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,west lothian,stirling
+own vehicle,own vehicle,0,at home,250,150,1,good,good,not interested in social programme,NA,good,good,some days,no,NA,other europe,NA,"comrie (event campsite, and also friends' house in comrie)"
+own vehicle,own vehicle,0,at home,1100,200,0,excellent,excellent,excellent,NA,good,good,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,850,40,4,good,good,not interested in social programme,poor,excellent,average,yes,no,NA,other uk,NA,auchterarder
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,average,good,good,no,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,1400,100,8,good,excellent,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,killin and fort william
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,average,average,not interested in social programme,NA,average,good,no,no,NA,scotland,edinburgh,comrie
+own vehicle,own vehicle,0,other camping / caravan site,15,20,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,at home,70,6,0,excellent,excellent,good,NA,good,good,yes,no,NA,scotland,highland,pitlohry
+own vehicle,own vehicle,0,self-catering accommodation,1100,200,0,excellent,good,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,crieff
+own vehicle,shared private vehicle,0,hotel,170,200,3,excellent,good,not interested in social programme,NA,excellent,excellent,some days,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,650,150,14,excellent,excellent,not interested in social programme,poor,excellent,excellent,yes,no,NA,scotland,city of edinburgh,crieff
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,good,poor,good,NA,good,good,no,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,hotel,600,200,22,good,good,average,NA,excellent,excellent,yes,yes,good,other uk,NA,"inchyra, perth"
+own vehicle,own vehicle,0,self-catering accommodation,850,40,4,good,average,not interested in social programme,good,good,good,yes,yes,average,scotland,argyll and bute,dunkeld
+own vehicle,own vehicle,0,hotel,0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,stirling
+own vehicle,"mixture of own vehicle and cycle, often dropping off or collecting from within easy reach. walked to day 3!",0,log cabin,300,100,6,excellent,excellent,excellent,NA,good,excellent,yes,no,NA,rest of the world,NA,inchture
+hired vehicle,hired vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,good,NA,excellent,excellent,some days,no,NA,other uk,NA,comrie and perth
+hired vehicle,hired vehicle,0,military training camp,250,150,1,excellent,excellent,excellent,excellent,average,good,no,no,NA,other uk,NA,crieff
+own vehicle,shared private vehicle,0,self-catering accommodation,400,50,2,excellent,good,not interested in social programme,NA,excellent,good,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),195,70,13,average,poor,not interested in social programme,good,good,excellent,yes,no,NA,scotland,fife,.comrie
+hired vehicle,hired vehicle,0,self-catering accommodation,450,250,1,good,good,excellent,good,good,excellent,yes,yes,good,other uk,NA,comrie
+hired vehicle,event bus,4,event campsite (comrie croft),380,110,10,good,excellent,good,NA,good,good,some days,yes,average,other uk,NA,"knock castle, crieff"
+own vehicle,own vehicle,0,hotel,220,120,16,excellent,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,campsite and the roadside,0,75,7,good,excellent,not interested in social programme,good,average,good,no,yes,good,scotland,glasgow,bridge of earn
+air,event bus,4,guest house / b+b,225,0,10,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other europe,NA,perth
+"bus, train",event bus,7,guest house / b+b,0,75,7,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,scotland,highland,crieff
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,rest of the world,NA,st. killans
+own vehicle,own vehicle,0,at home,210,80,5,excellent,excellent,excellent,good,excellent,excellent,yes,no,NA,other uk,NA,perth
+rail,lift from station by fellow member,0,other camping / caravan site,500,30,4,excellent,excellent,not interested in social programme,average,excellent,excellent,no,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,850,40,4,excellent,good,not interested in social programme,NA,good,average,yes,yes,good,other uk,NA,auchterarder
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,excellent,excellent,excellent,good,some days,yes,excellent,other uk,NA,amulree
+own vehicle,shared private vehicle,0,event campsite (comrie croft),360,150,3,good,good,not interested in social programme,NA,excellent,good,no,no,NA,scotland,city of edinburgh,crieff
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,excellent,good,good,NA,average,poor,some days,no,NA,scotland,aberdeenshire,"until day 3 in crieff (hotel), from day 3 to the end in perth (b+b)"
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,good,scotland,scottish borders,barry buddon
+own vehicle,shared private vehicle,0,other camping / caravan site,2000,100,14,excellent,excellent,not interested in social programme,average,excellent,excellent,no,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,with friends / relatives,200,90,20,good,excellent,good,good,good,excellent,some days,no,NA,scotland,city of edinburgh,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,rest of the world,NA,polmont
+hired vehicle,hired vehicle,0,self-catering accommodation,300,100,6,good,good,not interested in social programme,average,good,good,no,no,NA,scotland,south norfolk,killan
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other uk,NA,st fillans
+own vehicle,shared private vehicle,0,campsite and the roadside,315,100,6,excellent,good,excellent,good,excellent,excellent,yes,no,NA,other europe,NA,comrie and pitlochry
+own vehicle,own vehicle,0,guest house / b+b,140,150,4,excellent,good,excellent,good,excellent,excellent,yes,no,NA,other europe,NA,stanley
+own vehicle,own vehicle,0,with friends / relatives,30,100,5,excellent,good,excellent,excellent,excellent,excellent,some days,yes,good,scotland,aberdeen,creiff
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,"dollar, clackmannanshire"
+air,hired vehicle,0,self-catering accommodation,1200,100,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,"comrie croft, perth"
+own vehicle,"mixture of own vehicle and cycle, often dropping off or collecting from within easy reach. walked to day 3!",0,self-catering accommodation,500,30,4,good,good,excellent,excellent,average,good,some days,yes,good,other uk,NA,crieff
+own vehicle,own vehicle,0,event campsite (comrie croft),250,150,1,good,good,average,NA,excellent,excellent,no,yes,good,other uk,NA,"comrie, dunkeld & pitlochry"
+own vehicle,own vehicle,0,with friends / relatives,0,75,7,good,excellent,not interested in social programme,good,good,poor,no,no,NA,other uk,NA,"lochearnhead, kinloch(near blairgowrie)"
+own vehicle,own vehicle,0,self-catering accommodation,150,150,3,excellent,good,excellent,good,excellent,excellent,some days,yes,good,other uk,NA,"event campsite, then aberfeldy caravan park"
+own vehicle,own vehicle,0,other camping / caravan site,70,6,0,good,average,not interested in social programme,NA,average,good,yes,no,NA,scotland,perth and kinross,comrie
+own vehicle,own vehicle,0,self-catering accommodation,486,100,28,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other europe,NA,crieff
+train to meet rest of part part way,shared private vehicle,0,event campsite (comrie croft),0,75,7,good,excellent,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,methven
+i live there.....,shared private vehicle,0,at home,250,150,1,excellent,good,not interested in social programme,good,excellent,excellent,some days,yes,good,other uk,NA,crieff
+own vehicle,own vehicle,0,hotel,90,100,16,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,good,other uk,NA,crieff
+own vehicle,own vehicle,0,guest house / b+b,80,70,2,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,scotland,perth and kinross,glenalmond
+own vehicle,own vehicle,0,event campsite (comrie croft),152,80,12,good,average,good,NA,good,excellent,some days,no,NA,scotland,dont know,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,good,good,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,luncarty jut north of perth
+own vehicle,own vehicle,0,self-catering accommodation,1100,200,0,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,good,average,not interested in social programme,average,average,poor,some days,no,NA,scotland,aberdeenshire,comrie
+air,hired vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,NA,good,average,yes,yes,good,other europe,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,770,150,12,good,good,good,good,good,poor,no,no,NA,scotland,city of edinburgh,rossendale
+own vehicle,own vehicle,0,self-catering accommodation,1800,60,14,excellent,good,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA,dunkeld
+own vehicle,own vehicle,0,at home,0,75,7,excellent,good,not interested in social programme,excellent,excellent,good,yes,no,NA,scotland,city of edinburgh,forgandenny
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,good,good,not interested in social programme,average,good,excellent,yes,no,NA,other europe,NA,perth
+hired vehicle,hired vehicle,0,guest house / b+b,556,40,4,excellent,excellent,not interested in social programme,NA,good,average,some days,no,NA,other uk,NA,auchterarder
+hired vehicle,hired vehicle,0,event campsite (comrie croft),250,150,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,bridge of earn
+own vehicle,event bus,5,other camping / caravan site,2000,100,14,excellent,good,not interested in social programme,very poor,excellent,good,no,no,NA,other uk,NA,event arenas (controlling)
+own vehicle,event bus,3,event campsite (comrie croft),0,75,7,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,forgandenny
+hired vehicle,hired vehicle,0,self-catering accommodation,700,0,10,good,good,not interested in social programme,average,good,good,some days,no,NA,scotland,highland,lochlane camp site
+own vehicle,shared private vehicle,0,self-catering accommodation,1500,1000,11,excellent,excellent,excellent,NA,good,good,some days,no,NA,other uk,NA,crieff
+hired vehicle,hired vehicle,0,hotel,80,70,2,excellent,good,not interested in social programme,poor,excellent,excellent,yes,no,NA,other uk,NA,st fillans   (and birnam   1 night b&b)
+own vehicle,own vehicle,0,at home,1446,80,1,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,st. fillans
+own vehicle,own vehicle,0,event campsite (comrie croft),1158,300,6,excellent,good,not interested in social programme,NA,good,excellent,yes,no,NA,other europe,NA,perth
+live in area,own vehicle,0,at home,550,150,4,excellent,good,good,good,excellent,excellent,yes,yes,good,other uk,NA,"lawers, loch tay"
+own vehicle,own vehicle,0,other camping / caravan site,160,80,4,excellent,excellent,not interested in social programme,NA,excellent,good,no,no,NA,other uk,NA,"comrie, edinburgh, kirriemuir"
+air,own vehicle,0,hotel,1200,100,7,excellent,excellent,good,average,good,good,yes,no,NA,other europe,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,good,average,not interested in social programme,NA,average,excellent,yes,yes,excellent,other uk,NA,comrie croft
+own vehicle,own vehicle,0,home for 4 nights rented with friends for 2,150,150,3,excellent,good,not interested in social programme,NA,good,average,no,yes,good,other europe,NA,"dunira, comrie"
+own vehicle,own vehicle,0,at home,900,100,5,excellent,excellent,not interested in social programme,good,excellent,good,no,no,NA,scotland,perthshire,crieff and pitlochry
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,good,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,loch tay highland lodges
+own vehicle,own vehicle,0,other camping / caravan site,560,60,14,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,other europe,NA,lawers
+own vehicle,own vehicle,0,self-catering accommodation,350,60,5,excellent,excellent,excellent,good,excellent,excellent,yes,yes,good,scotland,highland,crieff
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,good,good,excellent,excellent,yes,no,NA,other europe,NA,glasgow
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,good,excellent,NA,good,good,some days,yes,excellent,scotland,somerset,stirling
+air,hired vehicle,0,event campsite (comrie croft),200,90,20,excellent,good,good,good,good,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),200,90,20,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other uk,NA,lochearnhead
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,excellent,NA,excellent,average,no,no,NA,other europe,NA,crieff
+own vehicle,own vehicle,0,other camping / caravan site,70,6,0,good,excellent,not interested in social programme,good,average,poor,some days,yes,good,other europe,NA,"balquidder, st fillans, callander, murthly"
+air,shared private vehicle,0,self-catering accommodation,1500,1000,11,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,scotland,east lothian,crieff
+hired vehicle,hired vehicle,0,self-catering accommodation,850,40,4,excellent,good,not interested in social programme,good,good,average,yes,no,NA,other uk,NA,gargunnock
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,good,good,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,"crieff, pitlochry"
+own vehicle,own vehicle,0,self-catering accommodation,1200,100,7,excellent,excellent,excellent,good,good,excellent,yes,yes,good,other uk,NA,event campsite (comrie)
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,good,not interested in social programme,NA,good,average,no,no,NA,other uk,NA,comrie. dunkeld
+own vehicle,own vehicle,0,at home,0,75,7,good,poor,good,excellent,very poor,excellent,some days,no,NA,other uk,NA,glenfarg
+own vehicle,own vehicle,0,self-catering accommodation,770,150,12,excellent,excellent,not interested in social programme,NA,good,good,some days,no,NA,other europe,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,1e21,1e21,1e21,excellent,good,not interested in social programme,NA,good,good,some days,no,NA,scotland,east dunbartonshire,stanley
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,NA,excellent,good,no,no,NA,other uk,NA,"fearnan, loch tay"
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,NA,good,good,yes,yes,average,other uk,NA,hexham
+hired vehicle,event bus,4,event campsite (comrie croft),1000,1000,2,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other europe,NA,aberfeldy
+own vehicle,event bus,5,event campsite (comrie croft),150,150,3,excellent,excellent,average,NA,good,excellent,yes,no,NA,other uk,NA,aberfeldy
+air,event bus,4,guest house / b+b,70,6,0,good,excellent,excellent,NA,poor,average,some days,yes,excellent,scotland,ayr,comrie
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,excellent,excellent,excellent,excellent,yes,yes,excellent,other uk,NA,rumbling bridge
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,good,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,excellent,good,excellent,excellent,no,no,NA,scotland,edinburgh,between crieff and perth
+own vehicle,own vehicle,0,other camping / caravan site,144,60,6,excellent,good,not interested in social programme,NA,average,good,some days,no,NA,other uk,NA,"crieff, grandtully"
+own vehicle,own vehicle,0,self-catering accommodation,1300,60,15,good,average,not interested in social programme,NA,good,average,some days,no,NA,other uk,NA,aberfeldy
+own vehicle,event bus,6,event campsite (comrie croft),600,200,22,excellent,good,good,NA,excellent,good,yes,no,NA,scotland,aberdeen,lochearnhead
+own vehicle,own vehicle,0,event campsite (comrie croft),280,200,0,average,average,good,excellent,excellent,excellent,some days,no,NA,rest of the world,NA,comrie
+hired vehicle,hired vehicle,0,self-catering accommodation,1000,1000,2,average,good,not interested in social programme,good,average,average,some days,yes,good,other uk,NA,glen artney
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,good,good,good,yes,no,NA,scotland,dont know,comrie
+own vehicle,own vehicle,0,hotel,560,60,14,excellent,excellent,excellent,excellent,excellent,excellent,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,560,60,14,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,st fillans
+own vehicle,own vehicle,0,other camping / caravan site,80,70,2,good,average,not interested in social programme,NA,average,average,some days,yes,average,scotland,tayside,"crieff, dunkeld"
+own vehicle,own vehicle,0,self-catering accommodation,650,150,14,excellent,good,not interested in social programme,average,good,good,some days,no,NA,other europe,NA,menstrie
+own vehicle,own vehicle,0,with friends / relatives,200,90,20,excellent,good,excellent,excellent,excellent,excellent,yes,no,NA,scotland,aberdeenshire,perth
+air,own vehicle,0,other camping / caravan site,250,150,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,yes,good,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,595,150,8,good,good,not interested in social programme,NA,average,average,some days,yes,good,scotland,dumfries & galloway,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),70,6,0,excellent,excellent,not interested in social programme,NA,average,good,no,no,NA,other europe,NA,twenty shilling wood caravan site comrie
+bus (multiple),own vehicle,0,other camping / caravan site,150,150,3,good,good,not interested in social programme,good,excellent,good,some days,no,NA,other uk,NA,coupar angus
+hired vehicle,hired vehicle,0,self-catering accommodation,200,90,20,excellent,good,excellent,excellent,good,good,no,no,NA,scotland,aberdeenshire,methven
+hired vehicle,hired vehicle,0,self-catering accommodation,600,200,22,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,other uk,NA,comrie and birnam
+own vehicle,own vehicle,0,hotel,300,100,6,good,good,not interested in social programme,NA,excellent,excellent,yes,yes,good,scotland,aberdeen city,lochearnhead
+own vehicle,own vehicle,0,event campsite (comrie croft),345,45,11,excellent,excellent,not interested in social programme,excellent,excellent,excellent,some days,yes,excellent,other uk,NA,dunkeld
+own vehicle,own vehicle,0,hotel,200,90,20,good,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,edinburgh,glasgow
+own vehicle,own vehicle,0,self-catering accommodation,1400,100,8,excellent,excellent,good,average,excellent,excellent,no,no,NA,other uk,NA,"comrie croft campsite, den of lindores"
+own vehicle,own vehicle,2,self-catering accommodation,1000,1000,2,excellent,good,very poor,NA,good,excellent,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,good,good,good,no,no,NA,other uk,NA,comrie croft
+hired vehicle,shared private vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,good,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,"mid calder, pitlochry"
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,good,excellent,not interested in social programme,excellent,very poor,excellent,yes,yes,excellent,other uk,NA,scone
+rail,2 own vehicles as 5 people and dog too much for one car,0,at home,250,150,1,good,good,not interested in social programme,good,good,good,some days,no,NA,scotland,edinburgh,perth
+air,hired vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA,st fillans
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,east lothian,dukeld
+own vehicle,own vehicle,0,self-catering accommodation,950,130,1,excellent,excellent,excellent,excellent,excellent,excellent,yes,yes,excellent,scotland,stirling,brig o'turk
+own vehicle,shared private vehicle,0,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,good,excellent,excellent,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,hotel,10,60,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,good,scotland,aberdeenshire,st fillans
+own vehicle,own vehicle,0,self-catering accommodation,280,200,0,good,good,good,NA,good,good,some days,yes,good,other europe,NA,jedburgh (one night) then trochry for a week
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,"scone, perth"
+own vehicle,own vehicle,0,self-catering accommodation,1600,200,8,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,lochearnhead
+own vehicle,own vehicle,0,other camping / caravan site,200,90,20,excellent,good,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,2400,180,16,excellent,good,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie croft
+rail,event bus,6,event campsite (comrie croft),150,150,3,excellent,excellent,good,NA,good,good,some days,yes,good,scotland,scottish borders,stanley near perth
+own vehicle,own vehicle,0,guest house / b+b,300,100,6,excellent,excellent,excellent,excellent,excellent,excellent,yes,no,NA,other uk,NA,crieff
+hired vehicle,shared private vehicle,1,event campsite (comrie croft),90,100,16,excellent,excellent,good,NA,excellent,excellent,some days,yes,good,other uk,NA,comrie croft campsite
+ferry and own vehicle,own vehicle,0,self-catering accommodation,900,100,5,excellent,excellent,excellent,good,good,good,yes,no,NA,other uk,NA,swanlinbar
+air,hired vehicle,0,hotel,1100,200,0,excellent,good,not interested in social programme,NA,excellent,excellent,no,no,NA,scotland,south ayrshire,forgandenny
+own vehicle,event bus,6,event campsite (comrie croft),420,100,2,excellent,excellent,not interested in social programme,good,excellent,excellent,some days,no,NA,scotland,moray,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,good,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA,juniper green
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,850,40,4,good,average,good,NA,good,average,yes,yes,average,other uk,NA,near killin (in p & k tho')
+own vehicle,own vehicle,0,self-catering accommodation,280,200,0,good,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,dunblane
+hired vehicle,hired vehicle,0,self-catering accommodation,600,200,22,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,hotel,100,40,3,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,comrie
+own vehicle,shared private vehicle,0,other camping / caravan site,450,250,1,excellent,excellent,good,NA,excellent,excellent,some days,no,NA,scotland,aberdeenshire,crieff
+own vehicle,own vehicle,0,other camping / caravan site,2000,100,14,excellent,excellent,not interested in social programme,NA,excellent,average,some days,no,NA,other uk,NA,kenmore
+train to meet rest of part part way,shared private vehicle,0,self-catering accommodation,700,0,10,good,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA,evesham
+own vehicle,own vehicle,0,self-catering accommodation,2000,100,14,good,average,not interested in social programme,NA,average,average,yes,no,NA,other europe,NA,scone
+hired vehicle,hired vehicle,0,self-catering accommodation,700,0,10,good,good,good,good,excellent,excellent,yes,no,NA,scotland,highland,st fillans
+own vehicle,own vehicle,0,self-catering accommodation,1870,300,13,excellent,good,not interested in social programme,good,excellent,excellent,no,no,NA,other uk,NA,new fowlis
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,excellent,NA,good,good,some days,yes,good,other europe,NA,killin
+own vehicle,own vehicle,0,other camping / caravan site,900,100,5,good,excellent,excellent,NA,good,excellent,some days,yes,good,other uk,NA,near comrie
+own vehicle,own vehicle,0,with friends / relatives,70,6,0,excellent,excellent,excellent,excellent,excellent,good,some days,no,NA,scotland,highland,comrie croft
+own vehicle,own vehicle,0,with friends / relatives,90,100,16,excellent,excellent,excellent,excellent,excellent,good,some days,yes,excellent,scotland,east renfrewshire,killin
+ferry. stena with own car.,own vehicle,0,other camping / caravan site,1000,1000,2,good,good,not interested in social programme,good,good,good,yes,yes,good,scotland,wnorfolk,crieff
+own vehicle,shared private vehicle,0,other camping / caravan site,1500,1000,11,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,good,scotland,south ayrshire,perth
+own vehicle,own vehicle,0,self-catering accommodation,580,100,6,good,good,good,good,good,average,yes,no,NA,other europe,NA,lochearnhead
+rail,event bus,5,other camping / caravan site,215,50,20,excellent,excellent,average,NA,good,excellent,yes,yes,good,other uk,NA,callendar
+own vehicle,own vehicle,0,"mix of camping, at home, and with parents",70,6,0,excellent,excellent,not interested in social programme,good,good,good,some days,no,NA,other uk,NA,lochearnhead
+own vehicle,own vehicle,0,self-catering accommodation,2500,1500,2,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,crieff and ladybank
+own vehicle,own vehicle,0,other camping / caravan site,2000,100,14,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,other europe,NA,dunkeld
+hired vehicle,hired vehicle,0,self-catering accommodation,1500,1000,11,good,good,not interested in social programme,NA,good,good,some days,no,NA,scotland,edinburgh,killin
+own vehicle,own vehicle,0,self-catering accommodation,350,60,5,excellent,good,not interested in social programme,NA,excellent,good,no,no,NA,scotland,aberdeenshire,auchterarder
+own vehicle,own vehicle,0,guest house / b+b,0,75,7,excellent,good,good,good,good,good,some days,no,NA,other uk,NA,inverness or edinburgh
+own vehicle,own vehicle,0,event campsite (comrie croft),900,100,5,average,good,not interested in social programme,NA,good,good,yes,yes,good,other uk,NA,st fillians
+own vehicle,own vehicle,0,other camping / caravan site,300,100,6,good,average,not interested in social programme,very poor,good,good,some days,no,NA,scotland,highland,comrie
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,scotland,falkirk,crieff
+own vehicle,own vehicle,0,hotel,420,100,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA,doune
+own vehicle,own vehicle,0,self-catering accommodation,750,200,0,excellent,excellent,excellent,excellent,excellent,excellent,some days,no,NA,scotland,city of edinburgh,between crieff and perth off a85
+own vehicle,own vehicle,0,self-catering accommodation,666.84,100,9,excellent,excellent,not interested in social programme,NA,good,good,some days,no,NA,scotland,stirlingshire,comrie
+own vehicle,own vehicle,0,hotel,120,140,6,excellent,excellent,excellent,good,good,good,some days,yes,good,other uk,NA,methven
+own vehicle,shared private vehicle,0,with friends / relatives,625,70,15,excellent,good,good,NA,good,excellent,yes,no,NA,scotland,tayside,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,scotland,midlothian,bankfoot
+own vehicle,own vehicle,0,self-catering accommodation,1600,200,8,excellent,good,not interested in social programme,good,average,excellent,yes,no,NA,other uk,NA,braco
+own vehicle,own vehicle,0,at home,250,150,1,excellent,excellent,very poor,NA,good,good,some days,no,NA,other europe,NA,comrie
+own vehicle,shared private vehicle,0,camper van at 2 different locations,200,90,20,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA,"butterstone, dunkeld"
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,good,good,excellent,yes,yes,excellent,other uk,NA,crief
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,good,average,good,NA,good,average,no,no,NA,scotland,perthshire,pitlochry
+air,hired vehicle,0,self-catering accommodation,700,0,10,good,good,not interested in social programme,good,good,excellent,yes,yes,good,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,650,150,14,excellent,excellent,excellent,NA,excellent,excellent,yes,yes,good,other europe,NA,comrie croft
+own vehicle,own vehicle,0,at home,1500,1000,11,excellent,excellent,not interested in social programme,good,good,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,hotel,210,80,5,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,scotland,renfrewshire,"crieff x5 nights, dunkeld x 2 nights"
+own vehicle,own vehicle (3 days) and bus (3 days),4,guest house / b+b,225,0,10,excellent,good,good,NA,excellent,excellent,yes,no,NA,other uk,NA,monzie
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,average,NA,good,good,yes,no,NA,other uk,NA,lochearnhead
+hired vehicle,hired vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,excellent,NA,good,excellent,no,no,NA,other uk,NA,kilin
+own vehicle,own vehicle,0,at home,10,60,1,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,crieff hydro
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,good,NA,excellent,excellent,yes,yes,excellent,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,550,150,4,excellent,good,not interested in social programme,average,good,good,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,3000,720,13,excellent,good,not interested in social programme,good,average,excellent,yes,no,NA,scotland,aberdeenshire,doune
+hired vehicle,hired vehicle,0,self-catering accommodation,357,450,5,good,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,st fillans/blair athol/faskelly
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,good,NA,excellent,average,yes,yes,good,scotland,fife,comrie
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,some days,yes,good,scotland,somerset,dunblane
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,not interested in social programme,excellent,average,average,no,no,NA,other europe,NA,muthill
+own vehicle,own vehicle,0,event campsite (comrie croft),500,30,4,average,good,not interested in social programme,NA,good,excellent,some days,yes,good,other uk,NA,crieff
+shared private vehicle,shared private vehicle,0,other camping / caravan site,360,150,3,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,rest of the world,NA,travel lodge perth
+own vehicle,own vehicle,0,event campsite (comrie croft),1000,1000,2,good,good,good,NA,good,good,some days,yes,good,other uk,NA,comrie
+hired vehicle,hired vehicle,0,hotel,2,50,10,good,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,edinburgh,comrie & inver mill
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,good,good,not interested in social programme,good,average,average,some days,yes,good,other uk,NA,aberfeldy
+own vehicle,own vehicle,0,hotel,120,140,6,excellent,good,not interested in social programme,good,excellent,excellent,some days,no,NA,scotland,west lothian,comrie croft
+air,hired vehicle,0,self-catering accommodation,272,60,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,other uk,NA,at home (dunblane)
+own vehicle,own vehicle,0,self-catering accommodation,270,60,3,average,good,not interested in social programme,NA,excellent,good,some days,no,NA,other uk,NA,"comrie, crieff"
+rail,military car,0,self-catering accommodation,1000,1000,2,excellent,excellent,good,good,excellent,excellent,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,scotland,edinburgh,st fillans
+own vehicle,own vehicle,0,event campsite (comrie croft),200,90,20,good,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,640,100,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,580,100,6,good,excellent,not interested in social programme,good,excellent,average,yes,no,NA,other europe,NA,perth
+own vehicle,shared private vehicle,0,self-catering accommodation,500,30,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,excellent,scotland,city of edinburgh,dunkeld
+own vehicle,own vehicle,1,self-catering accommodation,1000,1000,2,excellent,good,not interested in social programme,excellent,good,good,no,no,NA,other uk,NA,aberfeldy
+own vehicle,own vehicle,0,self-catering accommodation,1100,200,0,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,stirling
+bus (multiple),event bus,6,event campsite (comrie croft),150,150,3,good,good,not interested in social programme,good,average,average,some days,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,guest house / b+b,160,80,4,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,scotland,aberdeenshire,"crieff (hotel), a friend near 5 miles away from day , dunkeld (hotel), aberfeldy (hotel), stayed with family"
+own vehicle,own vehicle,0,at home,0,75,7,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,event bus,4,other camping / caravan site,860,120,6,average,good,average,NA,excellent,excellent,no,no,NA,other uk,NA,ballinluig
+own vehicle,own vehicle,0,self-catering accommodation,790,240,21,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA,workington
+own vehicle,event bus,5,event campsite (comrie croft),250,150,1,excellent,excellent,excellent,good,average,excellent,some days,no,NA,other uk,NA,lawers locherbie
+own vehicle,shared private vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,average,good,good,no,yes,good,other uk,NA,crieff
+"bus, train",own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,average,NA,good,good,some days,yes,poor,scotland,aberdeenshire,did not travel
+own vehicle,own vehicle,0,self-catering accommodation,1800,60,14,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,1,with friends / relatives,200,90,20,excellent,excellent,excellent,average,excellent,good,no,yes,average,scotland,highland,buchanty/tulchan
+own vehicle,own vehicle,0,self-catering accommodation,488,120,10,good,good,not interested in social programme,NA,excellent,good,no,no,NA,other europe,NA,"comrie croft, perth"
+own vehicle,own vehicle,0,hotel,90,100,16,excellent,excellent,average,NA,good,excellent,yes,yes,average,other uk,NA,"auchterarder, perth"
+hired vehicle,hired vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,average,good,good,no,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,event campsite (comrie croft),70,6,0,excellent,excellent,excellent,excellent,excellent,average,some days,no,NA,other uk,NA,"comrie croft, stirling, grandtully"
+own vehicle,own vehicle,0,at home,250,150,1,excellent,excellent,not interested in social programme,good,excellent,good,some days,no,NA,other uk,NA,crieff
+rail,event bus,7,other camping / caravan site,80,70,2,good,average,not interested in social programme,NA,average,average,some days,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,at home,560,60,14,good,good,average,NA,good,poor,some days,no,NA,other uk,NA,dunblane
+own vehicle,event bus,6,event campsite (comrie croft),502,80,1,excellent,excellent,good,NA,average,good,yes,yes,good,other uk,NA,glenalmond
+own vehicle,own vehicle,0,event campsite (comrie croft),600,200,22,average,average,not interested in social programme,good,good,good,yes,yes,average,other uk,NA,gargunnock
+own vehicle,own vehicle,0,event campsite (comrie croft),150,150,3,excellent,excellent,good,NA,average,good,no,yes,average,other uk,NA,crieff
+own vehicle,event bus,4,event campsite (comrie croft),195,70,13,good,excellent,good,good,excellent,excellent,some days,no,NA,scotland,edinburgh,perth
+own vehicle,own vehicle,0,self-catering accommodation,1200,100,7,excellent,excellent,good,NA,excellent,excellent,yes,yes,good,other europe,NA,moneydie
+own vehicle,shared private vehicle,0,self-catering accommodation,357,450,5,excellent,good,not interested in social programme,NA,excellent,good,no,no,NA,other uk,NA,stirling
+hired vehicle,hired vehicle,0,other camping / caravan site,700,0,10,excellent,good,not interested in social programme,good,good,excellent,yes,no,NA,other uk,NA,"6 nights comrie, followed by 4 nights pilochry"
+hired vehicle,hired vehicle,0,hotel,170,200,3,excellent,good,average,NA,excellent,excellent,some days,yes,good,other uk,NA,"glenfarg, bridge of earn"
+own vehicle,own vehicle,0,event campsite (comrie croft),1500,1000,11,good,good,good,poor,average,average,some days,no,NA,other europe,NA,gilmerton
+own vehicle,own vehicle,0,other camping / caravan site,800,50,4,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,event bus,3,event campsite (comrie croft),300,100,6,excellent,excellent,good,good,good,excellent,yes,yes,good,other europe,NA,killin
+own vehicle,event bus,3,event campsite (comrie croft),1300,60,15,good,good,good,NA,excellent,good,yes,yes,average,scotland,east dunbartonshire,aberfeldy
+own vehicle,own vehicle,0,event campsite (comrie croft),160,80,4,excellent,good,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,average,good,good,no,yes,average,other uk,NA,crieff
+own vehicle,own vehicle,0,other camping / caravan site,140,150,4,excellent,good,not interested in social programme,average,excellent,good,some days,no,NA,other uk,NA,st fillans
+own vehicle,own vehicle,0,hotel,560,60,14,excellent,excellent,not interested in social programme,poor,average,average,some days,no,NA,scotland,south norfolk,comrie croft
+own vehicle,event bus,3,other camping / caravan site,0,75,7,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,other europe,NA,glasgow
+own vehicle,own vehicle,0,self-catering accommodation,720,140,8,good,good,average,good,good,poor,no,no,NA,other uk,NA,loch katrine
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,good,NA,excellent,excellent,yes,yes,excellent,other uk,NA,fearnan
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,excellent,NA,good,good,no,no,NA,other uk,NA,crieff
+own vehicle,event bus,4,other camping / caravan site,800,50,4,excellent,excellent,average,NA,good,excellent,yes,yes,good,other uk,NA,comrie croft
+own vehicle,shared private vehicle,0,guest house / b+b,350,60,5,excellent,good,not interested in social programme,NA,good,average,some days,no,NA,other uk,NA,crieff 5 nights pitlochry 2 nights
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,good,not interested in social programme,average,good,average,no,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,other camping / caravan site,1000,1000,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,1300,60,15,excellent,average,not interested in social programme,excellent,average,poor,no,no,NA,other uk,NA,madderty
+hired vehicle,hired vehicle,0,guest house / b+b,100,40,3,excellent,good,excellent,NA,good,excellent,yes,no,NA,scotland,walsall,crieff
+own vehicle,own vehicle,0,other camping / caravan site,176,100,12,excellent,excellent,excellent,good,excellent,excellent,some days,no,NA,other uk,NA,aberfeldy
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other europe,NA,auchterarder
+own vehicle,event bus,5,event campsite (comrie croft),250,150,1,good,good,excellent,good,average,average,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,270,60,3,good,good,good,good,good,excellent,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,good,scotland,edinburgh,home
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,excellent,not interested in social programme,NA,good,good,some days,yes,good,scotland,highland,stanley
+own vehicle,own vehicle,0,self-catering accommodation,1800,60,14,excellent,excellent,not interested in social programme,good,good,good,yes,no,NA,other uk,NA,aberfeldy
+own vehicle,own vehicle,0,self-catering accommodation,1e21,1e21,1e21,good,average,not interested in social programme,average,good,good,no,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,average,not interested in social programme,NA,excellent,average,some days,no,NA,scotland,perth and kinross,comrie
+own vehicle,event bus,5,event campsite (comrie croft),1000,1000,2,excellent,good,not interested in social programme,NA,good,excellent,some days,no,NA,other europe,NA,comrie
+rail,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,NA,good,excellent,yes,no,NA,other europe,NA,comrie croft
+air,hired vehicle,0,self-catering accommodation,450,250,1,excellent,good,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,renfrewshire,aberfeldy
+own vehicle,own vehicle,0,with friends / relatives,60,60,6,excellent,excellent,excellent,excellent,excellent,good,some days,no,NA,other uk,NA,comrie
+own vehicle,shared private vehicle,0,self-catering accommodation,1200,100,7,excellent,excellent,not interested in social programme,NA,excellent,good,some days,yes,good,rest of the world,NA,crieff and pitlochry
+own vehicle,own vehicle,0,on a motorhome site,80,70,2,excellent,good,good,NA,good,good,yes,no,NA,scotland,edinburgh,crieff
+own vehicle,own vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,good,other uk,NA,birnam
+own vehicle,own vehicle,1,event campsite (comrie croft),260,100,8,excellent,good,excellent,excellent,excellent,excellent,no,no,NA,other uk,NA,comrie
+air,hired vehicle,0,self-catering accommodation,700,0,10,good,good,not interested in social programme,good,average,good,yes,yes,good,other europe,NA,perth
+own vehicle,own vehicle,0,event campsite (comrie croft),560,60,14,good,average,not interested in social programme,NA,good,excellent,no,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,hotel,300,100,6,excellent,good,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,dunblane
+own vehicle,own vehicle,0,at home,200,90,20,good,excellent,excellent,good,excellent,excellent,yes,no,NA,other uk,NA,comrie croft
+hired vehicle,hired vehicle,0,guest house / b+b,900,100,5,average,average,excellent,excellent,excellent,average,some days,no,NA,scotland,grampian,lochearnhead
+air,hired vehicle,0,self-catering accommodation,600,200,22,good,good,good,good,good,good,yes,yes,good,scotland,lothian,crieff
+own vehicle,own vehicle,0,at home,500,30,4,excellent,excellent,not interested in social programme,average,average,good,some days,no,NA,other europe,NA,lochearnhead
+own vehicle,shared private vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,good,good,excellent,average,no,no,NA,other uk,NA,lochearnhead
+own vehicle,own vehicle,0,other camping / caravan site,215,50,20,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other europe,NA,scone
+own vehicle,own vehicle,0,other camping / caravan site,70,6,0,good,average,not interested in social programme,NA,average,poor,yes,no,NA,other uk,NA,comrie
+did not travel,event bus,4,other camping / caravan site,372,200,0,good,average,not interested in social programme,NA,good,good,some days,yes,average,other uk,NA,"killin for first half, scone (perth) for second half"
+own vehicle,own vehicle,0,other camping / caravan site,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,scotland,edinburgh city,wigton
+own vehicle,own vehicle,0,hotel,70,6,0,excellent,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA,scone
+own vehicle,own vehicle,0,event campsite (comrie croft),30,100,5,good,good,average,NA,good,good,no,yes,average,other uk,NA,killin
+own vehicle,own vehicle,0,self-catering accommodation,1800,60,14,excellent,good,not interested in social programme,NA,excellent,average,some days,no,NA,other uk,NA,crief
+rail,event bus,6,event campsite (comrie croft),150,150,3,excellent,excellent,good,NA,good,good,some days,yes,good,scotland,moray,crieff.
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,good,good,not interested in social programme,good,good,good,yes,no,NA,other europe,NA,luncarty
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,good,good,good,good,good,good,yes,no,NA,other uk,NA,comrie croft campsite
+shared private vehicle,shared private vehicle,0,self-catering accommodation,1000,1000,2,excellent,excellent,good,average,excellent,excellent,some days,yes,excellent,scotland,city of edinburgh,comrie
+air,hired vehicle,0,self-catering accommodation,0,75,7,excellent,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,at home,760,120,6,excellent,excellent,good,good,good,excellent,some days,no,NA,other uk,NA,skelmersdale
+own vehicle,shared private vehicle,0,event campsite (comrie croft),290,50,7,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,"tibbermore, near perth"
+hired vehicle,hired vehicle,3,self-catering accommodation,2200,150,2,good,good,not interested in social programme,NA,average,good,yes,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,hotel,470,100,10,excellent,excellent,excellent,good,excellent,excellent,no,no,NA,other uk,NA,dunblane
+own vehicle,own vehicle,0,camper van at 2 different locations,0,75,7,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA,dunblane
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,not interested in social programme,NA,excellent,average,no,yes,excellent,other uk,NA,comrie
+own vehicle,event bus,6,self-catering accommodation,700,0,10,excellent,good,not interested in social programme,excellent,excellent,good,no,no,NA,other uk,NA,crieff
+own vehicle,shared private vehicle,0,at home,280,200,0,good,good,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,lochearnhead
+own vehicle,own vehicle,0,self-catering accommodation,2000,100,14,excellent,good,average,NA,good,good,yes,no,NA,other uk,NA,gleneagles
+own vehicle,own vehicle,0,with friends / relatives,50,50,4,excellent,excellent,excellent,excellent,excellent,good,some days,no,NA,other uk,NA,perth
+own vehicle,event bus,5,other camping / caravan site,700,0,10,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),70,6,0,excellent,excellent,good,NA,excellent,excellent,no,no,NA,scotland,moray,loch tay lodges
+own vehicle,cycle,0,other camping / caravan site,500,30,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,good,scotland,edinburgh,st fillans
+military car,cycle,0,event campsite (comrie croft),590,100,0,average,good,good,NA,good,good,yes,yes,good,other uk,NA,crieff
+own vehicle,shared private vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,excellent,average,good,good,some days,yes,average,scotland,borders,amulree
+own vehicle,own vehicle and cycle,0,event campsite (comrie croft),0,75,7,excellent,good,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,killin
+hired vehicle,hired vehicle,0,self-catering accommodation,0,75,7,excellent,excellent,excellent,good,good,good,some days,no,NA,scotland,stirling,killin
+own vehicle,shared private vehicle,0,hotel,100,40,3,excellent,excellent,not interested in social programme,NA,excellent,good,yes,no,NA,other uk,NA,calender
+air,hired vehicle,0,self-catering accommodation,610,50,16,excellent,good,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,other europe,NA,crieff
+own vehicle,event bus,4,event campsite (comrie croft),560,60,14,excellent,excellent,not interested in social programme,NA,excellent,good,yes,no,NA,scotland,edinburgh,comrie
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,average,NA,good,excellent,some days,yes,poor,other uk,NA,dunkeld
+own vehicle,"3 days cycle (near event campsite), 3 days car",0,event campsite (comrie croft),20,40,1,excellent,excellent,not interested in social programme,average,excellent,excellent,some days,no,NA,other uk,NA,dunning
+own vehicle,own vehicle,0,self-catering accommodation,3600,0,10,excellent,good,not interested in social programme,good,average,average,no,no,NA,other uk,NA,callandar
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,good,good,not interested in social programme,good,good,good,some days,no,NA,scotland,colchester,crieff
+bus,event bus,5,event campsite (comrie croft),150,150,3,excellent,excellent,excellent,good,good,excellent,yes,no,NA,other uk,NA,"comrie, aberfeldy"
+air,hired vehicle,0,self-catering accommodation,850,40,4,excellent,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,other uk,NA,killin and dunkeld
+own vehicle,event bus,4,event campsite (comrie croft),0,75,7,excellent,good,good,NA,excellent,excellent,no,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,average,not interested in social programme,NA,average,average,no,no,NA,other uk,NA,glendevon
+own vehicle,shared private vehicle,0,self-catering accommodation,450,250,1,good,good,not interested in social programme,NA,excellent,good,some days,no,NA,other uk,NA,callander
+own vehicle,event bus,3,event campsite (comrie croft),500,30,4,good,good,good,average,average,average,some days,no,NA,scotland,east dunbartonshire,perth
+own vehicle,own vehicle,0,self-catering accommodation,100,40,3,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other europe,NA,strathyre
+own vehicle,own vehicle,0,at home,300,100,6,excellent,excellent,not interested in social programme,good,excellent,excellent,some days,no,NA,other uk,NA,"crieff, dunkeld"
+own vehicle,event bus,4,event campsite (comrie croft),100,40,3,good,good,not interested in social programme,NA,average,excellent,no,no,NA,other uk,NA,st fillans
+own vehicle,shared private vehicle,0,with friends / relatives,1200,100,7,excellent,excellent,excellent,NA,good,average,some days,yes,average,scotland,stirling,crieff
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,average,not interested in social programme,NA,good,average,some days,yes,average,scotland,east ayrshire,killin
+own vehicle,own vehicle,0,self-catering accommodation,1100,200,0,average,average,not interested in social programme,good,average,average,some days,yes,good,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,320,100,0,excellent,excellent,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,near crieff
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,excellent,excellent,good,NA,excellent,excellent,yes,yes,good,other uk,NA,"lochearnhead, perth, pitlochry"
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,good,good,good,yes,yes,good,other uk,NA,comrie
+military car,event bus,3,event campsite (comrie croft),200,90,20,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,3600,0,10,excellent,excellent,not interested in social programme,good,excellent,excellent,some days,no,NA,other uk,NA,buchanty
+own vehicle,own vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,good,scotland,east dunbartonshire,sma glen
+own vehicle,own vehicle,0,with friends / relatives,0,75,7,excellent,good,not interested in social programme,NA,good,excellent,no,no,NA,other uk,NA,crieff
+air,hired vehicle,0,guest house / b+b,150,150,3,good,excellent,excellent,average,average,good,some days,yes,excellent,other europe,NA,"buchanty, glenalmond"
+own vehicle,own vehicle,2,self-catering accommodation,2500,1500,2,excellent,good,not interested in social programme,very poor,good,good,no,no,NA,other uk,NA,aberfeldy
+own vehicle,event bus,6,other camping / caravan site,0,75,7,excellent,excellent,average,NA,excellent,excellent,yes,yes,good,scotland,highland,aberfeldy
+own vehicle,event bus,6,event campsite (comrie croft),150,150,3,excellent,excellent,good,NA,good,good,no,no,NA,other uk,NA,crieff
+hired vehicle,hired vehicle,0,hotel,100,40,3,good,average,good,NA,good,average,some days,yes,average,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,good,average,NA,good,excellent,some days,no,NA,rest of the world,NA,dunning
+we only went to edinchip and grandtully,hired vehicle,0,hotel,120,140,6,good,good,not interested in social programme,NA,good,average,some days,yes,good,other uk,NA,perth
+own vehicle,own vehicle,0,at home,70,6,0,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,scotland,edinburgh,crime 20 shilling campsite
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,NA,good,average,some days,no,NA,scotland,clackmannanshire,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,450,250,1,excellent,good,good,NA,excellent,good,yes,no,NA,other europe,NA,fortingall
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),250,150,1,excellent,excellent,good,NA,good,excellent,some days,no,NA,rest of the world,NA,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,1400,100,8,excellent,excellent,not interested in social programme,excellent,excellent,good,yes,no,NA,other uk,NA,braco
+own vehicle,own vehicle,0,event campsite (comrie croft),800,50,4,excellent,excellent,not interested in social programme,NA,excellent,good,some days,no,NA,scotland,east dunbartonshire,dunkeld
+own vehicle,shared private vehicle,0,hotel,0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA,creif
+own vehicle,own vehicle,0,self-catering accommodation,2000,100,14,excellent,excellent,not interested in social programme,good,excellent,excellent,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,excellent,NA,good,good,no,no,NA,other uk,NA,crieff
+air,shared private vehicle,0,hotel,75,50,14,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,scotland,falkirk,"dalveich,kinloch"
+own vehicle,own vehicle,0,other camping / caravan site,0,75,7,good,good,not interested in social programme,NA,average,good,no,no,NA,other europe,NA,aberfeldy
+own vehicle,own vehicle,0,event campsite (comrie croft),200,90,20,excellent,excellent,excellent,good,good,excellent,yes,no,NA,scotland,highland,comrie and stirling
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+hired vehicle,hired vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,NA,good,good,yes,yes,good,other uk,NA,killin
+hired vehicle,mix of bus and rental car,1,event campsite (comrie croft),250,150,1,good,good,good,NA,excellent,excellent,no,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,on a motorhome site,120,140,6,excellent,good,not interested in social programme,NA,good,average,some days,no,NA,scotland,falkirk,stirling university
+own vehicle,own vehicle,0,event campsite (comrie croft),100,40,3,good,good,good,NA,good,excellent,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,350,60,5,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other europe,NA,comrie croft
+own vehicle,own vehicle,0,with friends / relatives,650,150,14,excellent,excellent,excellent,NA,good,average,no,no,NA,scotland,stirling,edinburgh
+hired vehicle,hired vehicle,0,self-catering accommodation,300,100,6,good,good,good,average,average,average,no,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,1200,100,7,excellent,excellent,excellent,good,excellent,average,no,no,NA,other uk,NA,killin
+hired vehicle,hired vehicle,0,self-catering accommodation,0,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other europe,NA,auchterarder
+"car and rail, we came separately",own vehicle,0,on a motorhome site,300,100,6,excellent,excellent,not interested in social programme,NA,good,average,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,hostel,1300,60,15,excellent,excellent,excellent,NA,excellent,excellent,yes,yes,good,scotland,mid lothian,"mynydd isa, mold"
+own vehicle,own vehicle,0,other camping / caravan site,120,140,6,good,good,good,very poor,average,good,no,no,NA,scotland,edinburgh,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,good,excellent,not interested in social programme,good,good,good,some days,yes,good,other uk,NA,perth
+own vehicle,own vehicle,0,self-catering accommodation,400,50,2,excellent,excellent,excellent,good,excellent,good,some days,yes,good,other uk,NA,bridge of earn
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,excellent,excellent,not interested in social programme,average,excellent,excellent,no,no,NA,other uk,NA,little dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,760,120,6,excellent,excellent,good,good,good,excellent,yes,yes,excellent,other europe,NA,glenfarg
+own vehicle,own vehicle,0,hostel,70,6,0,excellent,excellent,excellent,NA,excellent,excellent,yes,yes,good,other europe,NA,comrie
+own vehicle,own vehicle,1,event campsite (comrie croft),140,150,4,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other uk,NA,brig o turk
+own vehicle,own vehicle,0,event campsite (comrie croft),200,90,20,excellent,excellent,not interested in social programme,excellent,excellent,excellent,some days,no,NA,other uk,NA,"strathyre, aberfeldy, lenzie"
+own vehicle,own vehicle,0,with friends / relatives,195,70,13,good,excellent,average,NA,excellent,good,no,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,hotel,300,100,6,excellent,good,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,rest of the world,NA,killin
+own vehicle,own vehicle,0,hotel,50,50,4,excellent,excellent,excellent,excellent,excellent,excellent,some days,yes,excellent,other uk,NA,amulree
+own vehicle,own vehicle,0,hotel,400,50,2,excellent,excellent,excellent,excellent,excellent,excellent,some days,no,NA,other uk,NA,comrie/crieff
+own vehicle,own vehicle,0,self-catering accommodation,2200,150,2,good,good,not interested in social programme,good,average,average,no,no,NA,other uk,NA,perth
+air,hired vehicle,0,self-catering accommodation,0,75,7,excellent,good,excellent,good,excellent,excellent,yes,no,NA,other uk,NA,crieff
+hired vehicle,hired vehicle,0,self-catering accommodation,700,0,10,excellent,excellent,excellent,NA,good,excellent,yes,yes,average,other uk,NA,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,average,good,good,some days,no,NA,other uk,NA,comrie
+hired vehicle,hired vehicle,0,self-catering accommodation,272,60,1,excellent,good,excellent,NA,excellent,excellent,no,yes,excellent,other uk,NA,stirling
+own vehicle,event bus,3,event campsite (comrie croft),800,50,4,good,poor,good,NA,average,average,yes,yes,average,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),360,150,3,good,good,not interested in social programme,NA,good,excellent,some days,no,NA,other uk,NA,perth
+own vehicle,own vehicle,0,other camping / caravan site,200,90,20,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,scotland,aberdeenshire,brig o turk
+own vehicle,own vehicle,2,event campsite (comrie croft),0,75,7,excellent,good,good,NA,excellent,excellent,some days,no,NA,scotland,edinburgh,comrie
+own vehicle,event bus,6,event campsite (comrie croft),70,6,0,excellent,excellent,excellent,NA,excellent,average,no,no,NA,other uk,NA,callander
+air,hired vehicle,0,hotel,150,150,3,good,good,good,NA,average,good,some days,yes,good,scotland,scottish borders,"lawers, loch tay"
+own vehicle,own vehicle,0,at home,140,150,4,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,at home,225,0,10,excellent,excellent,excellent,average,good,good,some days,no,NA,other uk,NA,crieff
+air,hired vehicle,0,guest house / b+b,140,150,4,excellent,good,not interested in social programme,average,good,average,some days,yes,good,other uk,NA,st fillans
+own vehicle,own vehicle,0,event campsite (comrie croft),650,150,14,average,good,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA,dunkeld
+own vehicle,own vehicle,0,guest house / b+b,70,6,0,good,excellent,good,NA,excellent,excellent,yes,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,some days,no,NA,other uk,NA,"dunblane, logierait (pitlochry)"
+own vehicle,own vehicle,0,self-catering accommodation,1700,300,10,excellent,excellent,excellent,NA,good,good,yes,yes,average,other uk,NA,glen eagles
+own vehicle,event bus,5,event campsite (comrie croft),450,250,1,excellent,excellent,good,excellent,good,good,no,no,NA,scotland,south norfolk,muthill
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA,comrie
+hired vehicle,hired vehicle,0,guest house / b+b,0,75,7,excellent,excellent,good,average,excellent,excellent,yes,yes,excellent,other uk,NA,stirling
+own vehicle,shared private vehicle,0,self-catering accommodation,1400,100,8,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,yes,excellent,rest of the world,NA,logierait
+own vehicle,own vehicle,0,self-catering accommodation,380,110,10,excellent,excellent,excellent,NA,excellent,average,no,no,NA,scotland,highland,"comrie croft campsite then sister's house, aberfeldy"
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,good,average,good,some days,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),150,150,3,excellent,excellent,excellent,excellent,good,good,no,yes,good,rest of the world,NA,lochearnhead lochside lodges (hoseasons)
+own vehicle,own vehicle,0,event campsite (comrie croft),470,100,10,good,good,good,NA,excellent,excellent,no,no,NA,other uk,NA,comrie
+own vehicle,own vehicle,0,event campsite (comrie croft),0,75,7,good,good,not interested in social programme,NA,average,average,no,no,NA,rest of the world,NA,"viewmount, croftinloan, pitlochry"
+air,hired vehicle,0,self-catering accommodation,500,30,4,excellent,excellent,not interested in social programme,NA,good,good,yes,yes,good,other uk,NA,1. drummond trout farm   2. mainstay farm
+hired vehicle,hired vehicle,0,guest house / b+b,84,40,2,good,poor,good,average,good,good,some days,no,NA,other uk,NA,weem
+own vehicle,own vehicle,0,event campsite (comrie croft),160,80,4,excellent,excellent,excellent,average,good,good,no,no,NA,other europe,NA,bankfoot
+own vehicle,own vehicle,0,with friends / relatives,700,0,10,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,other europe,NA,comrie
+own vehicle,own vehicle,0,hotel,200,90,20,excellent,good,good,NA,good,good,yes,no,NA,other uk,NA,crieff campsite
+own vehicle,own vehicle,0,self-catering accommodation,1300,60,15,excellent,excellent,not interested in social programme,excellent,excellent,excellent,some days,yes,excellent,other uk,NA,stirling (1 night) st fillans (7 nights)
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA,loch ranch
+own vehicle,own vehicle,0,self-catering accommodation,824,90,0,excellent,excellent,not interested in social programme,good,excellent,average,some days,yes,good,other uk,NA,lochearnhead and grandtully
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,excellent,excellent,not interested in social programme,NA,good,excellent,some days,no,NA,other uk,NA,killin
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,auchterarder
+own vehicle,event bus,4,event campsite (comrie croft),0,75,7,excellent,excellent,good,average,excellent,excellent,some days,no,NA,rest of the world,NA,methven
+own vehicle,cycle,0,event campsite (comrie croft),200,90,20,excellent,excellent,not interested in social programme,poor,good,excellent,no,no,NA,scotland,mid lothian,dunkeld
+air,hired vehicle,0,hotel,200,90,20,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,stirling,crieff
+own vehicle,own vehicle,0,event campsite (comrie croft),60,60,6,excellent,excellent,good,good,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,shared private vehicle,0,hotel,400,50,2,good,good,good,good,excellent,excellent,some days,yes,average,other europe,NA,loch tay
+own vehicle,own vehicle,0,self-catering accommodation,1200,100,7,poor,good,not interested in social programme,good,excellent,good,yes,no,NA,other uk,NA,gargunnock
+own vehicle,own vehicle,0,self-catering accommodation,200,90,20,excellent,good,good,NA,excellent,excellent,yes,no,NA,other uk,NA,dunkeld
+own vehicle,own vehicle,0,self-catering accommodation,270,60,3,good,poor,good,poor,excellent,excellent,yes,no,NA,rest of the world,NA,edinburgh
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,average,excellent,good,good,good,good,no,no,NA,other uk,NA,perth (outskirts)
+hired vehicle,hired vehicle,0,event campsite (comrie croft),200,90,20,excellent,good,good,NA,excellent,excellent,some days,no,NA,rest of the world,NA,crieff
+air,hired vehicle,0,event campsite (comrie croft),150,150,3,excellent,excellent,excellent,NA,good,good,yes,no,NA,scotland,perthshire,stirling
+own vehicle,own vehicle,0,self-catering accommodation,2200,150,2,excellent,excellent,excellent,excellent,good,good,no,no,NA,other europe,NA,perth
+own vehicle,own vehicle,0,at home,157.5,50,4,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,scotland,sweden,crieff
+hired vehicle,hired vehicle,0,hotel,1000,1000,2,poor,excellent,good,good,good,excellent,yes,no,NA,other uk,NA,dunkeld
+own vehicle,shared private vehicle,0,event campsite (comrie croft),200,90,20,excellent,good,not interested in social programme,NA,excellent,good,yes,yes,average,scotland,scottish borders,callander
+own vehicle,event bus,6,event campsite (comrie croft),0,75,7,excellent,average,excellent,NA,excellent,average,yes,yes,average,other uk,NA,0
+own vehicle,own vehicle,0,self-catering accommodation,570,65,13,good,good,good,good,excellent,excellent,yes,no,NA,other uk,NA,muthill (near crieff)
+own vehicle,own vehicle,1,self-catering accommodation,600,200,22,excellent,good,not interested in social programme,excellent,good,excellent,yes,no,NA,scotland,perth and kinross,stirling
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,good,good,average,good,good,some days,no,NA,scotland,fife,comrie
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,excellent,NA,excellent,good,some days,yes,good,scotland,edinburgh,comrie
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,NA,good,average,some days,yes,good,other europe,NA,perth
+own vehicle,shared private vehicle,0,with friends / relatives,900,100,5,excellent,good,not interested in social programme,NA,good,excellent,yes,no,NA,other uk,NA,milton of machany
+own vehicle,own vehicle,0,at home,150,150,3,good,excellent,good,NA,excellent,excellent,no,no,NA,other uk,NA,"crieff, lochearnhead, lintrathen, pitcrocknie, bankfoot,"
+own vehicle,own vehicle,0,hotel,560,60,14,excellent,excellent,excellent,good,excellent,excellent,yes,no,NA,other europe,NA,comrie
+own vehicle,own vehicle,0,hotel,315,100,6,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,average,other uk,NA,comrie
+own vehicle,own vehicle,0,other camping / caravan site,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,some days,no,NA,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,excellent,good,good,excellent,some days,yes,good,other uk,NA,ardeonaig
+own vehicle,own vehicle,0,other camping / caravan site,70,6,0,good,average,not interested in social programme,NA,good,good,no,no,NA,other uk,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,3000,720,13,excellent,good,not interested in social programme,NA,average,poor,no,no,NA,other europe,NA,crieff
+i live here.,own vehicle,0,at home,0,75,7,excellent,good,not interested in social programme,good,good,good,yes,yes,good,scotland,highland,killin
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,excellent,excellent,good,excellent,excellent,some days,yes,excellent,rest of the world,NA,edinburg
+own vehicle,own vehicle,0,at home,155,150,3,excellent,excellent,excellent,good,good,good,some days,no,NA,other uk,NA,st fillans
+own vehicle,own vehicle,0,self-catering accommodation,700,0,10,excellent,good,excellent,NA,good,average,some days,yes,excellent,other uk,NA,edinburgh
+air,hired vehicle,0,self-catering accommodation,350,60,5,good,good,not interested in social programme,average,good,good,no,no,NA,scotland,lothian,nr dunkeld
+own vehicle,own vehicle,0,event campsite (comrie croft),120,140,6,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,other europe,NA,glenfarg house
+own vehicle,own vehicle,0,other camping / caravan site,100,40,3,excellent,excellent,not interested in social programme,NA,excellent,good,some days,yes,good,other uk,NA,aberfeldy
+own vehicle,own vehicle,0,self-catering accommodation,850,40,4,good,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,rest of the world,NA,moneydie
+own vehicle,own vehicle,0,other camping / caravan site,70,6,0,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,other europe,NA,crieff
+own vehicle,own vehicle,0,hotel and friends (moved around),120,140,6,excellent,good,not interested in social programme,good,good,average,no,no,NA,other uk,NA,ashtead
+own vehicle,own vehicle,1,event campsite (comrie croft),0,75,7,good,excellent,not interested in social programme,average,excellent,good,no,no,NA,other uk,NA,kenmore
+hired vehicle,own vehicle,2,event campsite (comrie croft),500,30,4,excellent,excellent,not interested in social programme,good,good,good,no,no,NA,scotland,scottish borders council,perth
+hired vehicle,hired vehicle,0,guest house / b+b,650,150,14,excellent,excellent,not interested in social programme,NA,good,excellent,some days,yes,good,other europe,NA,"stanley, near perth"
+own vehicle,own vehicle,0,self-catering accommodation,800,50,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,poor,other uk,NA,balquhidder station
+own vehicle,own vehicle,0,guest house / b+b,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,no,no,NA,scotland,east dunbartonshire,strathearn
+i live there.....,shared private vehicle,0,at home,0,75,7,excellent,excellent,good,good,excellent,excellent,no,yes,excellent,other uk,NA,crieff
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,excellent,excellent,excellent,good,good,excellent,yes,yes,good,other uk,NA,tulchan
+own vehicle,own vehicle,0,guest house / b+b,320,100,0,excellent,excellent,good,good,excellent,excellent,some days,yes,excellent,scotland,perth & kinross,st fillans
+own vehicle,own vehicle,0,event campsite (comrie croft),345,45,11,excellent,excellent,good,NA,average,average,some days,no,NA,other uk,NA,scone camp site
+rail,event bus,3,event campsite (comrie croft),1020,69,26,good,good,excellent,excellent,excellent,excellent,yes,yes,excellent,other uk,NA,comrie
+own vehicle,own vehicle,0,self-catering accommodation,600,200,22,good,good,good,NA,good,good,yes,no,NA,rest of the world,NA,comrie croft
+own vehicle,own vehicle,0,self-catering accommodation,1500,1000,11,excellent,good,not interested in social programme,good,good,good,some days,yes,good,rest of the world,NA,auchterarder

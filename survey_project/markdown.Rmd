@@ -1,0 +1,17 @@
+---
+title: "Survey Event Analysis Markdown"
+author: "Jennie Eardley"
+date: "06/06/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Analysis of the results of a survey about a sporting event held in Scotland. 
+
+
+### Usual Residence of Attendees 
+
+
