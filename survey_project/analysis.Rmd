@@ -54,12 +54,6 @@ survey_data %>%
 ```
 
 ```{r}
-survey_data %>% 
-  group_by(overnight_stay_location) %>% 
-  summarise(count = n()) %>% 
-  arrange(desc(count))
-```
-```{r}
 # splitting distances gained from the google map distance API into groups
 hundred_and_over <- location_data %>% 
   arrange(desc(miles)) %>% 
@@ -164,16 +158,16 @@ sum(under_500_TRUE$n)/nrow(survey_data)
 ```
 ```{r}
 # calculating the percentage that engaged with facebook or twitter
-no <- social_media_df %>% 
+no <- survey_data %>% 
   filter(facebook_twitter_following == "no") %>% 
   nrow() 
-yes <- social_media_df %>% 
+yes <- survey_data %>% 
   filter(facebook_twitter_following == "yes") %>% 
   nrow() 
 yes/(yes+no)
 ```
 ```{r}
-social_media_df %>%
+survey_data %>%
   count(facebook_twitter_rating, sort = TRUE) %>% 
   filter(facebook_twitter_rating == "good" | facebook_twitter_rating == "excellent") 
 (107 + 97)/yes

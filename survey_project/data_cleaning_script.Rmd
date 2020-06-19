@@ -6,6 +6,7 @@ library(gmapsdistance)
 
 ```
 ```{r}
+# reading in synthesised survey data 
 survey_data <- read_csv("data/synthesised_survey_data.csv")
 ```
 ```{r}
@@ -22,7 +23,7 @@ local_authority_vector <- c("aberdeen", "aberdeenshire", "angus", "argyll and bu
 ```
 
 ```{r}
-# cleaning up the local authority data, have replaced ayr with south ayrshire as ayr is in south ayrshire, have listed an entry of tayside as unknown as this could be either perthshire & kinross or dundee
+# cleaning up the local authority data to ensure it only contains data held in the local authority vector, have replaced ayr with south ayrshire as ayr is in south ayrshire, have listed an entry of tayside as unknown as this could be either perthshire & kinross or dundee
 survey_data <- survey_data %>% 
   replacement_function("pkc", "perth and kinross") %>% 
   replacement_function("^edinburgh$", "city of edinburgh") %>% 
@@ -48,11 +49,6 @@ survey_data <- survey_data %>%
   replacement_function("argyll & bute", "argyll and bute")
 ```
 
-
-```{r}
-#survey_data$local_authority <- local_authority_data
-```
-
 ```{r}
 # replacing instances of other UK incorrectly entered as Scotland
 survey_data$residence[!survey_data$local_authority %in% local_authority_vector & survey_data$residence == "scotland"] <- "other uk"
@@ -70,7 +66,7 @@ survey_data %>%
   filter(!local_authority %in% local_authority_vector)
 ```
 ```{r}
-# list of transport type categories 
+# establishing a list of accepted transport type categories 
 transport_types <- c("own vehicle", "hired vehicle", "rail", "air", "bus", "military car", "public transport", "ferry and vehicle", "ferry and public transport", "NA", "local", "public and private", "air and hired vehicle", "shared vehicle", "hired and own vehicle")
 
 ```
@@ -169,6 +165,7 @@ survey_data %>%
 ```
 
 ```{r}
+# a list of where people stayed overnight 
 locations <- c("comrie", "crieff", "perth", "aberfeldy", "auchterarder", "stirling", "bridge of allan", "scone", "dunkeld", "dundee", "killin", "glasgow", "edinburgh", "gleneagles", "broughty ferry", "dollar", "callander", "blair atholl", "lochearnhead", "st fillans", "monzie", "bridge of earn", "polmont", "tulchan", "scone", "strathearn", "kenmore", "dunblane", "pitlochry", "blair drummond", "galashiels", "methven", "rumbling bridge", "coupar angus", "bankfoot", "doune", "braco", "england", "dunning", "loch tay", "inchture", "abernyte", "multiple", "forgandenny", "glen almond", "barry buddon", "balerno", "balquhidder", "muthill", "kinkell bridge", "fowlis wester", "other", "birnam", "acharn", "blackford", "garrow", "tigh mor", "luncarty", "amulree", "gauldry", "dull", "lawers", "lochlane", "moneydie", "ayton", "brig o'turk", "glenfarg", "fearnan", "gargunnock", "faskally", "logierait", "juniper green", "fortingall", "blairgowrie", "monzie", "loch earn", "menstrie", "glenartney", "dunira", "butterstone", "gilmerton", "loch katrine", "weem", "sma glen", "strathyre", "buchanty", "ardeonaig", "little dunkeld", "madderty", "ballinluig", "new fowlis", "glen artney", "glendevon", "tibbermore", "abernyte", "between crieff and perth", "stanley", "comrie other", "dunira", "local")
 sort(locations)
 ```
@@ -417,14 +414,8 @@ $", "other") %>%
 survey_data %>% 
   filter(!overnight_stay_location %in% locations)
 ```
-
 ```{r}
-# saving cleaned dataframe
-write_csv(survey_data, "/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/clean_survey_data.csv")
-```
-
-```{r}
-# reading in a file with information about population of Scottish places greater than 500
+# reading in a file with information about population of Scottish places greater than 500 from the Scottish Government's website
 locality_data <- read_csv("data/2016-pop-est-sett-local-tab3a.csv", skip = 3) %>% 
   clean_names() %>% 
   dplyr::select(x1, x3) %>% 
@@ -433,7 +424,7 @@ locality_data <- read_csv("data/2016-pop-est-sett-local-tab3a.csv", skip = 3) %>
 ```
 
 ```{r}
-# converting to lower case
+# converting to lower case and from factor to character
 locality_data <- data.frame(lapply(locality_data, function(x){
   if (is.character(x)) return(tolower(x))
   else return(x)
@@ -444,13 +435,8 @@ locality_data <- locality_data %>%
 
 ```{r}
 # joining the new population data with location information
-location_and_population_data <- right_join(locality_data, survey_data, by = c("location"= "overnight_stay_location"))  %>% 
-  select(location, population)
-location_and_population_data
-```
-```{r}
-# adding the population variable to survey data 
-survey_data$population <- location_and_population_data$population
+survey_data <- right_join(locality_data, survey_data, by = c("location"= "overnight_stay_location"))  
+survey_data
 ```
 
 ```{r}
@@ -464,19 +450,20 @@ get.api.key()
 ```
 
 ```{r}
-unique_location_and_popualtion_data <- unique(location_and_population_data) %>% 
+# removing data that I don't want distance information about
+map_data <- 
+  survey_data %>% 
+  select(location) %>% 
+  unique() %>% 
   filter(location != "england", location!= "other", location != "multiple", location != "strathearn", location != "local")
 ```
 
 ```{r}
-map_data <- unique_location_and_popualtion_data %>% 
-  select(location)
-```
-
-```{r}
+# slicing data into sections as the API is only able to accept 25 observations at a time 
 section_one <- slice(map_data, 1:25)
 ```
 ```{r}
+# the API works better if the country is provided and all spaces need to be replaced with +s
 section_one <- paste0(section_one$location, "+scotland") 
 section_one <- str_replace_all(section_one, " ", "+")
 ```
@@ -525,43 +512,37 @@ section_four <- str_replace_all(section_four, " ", "+")
 distances_four <- gmapsdistance(section_four, "strathearn+scotland", mode = "driving", shape = "long")
 distances_four
 ```
-```{r}
-map_data <- paste0(map_data$location, "+scotland") 
-map_data <- str_replace_all(map_data, " ", "+")
-```
 
 ```{r}
-locality_data <- as_tibble(locality_data)
-```
-```{r}
+# combining all sections into one dataframe
 distances_data_frame <- do.call("rbind", list(distances_one$Distance, distances_two$Distance, distances_three$Distance, distances_four$Distance))
 ```
 
 ```{r}
+# replacing the + signs and +scotland
 distances_data_frame <- distances_data_frame %>% 
-  mutate_all(str_replace_all, "\\+scotland", "")
-
-distances_data_frame <- distances_data_frame %>% 
+  mutate_all(str_replace_all, "\\+scotland", "") %>% 
   mutate_all(str_replace_all, "\\+", " ")
 ```
 ```{r}
+# renaming variables 
 distances_data_frame <- distances_data_frame %>% 
   select(or, Distance) %>% 
   rename(distance = Distance, location = or)
 ```
 ```{r}
 # creating a left join to ensure that NAs are not included and converting to include conversion to kilometers and miles 
-location_distance_count_data <- left_join(distances_data_frame, survey_data, by = c("location" = "overnight_stay_location")) %>% 
+location_distance_count_data <- left_join(distances_data_frame, survey_data) %>% 
   group_by(location) %>% 
   mutate(count = n()) %>% 
   unique() %>% 
   mutate( 
-    kilometres = round(as.numeric(distance)/1000, 1), 
-    miles = round(kilometres * 0.621371, 1)) %>% 
-  select(-distance)
-  
+    kilometers = round(as.numeric(distance)/1000, 1), 
+    miles = round(kilometers * 0.621371, 1)) %>% 
+  select(count, location, kilometers, miles) %>% 
+  unique() %>% 
+  arrange(desc(count))
 ```
-
 ```{r}
 write_csv(location_distance_count_data, "/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/location_distance_count.csv")
 ```
