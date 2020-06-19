@@ -172,6 +172,55 @@ survey_data %>%
   filter(facebook_twitter_rating == "good" | facebook_twitter_rating == "excellent") 
 (107 + 97)/yes
 ```
+```{r}
+all_livestreams <- livestream_data %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(livestream_races == "1") %>% 
+  nrow()
+```
+```{r}
+after_event_and_competition <- livestream_data %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(is.na(livestream_races)) %>% 
+  nrow()
+```
+```{r}
+after_event_and_races <- livestream_data %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(livestream_races == "1") %>% 
+  filter(is.na(livestream_competition)) %>% 
+  nrow()
+```
+```{r}
+competition_and_races <- livestream_data %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(livestream_races == "1") %>% 
+  filter(is.na(livestream_after_event)) %>% 
+  nrow()
+```
+```{r}
+races <- livestream_data %>% 
+  filter(is.na(livestream_after_event)) %>% 
+  filter(livestream_races == "1") %>% 
+  filter(is.na(livestream_competition)) %>% 
+  nrow()
+```
+```{r}
+after_event <- livestream_data %>% 
+  filter(is.na(livestream_races)) %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(is.na(livestream_competition)) %>% 
+  nrow()
+```
+```{r}
+competition <- livestream_data %>% 
+  filter(is.na(livestream_after_event)) %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(is.na(livestream_races)) %>% 
+  nrow()
+```
 
 ```{r}
 livestream_tibble <- tibble(races, after_event, competition, competition_and_races, after_event_and_races, after_event_and_competition, all_livestreams) %>% 

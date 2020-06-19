@@ -6,12 +6,85 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+livestream_data <- read_csv("data/synthesised_livestream.csv")
+survey_data <- read_csv("data/clean_survey_data.csv")
+location_data <- read_csv("data/location_distance_count.csv")
 ```
 
 ### Analysis of the results of a survey about a sporting event held in Scotland. 
 
-
 ### Usual Residence of Attendees 
 
+```{r, echo = FALSE, figures-side, fig.show = 'hold', out.width = "50%"}
+survey_data %>% 
+  select(residence) %>% 
+  count(residence, sort = TRUE) %>% 
+  ggplot() +
+  geom_col(aes(x = residence, y = n), fill = "#008b8b") +
+  labs(
+    title = "Where Respondents Travelled From",
+    x = "Residence",
+    y = "Count"
+  ) +
+ theme_classic(base_size = 15) +
+  theme(plot.title = element_text(hjust = 0.5))
+local_authority_vector <- c("aberdeen", "aberdeenshire", "angus", "argyll and bute", "city of edinburgh", "comhairle nan eilean siar", "clackmannanshire", "dumfries and galloway", "dundee", "east ayrshire", "east dunbartonshire", "east lothian", "east renfrewshire", "falkirk", "fife", "glasgow", "highland", "inverclyde", "midlothian", "moray", "north ayrshire", "north lanarkshire", "orkney", "perth and kinross", "scottish borders", "shetland islands", "south ayrshire", "south lanarkshire", "stirling", "west dunbartonshire", "west lothian", "unknown")
+local_authority_vector_rev <- rev(local_authority_vector)
+survey_data %>% 
+ filter(residence == "scotland") %>% 
+  filter(local_authority != "unknown") %>% 
+  count(local_authority, sort = TRUE) %>% 
+    mutate(name = factor(local_authority, levels = local_authority_vector_rev)) %>%
+  ggplot() +
+  geom_col(aes(x = name, y = n), fill = "#008b8b") +
+  coord_flip() +
+  labs(title = "Respondents in Scotland by Local Authority",
+       x = "Local Authority", y = "Count") +
+   theme(plot.title = element_text(hjust = 0.5)) +
+    theme_classic(base_size = 15)
+```
+### Travel 
+Analysis here
+
+```{r, echo = FALSE, fig.show = 'hold', out.width = "50%"}
+survey_data %>% 
+  count(travel_method, sort = TRUE) %>% 
+  filter(n >= 5) %>% 
+  ggplot() +
+  geom_col(aes(x = travel_method, y = n), fill = "#008b8b") +
+  coord_flip() +
+  labs(title = "Travel to Event",
+       x = "Travel Method,",
+       y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+    theme_classic(base_size = 15)
+survey_data %>% 
+  count(event_travel, sort = TRUE) %>% 
+  filter(n >= 5) %>% 
+  ggplot() +
+  geom_col(aes(x = event_travel, y = n),fill = "#008b8b") +
+  coord_flip() +
+  labs(title = "Travel During Event",
+       x = "Travel Method,",
+       y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+    theme_classic(base_size = 15)
+```
+
+### Actionable Points
+
+- Consider alternative transport options 
+- Investigate increasing the availability of water
+- Review wifi availability 
+- Consider accessibility of public transport to social events 
+
+
+### Recommendations for Future Surveys
+
+- Ask for more specific areas in other UK
+- Supply more options for the respondents to select from drop down lists
+- Ask about Twitter and Facebook separately
+- Ask for ratings by day of event
 
