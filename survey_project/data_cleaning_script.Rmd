@@ -1,11 +1,15 @@
 ```{r}
 library(tidyverse)
+library(janitor)
+library(keyring)
+library(gmapsdistance)
+
 ```
 ```{r}
-survey_data <- read_csv("data/synthesised_survey_data")
+survey_data <- read_csv("data/synthesised_survey_data.csv")
 ```
 ```{r}
-# creating a function that quickly replaces one phrase with another 
+# as this survey had many free text options, this function helps to manually update entries to allow categorisation 
 replacement_function <- function(df, y, z) {
   df %>% 
   mutate_all(str_replace_all, y, z)
@@ -19,7 +23,7 @@ local_authority_vector <- c("aberdeen", "aberdeenshire", "angus", "argyll and bu
 
 ```{r}
 # cleaning up the local authority data, have replaced ayr with south ayrshire as ayr is in south ayrshire, have listed an entry of tayside as unknown as this could be either perthshire & kinross or dundee
-local_authority_data <- local_authority_data %>% 
+survey_data <- survey_data %>% 
   replacement_function("pkc", "perth and kinross") %>% 
   replacement_function("^edinburgh$", "city of edinburgh") %>% 
   replacement_function("^renfrewshire$", "east renfrewshire") %>% 
@@ -44,19 +48,522 @@ local_authority_data <- local_authority_data %>%
   replacement_function("argyll & bute", "argyll and bute")
 ```
 
+
+```{r}
+#survey_data$local_authority <- local_authority_data
+```
+
 ```{r}
 # replacing instances of other UK incorrectly entered as Scotland
-local_authority_data$residence[!local_authority_data$local_authority %in% local_authority_vector & local_authority_data$residence == "scotland"] <- "other uk"
+survey_data$residence[!survey_data$local_authority %in% local_authority_vector & survey_data$residence == "scotland"] <- "other uk"
 ```
 
 ```{r}
 # replacing an accidental swedish entry with other europe
-local_authority_data$residence[local_authority_data$local_authority  == "sweden"] <- "other europe"
+survey_data$residence[survey_data$local_authority  == "sweden"] <- "other europe"
 ```
 
 ```{r}
-local_authority_data %>% 
+# ensuring that all data has been categorised 
+survey_data %>% 
   filter(residence == "scotland") %>% 
   filter(!local_authority %in% local_authority_vector)
 ```
+```{r}
+# list of transport type categories 
+transport_types <- c("own vehicle", "hired vehicle", "rail", "air", "bus", "military car", "public transport", "ferry and vehicle", "ferry and public transport", "NA", "local", "public and private", "air and hired vehicle", "shared vehicle", "hired and own vehicle")
+
+```
+```{r}
+survey_data <- survey_data %>% 
+  replacement_function("^train to meet rest of part part way$", "rail") %>% 
+  replacement_function("^shared private vehicle$", "shared vehicle") %>% 
+  replacement_function("^live in area$", "local") %>% 
+  replacement_function("hired vehicle \\+ own vehicles$","hired and own vehicle") %>% 
+  replacement_function("^bus, train$", "public transport") %>%
+  replacement_function("^car lift from friend$", "shared vehicle") %>% 
+  replacement_function("^i live here.$", "local") %>% 
+  replacement_function("^lift from other participants$", "shared vehicle") %>% 
+  replacement_function("^coach\\+train\\+bus$", "public transport") %>% 
+  replacement_function("^living there$", "local") %>% 
+  replacement_function("^did not travel$", "local") %>% 
+  replacement_function("^air to edinburgh the hired car$", "air and hired vehicle") %>% 
+  replacement_function("^ferry and own vehicle$", "ferry and vehicle") %>% 
+  replacement_function("^boat, bus$", "ferry and public transport") %>% 
+  replacement_function("^& hired vehicle$", "hired vehicle") %>% 
+  replacement_function("^we only went to edinchip and grandtully$", "NA") %>% 
+  replacement_function("^coach$", "bus") %>% 
+  replacement_function("^bus \\(multiple\\)$", "bus") %>% 
+  replacement_function("^i live there.....$", "local") %>% 
+  replacement_function("^own vehicle and ferry the netherlands-uk$", "ferry and vehicle") %>% 
+  replacement_function("^2 own vehicles as 5 people and dog too much for one car$", "own vehicle") %>%   
+  replacement_function("^ferry. stena with own car.$", "ferry and vehicle") %>% 
+  replacement_function("^car and rail, we came separately$", "public and private")
+
+```
+
+```{r}
+survey_data %>% 
+  filter(!travel_method %in% transport_types) 
+```
+
+```{r}
+# slightly different categories are appropriate for the travel used during the event 
+transport_types_events <- c("own vehicle", "hired vehicle", "rail", "air", "bus", "cycle", "shared private vehicle", "event bus", "military car", "did not travel", "public transport", "mix of private and public", "local")
+```
+
+```{r}
+survey_data <- survey_data %>% 
+  replacement_function("^own vehicle and cycle$", "mix of private and public") %>% 
+  replacement_function("^lift from station by fellow member$", "mix of private and public") %>% 
+  replacement_function("^públic transport$", "public transport") %>% 
+  replacement_function("^2 own vehicles as 5 people and dog too much for one car$", "own vehicle") %>% 
+  replacement_function("^mix of bus and rental car$", "mix of private and public") %>% 
+  replacement_function("^own vehicle combined with bus$", "mix of private and public") %>% 
+  replacement_function("^own vehicle \\(3 days\\) and bus \\(3 days\\)$", "mix of private and public") %>%
+  replacement_function("mixture of own vehicle and cycle, often dropping off or collecting from within easy reach. walked to day 3!", "mix of private and public") %>% 
+  replacement_function("^3 days cycle \\(near event campsite\\), 3 days car$", "mix of private and public") %>% 
+  replacement_function("^shared vehicle", "shared private vehicle")
+```
+
+```{r}
+survey_data %>% 
+ select(event_travel) %>% 
+  filter(!event_travel %in% transport_types_events)
+```
+```{r}
+standard_accommodation_types <- c("hotel", "at home", "self catering", "military camp", "comrie croft", "multiple", "hostel", "guest house/b+b", "camping/caravan", "friends/relatives", "log cabin", "other")
+```
+
+```{r}
+survey_data <- survey_data %>% 
+  replacement_function("self-catering accommodation", "self catering") %>% 
+  replacement_function("event campsite \\(comrie croft\\)", "comrie croft") %>% 
+  replacement_function("other camping / caravan site", "camping/caravan") %>% 
+  replacement_function("camper van at 2 different locations", "camping/caravan") %>% 
+  replacement_function("with friends / relatives", "friends/relatives") %>% 
+  replacement_function("home for 4 nights rented with friends for 2", "multiple") %>% 
+  replacement_function("mix of home abd friends", "multiple") %>% 
+  replacement_function("mix of camping, at home, and with parents", "multiple") %>% 
+  replacement_function("hotel for first half week then at home", "multiple") %>% 
+  replacement_function("hotel and guest house", "multiple") %>% 
+  replacement_function("comrie croft \\+ murraypark", "multiple") %>% 
+  replacement_function("premier inn", "hotel") %>% 
+  replacement_function("hotel and friends \\(moved around\\)", "multiple") %>% 
+  replacement_function("airbnb, self-catered apartment", "self catering") %>% 
+  replacement_function("on a motorhome site", "camping/caravan") %>% 
+  replacement_function("^air bnb$", "self catering") %>% 
+  replacement_function("in a caravan by airbnb", "camping/caravan") %>% 
+  replacement_function("military training camp", "military camp") %>% 
+  replacement_function("mix of self-catering and b\\+b", "multiple") %>% 
+  replacement_function("stayed ina mix of comrie croft camptsite and b&b", "multiple") %>% 
+  replacement_function("second home", "at home") %>% 
+  replacement_function("campsite and the roadside", "multiple") %>% 
+  replacement_function("event arenas \\(controlling\\)", "other") %>% 
+  replacement_function("^guest house / b\\+b$", "guest house/b\\+b")
+```
+
+```{r}
+survey_data %>% 
+  filter(!accommodation_type %in% standard_accommodation_types)
+```
+
+```{r}
+locations <- c("comrie", "crieff", "perth", "aberfeldy", "auchterarder", "stirling", "bridge of allan", "scone", "dunkeld", "dundee", "killin", "glasgow", "edinburgh", "gleneagles", "broughty ferry", "dollar", "callander", "blair atholl", "lochearnhead", "st fillans", "monzie", "bridge of earn", "polmont", "tulchan", "scone", "strathearn", "kenmore", "dunblane", "pitlochry", "blair drummond", "galashiels", "methven", "rumbling bridge", "coupar angus", "bankfoot", "doune", "braco", "england", "dunning", "loch tay", "inchture", "abernyte", "multiple", "forgandenny", "glen almond", "barry buddon", "balerno", "balquhidder", "muthill", "kinkell bridge", "fowlis wester", "other", "birnam", "acharn", "blackford", "garrow", "tigh mor", "luncarty", "amulree", "gauldry", "dull", "lawers", "lochlane", "moneydie", "ayton", "brig o'turk", "glenfarg", "fearnan", "gargunnock", "faskally", "logierait", "juniper green", "fortingall", "blairgowrie", "monzie", "loch earn", "menstrie", "glenartney", "dunira", "butterstone", "gilmerton", "loch katrine", "weem", "sma glen", "strathyre", "buchanty", "ardeonaig", "little dunkeld", "madderty", "ballinluig", "new fowlis", "glen artney", "glendevon", "tibbermore", "abernyte", "between crieff and perth", "stanley", "comrie other", "dunira", "local")
+sort(locations)
+```
+```{r}
+# entries with multiple locations have been categorised as "multiple"
+survey_data <- survey_data %>%
+  replacement_function("^comrie croft campsite$", "comrie") %>% 
+  replacement_function("^st fillans   \\(and birnam   1 night b&b\\)$", "multiple") %>% 
+  replacement_function("^crieff   blair atholl$", "multiple") %>% 
+  replacement_function("^crieff 5 nights pitlochry 2 nights$", "multiple") %>% 
+  replacement_function("^stanley, near perth$", "stanley") %>% 
+  replacement_function("^comrie, dunkeld & pitlochry$", "multiple") %>% 
+  replacement_function("^comrie croft, stirling, grandtully$", "multiple") %>% 
+  replacement_function("^comrie croft campsite, den of lindores$", "multiple") %>% 
+  replacement_function("^comrie croft campsite then sister's house, aberfeldy$", "multiple") %>% 
+  replacement_function("^between crieff and perth off a85$", "between crieff and perth") %>% 
+  replacement_function("^dunira, comrie$", "dunira") %>% 
+  replacement_function("^crime 20 shilling campsite$", "comrie other") %>% 
+  replacement_function("^event campsite \\(comrie\\)$", "comrie") %>% 
+  replacement_function("^stanley near perth$", "stanley") %>% 
+  replacement_function("^at home \\(dunblane\\)$", "other") %>% 
+  replacement_function("^crieff, stanley$", "multiple") %>% 
+  replacement_function("^edinburgh, perth, dundee, berwick.$", "multiple") %>% 
+  replacement_function("^comrie croft6$", "comrie") %>% 
+  replacement_function("^comrie croft and at home in edinburgh$", "multiple") %>% 
+  replacement_function("^comrie croft, dunkeld, faskally \\(pitlochry\\)$","multiple") %>% 
+  replacement_function("^crieff blair atholl$", "multiple") %>% 
+  replacement_function("^comrie \\(event campsite, and also friends' house in comrie\\)$", "multiple") %>%   replacement_function("^comrie croft, perth$", "multiple") %>% 
+  replacement_function("^comrie, dunkeld & pitlochry	", "multiple") %>% 
+  replacement_function("^st fillans \\(and birnam 1 night b&b\\)", "multiple") %>% 
+  replacement_function("^0$", "other") %>% 
+  replacement_function("^until day 3 in crieff \\(hotel\\), from day 3 to the end in perth \\(b\\+b\\)$", "multiple") %>% 
+  replacement_function("^crieff, stanley", "multiple") %>% 
+  replacement_function("^st. killans", "other") %>% 
+  replacement_function("^crieff blair atholl$", "multiple") %>% 
+  replacement_function("^buchanty, glenalmond$", "multiple") %>% 
+  replacement_function("^multiple a85$", "multiple") %>% 
+  replacement_function("^event campsite, then aberfeldy caravan park$", "multiple") %>% 
+  replacement_function("^comrie and at home in edinburgh$", "multiple") %>% 
+  replacement_function("^houstcomrie$", "other") %>% 
+  replacement_function("^crime 2other shilling campsite$", "other") %>% 
+  replacement_function("^home \\(dunkeld\\)$", "other") %>% 
+  replacement_function("^crieffpitlochry$", "multiple") %>% 
+  replacement_function("^crieffgrandtully$", "multiple") %>% 
+  replacement_function("^between crieffnd perth$", "between crieff and perth") %>% 
+  replacement_function("^comrie6$", "comrie") %>%
+  replacement_function("^multiple pitlochry$", "multiple") %>% 
+  replacement_function("^crieffother$", "multiple") %>% 
+  replacement_function("^hcomrie$", "comrie") %>% 
+  replacement_function("^lochearnhead, kinloch\\(near blairgowrie\\)$", "multiple") %>% 
+  replacement_function("^stirling \\(1 night\\) st fillans \\(7 nights\\)$", "multiple") %>% 
+  replacement_function("^crieffher$", "crieff") %>% 
+  replacement_function("^crieffotel$", "crieff") %>% 
+  replacement_function("^crieffandtully$", "multiple") %>% 
+  replacement_function("^crieffrie$", "crieff") %>% 
+  replacement_function("^criefftlochry$", "other") %>% 
+  replacement_function("^crieffandtully$", "crieff") %>% 
+  replacement_function("^muthill \\(near crieff\\)$", "crieff") %>% 
+  replacement_function("^crieffampsite$", "crieff") %>% 
+  replacement_function("^crieffdunkeld$", "multiple") %>% 
+  replacement_function("^crieffnd pitlochry$", "multiple") %>% 
+  replacement_function("^6 nightcomrie, followed by 4 nights pilochry$", "multiple") %>% 
+  replacement_function("^crieffnd ladybank$", "crieff") %>% 
+  replacement_function("^crieffydro$", "crieff") %>% 
+  replacement_function("^neacomrie$", "other") %>% 
+  replacement_function("^between crieffnd perth off a85$", "between crieff and perth") %>% 
+  replacement_function("^until day 3 in crieff \\(hotel\\), from day 3 to the end in perth \\(b+b\\)$", "multiple") %>% 
+  replacement_function("^one night with friends in dunblane, otherwise commuted$", "multiple") %>% 
+  replacement_function("^abernyte - camping in friend's garden$", "abernyte") %>% 
+  replacement_function("^comrie, then aberfeldy caravan park$", "multiple") %>% 
+  replacement_function("^1. drummond trout farm   2. mainstay farm$", "multiple") %>% 
+  replacement_function("^comrie  crofy$", "comrie") %>% 
+  replacement_function("^dollar, clackmannanshire$", "dollar") %>% 
+  replacement_function("^callaner$", "callander") %>% 
+  replacement_function("^comrie and pitlochry$", "multiple") %>% 
+  replacement_function("^killin for first half, scone \\(perth\\) for second half$", "multiple") %>% 
+  replacement_function("^st. fillans$", "st fillans") %>% 
+  replacement_function("^killin and dunkeld$", "multiple") %>% 
+  replacement_function("^tibbermore, near perth$", "tibbermore") %>% 
+  replacement_function("^comrie, aberfeldy$", "multiple") %>% 
+  replacement_function("^lochearnhead, perth, pitlochry$", "multiple") %>% 
+  replacement_function("^comrie, edinburgh, kirriemuir$", "multiple") %>% 
+  replacement_function("^comrcomrie\\)$", "comrie") %>% 
+  replacement_function("^buchanty/tulchan$", "multiple") %>% 
+  replacement_function("^loch tay highland lodges$", "loch tay") %>% 
+  replacement_function("^dunicomrie$", "other") %>% 
+  replacement_function("^crieff5 nights pitlochry 2 nights$", "other") %>% 
+  replacement_function("^killin for first half, scone (perth) for second half$", "multiple") %>% 
+  replacement_function("^loch tay lodges$", "loch tay") %>% 
+  replacement_function("^twenty shilling wood caravan comrie$", "comrie") %>% 
+  replacement_function("^comrie and stirling$", "multiple") %>% 
+  replacement_function("^muthill \\(crieff\\)$", "muthill") %>% 
+  replacement_function("^milton of machany$", "auchterarder") %>% 
+  replacement_function("^crieff, lochearnhead, lintrathen, pitcrocknie, bankfoot,$", "multiple") %>% 
+  replacement_function("^glenfarg, bridge of earn$", "multiple") %>% 
+  replacement_function("^crieff.$", "crieff") %>% 
+  replacement_function("^multiplechry$", "other") %>% 
+  replacement_function("^lochearnhead, kinloch\\(near blairgowrie\\)	$", "multiple") %>% 
+  replacement_function("^lochearnhead and grandtully$", "multiple") %>% 
+  replacement_function("^perth \\(outskirts\\)$", "perth") %>% 
+  replacement_function("^mynydd isa, mold$", "other") %>% 
+  replacement_function("^loch ranch$", "other") %>% 
+  replacement_function("^dalveich,kinloch$", "lochearnhead") %>% 
+  replacement_function("^near crieff$", "crieff") %>% 
+  replacement_function("^creif$", "crieff") %>% 
+  replacement_function("^buchanty, glen almond$", "multiple") %>% 
+  replacement_function("^crieff and pitlochry$", "multiple") %>% 
+  replacement_function("^brig o turk$", "brig o'turk") %>% 
+  replacement_function("^crieff blair atholl$", "multiple") %>% 
+  replacement_function("^rosie ochil, forgandenny$", "forgandenny") %>% 
+  replacement_function("^killin and scone$", "multiple") %>% 
+  replacement_function("^auchterader, perth$", "multiple") %>% 
+  replacement_function("^inchyra, perth$", "multiple") %>% 
+  replacement_function("^.comrie$", "comrie") %>% 
+  replacement_function("^st. killins$", "other") %>% 
+  replacement_function("^luncarty jut north of perth$", "luncarty") %>% 
+  replacement_function("^st fillans \\(and birnam 1 night b&b\\)$", "multiple") %>% 
+  replacement_function("^strathyre, aberfeldy, lenzie$", "multiple") %>% 
+  replacement_function("^comrie/crieff$", "multiple") %>% 
+  replacement_function("^dunblane, logierait \\(pitlochry\\)$", "multiple") %>% 
+  replacement_function("^comrie then sister's house, aberfeldy$", "multiple") %>% 
+  replacement_function("^lochearnhead lochside lodges \\(hoseasons\\)$", "lochearnhead") %>% 
+  replacement_function("^viewmount, croftinloan, pitlochry$", "multiple") %>% 
+  replacement_function("^1. drummond trout farm 2. mainstay farm$", "multiple") %>% 
+  replacement_function("^comrie, stirling, grandtully$", "multiple") %>% 
+  replacement_function("^crieff \\(hotel\\), a friend near 5 miles away from day , dunkeld \\(hotel\\), aberfeldy \\(hotel\\), stayed with family$", "multiple") %>% 
+  replacement_function("^st fillans/blair athol/faskelly$", "multiple") %>% 
+  replacement_function("^multiple a85$", "multiple") %>% 
+  replacement_function("^crieff and ladybank$", "multiple") %>% 
+  replacement_function("^near comrie$", "comrie") %>% 
+  replacement_function("^6 nights comrie, followed by 4 nights pilochry$", "multiple") %>% 
+  replacement_function("^calender$", "callander") %>% 
+  replacement_function("^callandar$", "callander") %>% 
+  replacement_function("^skelmersdale$", "england") %>% 
+  replacement_function("^pitlohry$", "pitlochry") %>% 
+  replacement_function("^knock castle, crieff$", "crieff") %>% 
+  replacement_function("^killin and fort william$", "multiple") %>% 
+  replacement_function("^auchterarder, perth$", "multiple") %>% 
+  replacement_function("^lawers locherbie$", "multiple") %>% 
+  replacement_function("^did not travel$", "other") %>% 
+  replacement_function("^near killin \\(in p & k tho'\\)$", "killin") %>% 
+  replacement_function("^jedburgh \\(one night\\) then trochry for a week$", "multiple") %>% 
+  replacement_function("^evesham$", "england") %>% 
+  replacement_function("^swanlinbar$", "other") %>% 
+  replacement_function("^mid calder, pitlochry$", "multiple") %>% 
+  replacement_function("^other near perth$", "perth") %>% 
+  replacement_function("^comrie and birnam$", "multiple") %>% 
+  replacement_function("^comrie, den of lindores$", "comrie") %>% 
+  replacement_function("^balquidder, st fillans, callander, murthly$", "multiple") %>% 
+  replacement_function("^callendar$", "callander") %>% 
+  replacement_function("^comrie, crieff$", "multiple") %>% 
+  replacement_function("^butterstone, dunkeld$", "multiple") %>% 
+  replacement_function("^inverness or edinburgh$", "multiple") %>% 
+  replacement_function("^comrie & inver mill$", "multiple") %>% 
+  replacement_function("^comrie \\(comrie, and also friends' house in comrie\\)$", "comrie") %>% 
+  replacement_function("^crieff hotel$", "crieff") %>% 
+  replacement_function("^at other \\(dunblane\\)$", "dunblane") %>% 
+  replacement_function("^travel lodge perth$", "perth") %>% 
+  replacement_function("^crieff x5 nights, dunkeld x 2 nights$", "multiple") %>% 
+  replacement_function("^kilin$", "killin") %>% 
+  replacement_function("^lochearn$", "loch earn") %>% 
+  replacement_function("^monzie, crieff$", "monzie") %>% 
+  replacement_function("^crieff/comrie$", "multiple") %>% 
+  replacement_function("^loch earn, blair atholl, faskally$", "multiple") %>% 
+  replacement_function("^auchterarder - pitlokry$", "multiple") %>% 
+  replacement_function("^motala$", "other") %>% 
+  replacement_function("^kenmore, garrow$", "kenmore") %>% 
+  replacement_function("^lochearnhead and aberfeldy$", "multiple") %>% 
+  replacement_function("^fortingall nr aberfeldy$", "fortingall") %>% 
+  replacement_function("^whitemoss$", "dunning") %>% 
+  replacement_function("^near lochearnhead$", "lochearnhead") %>% 
+  replacement_function("^crieff hydro$", "crieff") %>% 
+  replacement_function("^wester fowlis$", "fowlis wester") %>% 
+  replacement_function("^crieff blair atholl$", "multiple") %>% 
+  replacement_function("^balquidder, perth, grandtully$", "multiple") %>% 
+  replacement_function("^multiple faskally \\(pitlochry\\)$", "faskally") %>% 
+  replacement_function("^one night with friends in dunblane, otherwise commuted
+$", "other") %>% 
+  replacement_function("^fearnan, loch tay$", "fearnan") %>% 
+  replacement_function("^scone, perth$", "multiple") %>% 
+  replacement_function("^comrie. dunkeld$", "multiple") %>% 
+  replacement_function("^crieff, grandtully$", "multiple") %>% 
+  replacement_function("^crieff, pitlochry$", "multiple") %>% 
+  replacement_function("^nr dunkeld$", "dunkeld") %>% 
+  replacement_function("^other, near perth$", "perth") %>% 
+  replacement_function("^glenfarg house$", "ayton") %>% 
+  replacement_function("^scone camp site$", "scone") %>% 
+  replacement_function("^balquhidder station$", "balquhidder") %>% 
+  replacement_function("^ashtead$", "england") %>% 
+  replacement_function("^lawers, loch tay$", "lawers") %>% 
+  replacement_function("^st.fillans$", "st fillans") %>% 
+  replacement_function("^lochlane camp site$", "lochlane") %>% 
+  replacement_function("^hexham$", "england") %>% 
+  replacement_function("^acharn cottages. killin$", "killin") %>% 
+  replacement_function("^crieff campsite$", "crieff") %>% 
+  replacement_function("^glen eagles$", "gleneagles") %>% 
+  replacement_function("^lochlane & scone$", "multiple") %>% 
+  replacement_function("^gauldry, fife$", "gauldry") %>% 
+  replacement_function("^houston comrie$", "multiple") %>% 
+  replacement_function("^glenalmond$", "glen almond") %>% 
+  replacement_function("^edinburgh, perth, dundee, berwick$", "multiple") %>% 
+  replacement_function("^other \\(dunkeld\\)$", "dunkeld") %>% 
+  replacement_function("^hpb holiday resort tigh mor$", "tigh mor") %>% 
+  replacement_function("^comrie and at other in edinburgh$", "multiple") %>% 
+  replacement_function("^lawera$", "other") %>% 
+  replacement_function("^crieff hydro hotel$", "crieff") %>% 
+  replacement_function("^near dunning$", "dunning") %>% 
+  replacement_function("^home$", "other") %>% 
+  replacement_function("^multiple.$", "multiple") %>% 
+  replacement_function("^comrie crieff$", "multiple") %>% 
+  replacement_function("^killan$", "killin") %>% 
+  replacement_function("^comrie and tummel bridge$", "multiple") %>% 
+  replacement_function("^garrow, south of kenmore$", "garrow") %>% 
+  replacement_function("^tullibardine$", "blackford") %>% 
+  replacement_function("^comrie croft$", "comrie") %>% 
+  replacement_function("^comrie crofy$ $", "comrie") %>% 
+  replacement_function("^event campsite$", "comrie") %>%
+  replacement_function("^comrie campsite$", "comrie") %>% 
+  replacement_function("^comrie only$", "comrie") %>% 
+  replacement_function("^sterling university campus$", "stirling") %>% 
+  replacement_function("^creiff$", "crieff") %>% 
+  replacement_function("^stirling university$", "stirling") %>% 
+  replacement_function("^crief$", "crieff") %>% 
+  replacement_function("^dukeld$", "dunkeld") %>% 
+  replacement_function("^between crieff and perth$", "multiple") %>% 
+  replacement_function("^twenty shilling wood caravan site comrie$", "comrie") %>% 
+  replacement_function("^comrie, perth$", "multiple") %>% 
+  replacement_function("^callendar$", "callander") %>% 
+  replacement_function("^st fillians$", "st fillans") %>% 
+  replacement_function("^workington$", "england") %>% 
+  replacement_function("^nr crieff$", "crieff") %>% 
+  replacement_function("^rossendale$", "england") %>% 
+  replacement_function("^event arenas \\(controlling\\)$", "other") %>% 
+  replacement_function("^edinburg$", "edinburgh") %>% 
+  replacement_function("^wigton$", "england") %>% 
+  replacement_function("^edinburghh+$", "edinburgh") %>% 
+  replacement_function("^comrie and perth$", "multiple") %>%
+  replacement_function("^new county hotel in perth$", "perth") %>% 
+  replacement_function("^crieff, dunkeld$", "multiple") %>% 
+  replacement_function("^crieff, other$", "multiple") %>% 
+  replacement_function("^city of edinburgh$", "edinburgh")
+```
+
+```{r}
+# checks to ensure that all locations are accounted for
+survey_data %>% 
+  filter(!overnight_stay_location %in% locations)
+```
+
+```{r}
+# saving cleaned dataframe
+write_csv(survey_data, "/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/clean_survey_data.csv")
+```
+
+```{r}
+# reading in a file with information about population of Scottish places greater than 500
+locality_data <- read_csv("data/2016-pop-est-sett-local-tab3a.csv", skip = 3) %>% 
+  clean_names() %>% 
+  dplyr::select(x1, x3) %>% 
+  rename(location = x1,
+         population = x3)
+```
+
+```{r}
+# converting to lower case
+locality_data <- data.frame(lapply(locality_data, function(x){
+  if (is.character(x)) return(tolower(x))
+  else return(x)
+}))
+locality_data <- locality_data %>% 
+  mutate_if(is.factor, as.character)
+```
+
+```{r}
+# joining the new population data with location information
+location_and_population_data <- right_join(locality_data, survey_data, by = c("location"= "overnight_stay_location"))  %>% 
+  select(location, population)
+location_and_population_data
+```
+```{r}
+# adding the population variable to survey data 
+survey_data$population <- location_and_population_data$population
+```
+
+```{r}
+write_csv(survey_data,"/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/clean_survey_data.csv")
+```
+
+```{r}
+# accessing passwords stored in keyring to access google maps distance API
+set.api.key(key_get(service = "api_details", keyring = "distance_api"))
+get.api.key()
+```
+
+```{r}
+unique_location_and_popualtion_data <- unique(location_and_population_data) %>% 
+  filter(location != "england", location!= "other", location != "multiple", location != "strathearn", location != "local")
+```
+
+```{r}
+map_data <- unique_location_and_popualtion_data %>% 
+  select(location)
+```
+
+```{r}
+section_one <- slice(map_data, 1:25)
+```
+```{r}
+section_one <- paste0(section_one$location, "+scotland") 
+section_one <- str_replace_all(section_one, " ", "+")
+```
+
+```{r}
+# based on driving time as most people used cars to get the the event
+distances_one <- gmapsdistance(section_one, "strathearn+scotland", mode = "driving", shape = "long")
+distances_one
+```
+```{r}
+section_two <- slice(map_data, 26:50)
+```
+
+```{r}
+section_two <- paste0(section_two$location, "+scotland") 
+section_two <- str_replace_all(section_two, " ", "+")
+```
+
+```{r}
+distances_two <- gmapsdistance(section_two, "strathearn+scotland", mode = "driving", shape = "long")
+distances_two
+```
+```{r}
+section_three <- slice(map_data, 51:75)
+```
+
+```{r}
+section_three <- paste0(section_three$location, "+scotland") 
+section_three <- str_replace_all(section_three, " ", "+")
+```
+
+```{r}
+distances_three <- gmapsdistance(section_three, "strathearn+scotland", mode = "driving", shape = "long")
+distances_three
+```
+```{r}
+section_four <- slice(map_data, 76:86)
+```
+
+```{r}
+section_four <- paste0(section_four$location, "+scotland") 
+section_four <- str_replace_all(section_four, " ", "+")
+```
+
+```{r}
+distances_four <- gmapsdistance(section_four, "strathearn+scotland", mode = "driving", shape = "long")
+distances_four
+```
+```{r}
+map_data <- paste0(map_data$location, "+scotland") 
+map_data <- str_replace_all(map_data, " ", "+")
+```
+
+```{r}
+locality_data <- as_tibble(locality_data)
+```
+```{r}
+distances_data_frame <- do.call("rbind", list(distances_one$Distance, distances_two$Distance, distances_three$Distance, distances_four$Distance))
+```
+
+```{r}
+distances_data_frame <- distances_data_frame %>% 
+  mutate_all(str_replace_all, "\\+scotland", "")
+
+distances_data_frame <- distances_data_frame %>% 
+  mutate_all(str_replace_all, "\\+", " ")
+```
+```{r}
+distances_data_frame <- distances_data_frame %>% 
+  select(or, Distance) %>% 
+  rename(distance = Distance, location = or)
+```
+```{r}
+# creating a left join to ensure that NAs are not included and converting to include conversion to kilometers and miles 
+location_distance_count_data <- left_join(distances_data_frame, survey_data, by = c("location" = "overnight_stay_location")) %>% 
+  group_by(location) %>% 
+  mutate(count = n()) %>% 
+  unique() %>% 
+  mutate( 
+    kilometres = round(as.numeric(distance)/1000, 1), 
+    miles = round(kilometres * 0.621371, 1)) %>% 
+  select(-distance)
+  
+```
+
+```{r}
+write_csv(location_distance_count_data, "/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/location_distance_count.csv")
+```
+
 
