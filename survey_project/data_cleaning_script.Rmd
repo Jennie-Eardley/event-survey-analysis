@@ -547,4 +547,7 @@ location_distance_count_data <- left_join(distances_data_frame, survey_data) %>%
 write_csv(location_distance_count_data, "/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/location_distance_count.csv")
 ```
 
+```{r}
+
+```
 
