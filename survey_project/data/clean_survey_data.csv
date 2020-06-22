@@ -39,7 +39,7 @@ comrie,NA,own vehicle,own vehicle,other,camping/caravan,90,100,16,excellent,exce
 stirling,37610,hired vehicle,hired vehicle,other,hotel,900,100,5,excellent,good,not interested in social programme,very poor,excellent,excellent,yes,yes,excellent,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,camping/caravan,other,75,7,excellent,excellent,excellent,NA,good,excellent,yes,no,NA,scotland,clackmannanshire
 perth,47430,own vehicle,own vehicle,other,self catering,800,50,4,excellent,good,good,good,excellent,excellent,yes,no,NA,scotland,highland
-edinburgh,488050,own vehicle,event bus,4,comrie,120,140,6,average,good,not interested in social programme,NA,average,poor,no,no,NA,scotland,east dunbartonshire
+city of edinburgh,488050,own vehicle,event bus,4,comrie,120,140,6,average,good,not interested in social programme,NA,average,poor,no,no,NA,scotland,east dunbartonshire
 comrie,NA,own vehicle,event bus,5,comrie,300,100,6,excellent,excellent,good,good,excellent,good,no,no,NA,other uk,NA
 stanley,1410,own vehicle,own vehicle,other,at home,140,150,4,excellent,excellent,not interested in social programme,good,excellent,average,no,no,NA,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,comrie,144,60,6,excellent,excellent,good,NA,good,good,no,yes,excellent,scotland,aberdeen
@@ -61,7 +61,7 @@ comrie,NA,own vehicle,own vehicle,other,self catering,570,65,13,poor,good,not in
 multiple,NA,rail,own vehicle,other,self catering,1030,250,21,excellent,excellent,not interested in social programme,good,good,excellent,yes,no,NA,scotland,highland
 comrie,NA,rail,own vehicle,2,comrie,288,50,5,excellent,excellent,excellent,average,good,excellent,no,no,NA,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,self catering,100,40,3,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA
-comrie,NA,hired vehicle,event bus,6,comrie,other,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,scotland,edinburgh
+comrie,NA,hired vehicle,event bus,6,comrie,other,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,scotland,city of edinburgh
 killin,770,own vehicle,own vehicle,other,comrie,400,50,2,average,good,not interested in social programme,good,good,excellent,no,yes,excellent,other uk,NA
 perth,47430,air,hired vehicle,other,self catering,500,30,4,good,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,other uk,NA
 perth,47430,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA
@@ -72,7 +72,7 @@ st fillans,NA,own vehicle,own vehicle,other,self catering,450,250,1,excellent,ex
 comrie,NA,hired vehicle,public transport,other,self catering,other,75,7,good,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA
 acharn,NA,rail,event bus,3,comrie,40,30,2,excellent,good,good,average,good,excellent,no,yes,excellent,rest of the world,NA
 stirling,37610,own vehicle,own vehicle,other,hotel,126,50,2017,excellent,excellent,not interested in social programme,average,good,good,some days,yes,good,other uk,NA
-comrie,NA,own vehicle,own vehicle,other,self catering,2000,100,14,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,edinburgh
+comrie,NA,own vehicle,own vehicle,other,self catering,2000,100,14,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,city of edinburgh
 comrie,NA,own vehicle,shared private vehicle,other,hotel,420,100,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA
 birnam,NA,own vehicle,own vehicle,other,at home,180,75,23,excellent,excellent,excellent,average,good,good,some days,no,NA,scotland,scottish borders
 garrow,NA,own vehicle,own vehicle,other,comrie,150,150,3,excellent,good,good,NA,excellent,excellent,no,no,NA,other uk,NA
@@ -130,7 +130,7 @@ glen almond,NA,own vehicle,own vehicle,other,self catering,2200,150,2,excellent,
 perth,47430,air,hired vehicle,other,self catering,other,75,7,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,rest of the world,NA
 multiple,NA,own vehicle,mix of private and public,other,comrie,150,150,3,excellent,excellent,good,NA,average,good,no,no,NA,scotland,west lothian
 gauldry,660,own vehicle,own vehicle,other,comrie,other,75,7,good,excellent,not interested in social programme,NA,excellent,average,no,no,NA,other uk,NA
-stanley,1410,own vehicle,own vehicle,other,self catering,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,yes,yes,good,scotland,edinburgh
+stanley,1410,own vehicle,own vehicle,other,self catering,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,yes,yes,good,scotland,city of edinburgh
 comrie,NA,own vehicle,own vehicle,other,at home,450,250,1,good,good,not interested in social programme,average,good,good,some days,no,NA,other uk,NA
 gleneagles,NA,own vehicle,own vehicle,other,self catering,2000,100,14,excellent,good,very poor,good,excellent,good,no,no,NA,other uk,NA
 dull,NA,rail,event bus,7,camping/caravan,250,150,1,excellent,excellent,average,NA,good,excellent,some days,yes,good,other uk,NA
@@ -146,7 +146,7 @@ multiple,NA,air,hired vehicle,other,self catering,300,100,6,good,good,good,avera
 crieff,7430,own vehicle,own vehicle,other,self catering,750,200,other,good,good,not interested in social programme,NA,good,average,some days,yes,excellent,scotland,east lothian
 lochearnhead,NA,own vehicle,own vehicle,other,self catering,750,200,other,good,excellent,not interested in social programme,good,good,excellent,no,no,NA,other uk,NA
 fortingall,NA,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,not interested in social programme,NA,excellent,good,no,no,NA,other europe,NA
-balerno,NA,own vehicle,own vehicle,other,self catering,842,140,4,good,average,excellent,excellent,excellent,excellent,some days,yes,average,scotland,edinburgh
+balerno,NA,own vehicle,own vehicle,other,self catering,842,140,4,good,average,excellent,excellent,excellent,excellent,some days,yes,average,scotland,city of edinburgh
 comrie,NA,own vehicle,shared private vehicle,other,self catering,2200,150,2,good,good,excellent,NA,good,good,some days,no,NA,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA
 auchterarder,5120,own vehicle,event bus,3,comrie,other,75,7,excellent,good,not interested in social programme,NA,good,good,no,no,NA,other uk,NA
@@ -157,7 +157,7 @@ crieff,7430,own vehicle,event bus,4,comrie,70,6,other,excellent,excellent,excell
 fowlis wester,NA,own vehicle,own vehicle,other,comrie,450,250,1,good,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,self catering,700,other,10,good,average,not interested in social programme,good,average,average,some days,no,NA,other uk,NA
 lochearnhead,NA,own vehicle,own vehicle,other,hotel,150,150,3,excellent,excellent,not interested in social programme,good,good,good,yes,no,NA,scotland,stirling
-comrie,NA,hired vehicle,hired vehicle,other,hotel,800,50,4,poor,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,scotland,edinburgh
+comrie,NA,hired vehicle,hired vehicle,other,hotel,800,50,4,poor,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,scotland,city of edinburgh
 lochearnhead,NA,own vehicle,own vehicle,other,at home,70,6,other,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA
 multiple,NA,hired vehicle,hired vehicle,other,self catering,1500,1000,11,excellent,excellent,not interested in social programme,good,good,good,some days,no,NA,rest of the world,NA
 crieff,7430,own vehicle,own vehicle,other,comrie,other,75,7,excellent,excellent,excellent,NA,excellent,good,yes,yes,good,other uk,NA
@@ -244,12 +244,12 @@ comrie,NA,own vehicle,own vehicle,other,at home,1100,200,other,excellent,excelle
 auchterarder,5120,own vehicle,own vehicle,other,self catering,850,40,4,good,good,not interested in social programme,poor,excellent,average,yes,no,NA,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,self catering,600,200,22,excellent,good,good,average,good,good,no,no,NA,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,self catering,1400,100,8,good,excellent,not interested in social programme,NA,good,good,some days,no,NA,other uk,NA
-comrie,NA,own vehicle,own vehicle,other,camping/caravan,other,75,7,average,average,not interested in social programme,NA,average,good,no,no,NA,scotland,edinburgh
+comrie,NA,own vehicle,own vehicle,other,camping/caravan,other,75,7,average,average,not interested in social programme,NA,average,good,no,no,NA,scotland,city of edinburgh
 crieff,7430,own vehicle,own vehicle,other,camping/caravan,15,20,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA
 pitlochry,2950,own vehicle,own vehicle,other,at home,70,6,other,excellent,excellent,good,NA,good,good,yes,no,NA,scotland,highland
 crieff,7430,own vehicle,own vehicle,other,self catering,1100,200,other,excellent,good,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA
 comrie,NA,own vehicle,shared private vehicle,other,hotel,170,200,3,excellent,good,not interested in social programme,NA,excellent,excellent,some days,yes,excellent,other uk,NA
-crieff,7430,own vehicle,own vehicle,other,self catering,650,150,14,excellent,excellent,not interested in social programme,poor,excellent,excellent,yes,no,NA,scotland,edinburgh
+crieff,7430,own vehicle,own vehicle,other,self catering,650,150,14,excellent,excellent,not interested in social programme,poor,excellent,excellent,yes,no,NA,scotland,city of edinburgh
 crieff,7430,own vehicle,own vehicle,other,self catering,400,50,2,good,poor,good,NA,good,good,no,no,NA,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,hotel,600,200,22,good,good,average,NA,excellent,excellent,yes,yes,good,other uk,NA
 dunkeld,NA,own vehicle,own vehicle,other,self catering,850,40,4,good,average,not interested in social programme,good,good,good,yes,yes,average,scotland,argyll and bute
@@ -270,12 +270,12 @@ perth,47430,own vehicle,own vehicle,other,at home,210,80,5,excellent,excellent,e
 perth,47430,rail,mix of private and public,other,camping/caravan,500,30,4,excellent,excellent,not interested in social programme,average,excellent,excellent,no,no,NA,other uk,NA
 auchterarder,5120,own vehicle,own vehicle,other,self catering,850,40,4,excellent,good,not interested in social programme,NA,good,average,yes,yes,good,other uk,NA
 amulree,NA,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,excellent,excellent,excellent,good,some days,yes,excellent,other uk,NA
-crieff,7430,own vehicle,shared private vehicle,other,comrie,360,150,3,good,good,not interested in social programme,NA,excellent,good,no,no,NA,scotland,edinburgh
+crieff,7430,own vehicle,shared private vehicle,other,comrie,360,150,3,good,good,not interested in social programme,NA,excellent,good,no,no,NA,scotland,city of edinburgh
 multiple,NA,own vehicle,own vehicle,other,self catering,750,200,other,excellent,good,good,NA,average,poor,some days,no,NA,scotland,aberdeenshire
 barry buddon,NA,own vehicle,own vehicle,other,self catering,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,good,scotland,scottish borders
 perth,47430,own vehicle,shared private vehicle,other,camping/caravan,2000,100,14,excellent,excellent,not interested in social programme,average,excellent,excellent,no,no,NA,other uk,NA
 perth,47430,own vehicle,own vehicle,other,self catering,700,other,10,excellent,good,not interested in social programme,average,good,good,no,no,NA,other uk,NA
-comrie,NA,own vehicle,own vehicle,other,friends/relatives,200,90,20,good,excellent,good,good,good,excellent,some days,no,NA,scotland,edinburgh
+comrie,NA,own vehicle,own vehicle,other,friends/relatives,200,90,20,good,excellent,good,good,good,excellent,some days,no,NA,scotland,city of edinburgh
 polmont,5320,own vehicle,own vehicle,other,self catering,450,250,1,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,rest of the world,NA
 killin,770,hired vehicle,hired vehicle,other,self catering,300,100,6,good,good,not interested in social programme,average,good,good,no,no,NA,other uk,south norfolk
 st fillans,NA,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other uk,NA
@@ -299,9 +299,9 @@ luncarty,1650,own vehicle,own vehicle,other,self catering,400,50,2,good,good,not
 killin,770,own vehicle,own vehicle,other,self catering,1100,200,other,excellent,good,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,camping/caravan,other,75,7,good,average,not interested in social programme,average,average,poor,some days,no,NA,scotland,aberdeenshire
 perth,47430,air,hired vehicle,other,self catering,800,50,4,excellent,good,not interested in social programme,NA,good,average,yes,yes,good,other europe,NA
-england,NA,own vehicle,own vehicle,other,self catering,770,150,12,good,good,good,good,good,poor,no,no,NA,scotland,edinburgh
+england,NA,own vehicle,own vehicle,other,self catering,770,150,12,good,good,good,good,good,poor,no,no,NA,scotland,city of edinburgh
 dunkeld,NA,own vehicle,own vehicle,other,self catering,1800,60,14,excellent,good,not interested in social programme,NA,excellent,excellent,some days,no,NA,other europe,NA
-forgandenny,600,own vehicle,own vehicle,other,at home,other,75,7,excellent,good,not interested in social programme,excellent,excellent,good,yes,no,NA,scotland,edinburgh
+forgandenny,600,own vehicle,own vehicle,other,at home,other,75,7,excellent,good,not interested in social programme,excellent,excellent,good,yes,no,NA,scotland,city of edinburgh
 perth,47430,own vehicle,own vehicle,other,camping/caravan,other,75,7,good,good,not interested in social programme,average,good,excellent,yes,no,NA,other europe,NA
 auchterarder,5120,hired vehicle,hired vehicle,other,guest house/b+b,556,40,4,excellent,excellent,not interested in social programme,NA,good,average,some days,no,NA,other uk,NA
 bridge of earn,2990,hired vehicle,hired vehicle,other,comrie,250,150,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other uk,NA
@@ -342,7 +342,7 @@ aberfeldy,1950,own vehicle,event bus,5,comrie,150,150,3,excellent,excellent,aver
 comrie,NA,air,event bus,4,guest house/b+b,70,6,other,good,excellent,excellent,NA,poor,average,some days,yes,excellent,scotland,south ayrshire
 rumbling bridge,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,excellent,excellent,excellent,excellent,excellent,yes,yes,excellent,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,self catering,1000,1000,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,good,other uk,NA
-multiple,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,excellent,excellent,good,excellent,excellent,no,no,NA,scotland,edinburgh
+multiple,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,excellent,excellent,good,excellent,excellent,no,no,NA,scotland,city of edinburgh
 multiple,NA,own vehicle,own vehicle,other,camping/caravan,144,60,6,excellent,good,not interested in social programme,NA,average,good,some days,no,NA,other uk,NA
 aberfeldy,1950,own vehicle,own vehicle,other,self catering,1300,60,15,good,average,not interested in social programme,NA,good,average,some days,no,NA,other uk,NA
 lochearnhead,NA,own vehicle,event bus,6,comrie,600,200,22,excellent,good,good,NA,excellent,good,yes,no,NA,scotland,aberdeen
@@ -363,14 +363,14 @@ crieff,7430,hired vehicle,hired vehicle,other,self catering,600,200,22,excellent
 multiple,NA,own vehicle,own vehicle,other,camping/caravan,other,75,7,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,other uk,NA
 lochearnhead,NA,own vehicle,own vehicle,other,hotel,300,100,6,good,good,not interested in social programme,NA,excellent,excellent,yes,yes,good,scotland,aberdeen
 dunkeld,NA,own vehicle,own vehicle,other,comrie,345,45,11,excellent,excellent,not interested in social programme,excellent,excellent,excellent,some days,yes,excellent,other uk,NA
-glasgow,612040,own vehicle,own vehicle,other,hotel,200,90,20,good,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,edinburgh
+glasgow,612040,own vehicle,own vehicle,other,hotel,200,90,20,good,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,scotland,city of edinburgh
 multiple,NA,own vehicle,own vehicle,other,self catering,1400,100,8,excellent,excellent,good,average,excellent,excellent,no,no,NA,other uk,NA
 comrie,NA,own vehicle,own vehicle,2,self catering,1000,1000,2,excellent,good,very poor,NA,good,excellent,some days,no,NA,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,excellent,not interested in social programme,good,good,good,no,no,NA,other uk,NA
 comrie,NA,hired vehicle,shared private vehicle,other,self catering,700,other,10,excellent,excellent,good,good,excellent,excellent,yes,yes,excellent,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,self catering,700,other,10,excellent,excellent,not interested in social programme,NA,good,good,yes,no,NA,other uk,NA
 scone,5050,own vehicle,own vehicle,other,self catering,700,other,10,good,excellent,not interested in social programme,excellent,very poor,excellent,yes,yes,excellent,other uk,NA
-perth,47430,rail,own vehicle,other,at home,250,150,1,good,good,not interested in social programme,good,good,good,some days,no,NA,scotland,edinburgh
+perth,47430,rail,own vehicle,other,at home,250,150,1,good,good,not interested in social programme,good,good,good,some days,no,NA,scotland,city of edinburgh
 st fillans,NA,air,hired vehicle,other,self catering,800,50,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA
 dunkeld,NA,own vehicle,own vehicle,other,comrie,other,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,east lothian
 brig o'turk,NA,own vehicle,own vehicle,other,self catering,950,130,1,excellent,excellent,excellent,excellent,excellent,excellent,yes,yes,excellent,scotland,stirling
@@ -411,14 +411,14 @@ callander,3160,rail,event bus,5,camping/caravan,215,50,20,excellent,excellent,av
 lochearnhead,NA,own vehicle,own vehicle,other,multiple,70,6,other,excellent,excellent,not interested in social programme,good,good,good,some days,no,NA,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,self catering,2500,1500,2,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA
 dunkeld,NA,own vehicle,own vehicle,other,camping/caravan,2000,100,14,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,no,NA,other europe,NA
-killin,770,hired vehicle,hired vehicle,other,self catering,1500,1000,11,good,good,not interested in social programme,NA,good,good,some days,no,NA,scotland,edinburgh
+killin,770,hired vehicle,hired vehicle,other,self catering,1500,1000,11,good,good,not interested in social programme,NA,good,good,some days,no,NA,scotland,city of edinburgh
 auchterarder,5120,own vehicle,own vehicle,other,self catering,350,60,5,excellent,good,not interested in social programme,NA,excellent,good,no,no,NA,scotland,aberdeenshire
 multiple,NA,own vehicle,own vehicle,other,guest house/b+b,other,75,7,excellent,good,good,good,good,good,some days,no,NA,other uk,NA
 st fillans,NA,own vehicle,own vehicle,other,comrie,900,100,5,average,good,not interested in social programme,NA,good,good,yes,yes,good,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,camping/caravan,300,100,6,good,average,not interested in social programme,very poor,good,good,some days,no,NA,scotland,highland
 crieff,7430,own vehicle,own vehicle,other,self catering,700,other,10,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,scotland,falkirk
 doune,2150,own vehicle,own vehicle,other,hotel,420,100,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,no,NA,other uk,NA
-multiple,NA,own vehicle,own vehicle,other,self catering,750,200,other,excellent,excellent,excellent,excellent,excellent,excellent,some days,no,NA,scotland,edinburgh
+multiple,NA,own vehicle,own vehicle,other,self catering,750,200,other,excellent,excellent,excellent,excellent,excellent,excellent,some days,no,NA,scotland,city of edinburgh
 comrie,NA,own vehicle,own vehicle,other,self catering,666.84,100,9,excellent,excellent,not interested in social programme,NA,good,good,some days,no,NA,scotland,stirling
 methven,1300,own vehicle,own vehicle,other,hotel,120,140,6,excellent,excellent,excellent,good,good,good,some days,yes,good,other uk,NA
 comrie,NA,own vehicle,shared private vehicle,other,friends/relatives,625,70,15,excellent,good,good,NA,good,excellent,yes,no,NA,scotland,unknown
@@ -447,17 +447,17 @@ muthill,750,own vehicle,own vehicle,other,self catering,800,50,4,excellent,excel
 crieff,7430,own vehicle,own vehicle,other,comrie,500,30,4,average,good,not interested in social programme,NA,good,excellent,some days,yes,good,other uk,NA
 perth,47430,shared private vehicle,shared private vehicle,other,camping/caravan,360,150,3,excellent,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,rest of the world,NA
 comrie,NA,own vehicle,own vehicle,other,comrie,1000,1000,2,good,good,good,NA,good,good,some days,yes,good,other uk,NA
-multiple,NA,hired vehicle,hired vehicle,other,hotel,2,50,10,good,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,edinburgh
+multiple,NA,hired vehicle,hired vehicle,other,hotel,2,50,10,good,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,city of edinburgh
 aberfeldy,1950,own vehicle,own vehicle,other,self catering,700,other,10,good,good,not interested in social programme,good,average,average,some days,yes,good,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,hotel,120,140,6,excellent,good,not interested in social programme,good,excellent,excellent,some days,no,NA,scotland,west lothian
 other,NA,air,hired vehicle,other,self catering,272,60,1,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,self catering,270,60,3,average,good,not interested in social programme,NA,excellent,good,some days,no,NA,other uk,NA
 comrie,NA,rail,military car,other,self catering,1000,1000,2,excellent,excellent,good,good,excellent,excellent,yes,no,NA,other uk,NA
-st fillans,NA,own vehicle,own vehicle,other,self catering,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,scotland,edinburgh
+st fillans,NA,own vehicle,own vehicle,other,self catering,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,scotland,city of edinburgh
 comrie,NA,own vehicle,own vehicle,other,comrie,200,90,20,good,excellent,not interested in social programme,NA,excellent,excellent,some days,no,NA,other uk,NA
 perth,47430,own vehicle,own vehicle,other,self catering,640,100,2,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA
 perth,47430,own vehicle,own vehicle,other,self catering,580,100,6,good,excellent,not interested in social programme,good,excellent,average,yes,no,NA,other europe,NA
-dunkeld,NA,own vehicle,shared private vehicle,other,self catering,500,30,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,excellent,scotland,edinburgh
+dunkeld,NA,own vehicle,shared private vehicle,other,self catering,500,30,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,excellent,scotland,city of edinburgh
 aberfeldy,1950,own vehicle,own vehicle,1,self catering,1000,1000,2,excellent,good,not interested in social programme,excellent,good,good,no,no,NA,other uk,NA
 stirling,37610,own vehicle,own vehicle,other,self catering,1100,200,other,excellent,good,not interested in social programme,good,excellent,excellent,yes,no,NA,other uk,NA
 comrie,NA,bus,event bus,6,comrie,150,150,3,good,good,not interested in social programme,good,average,average,some days,no,NA,other uk,NA
@@ -480,7 +480,7 @@ dunblane,9410,own vehicle,own vehicle,other,at home,560,60,14,good,good,average,
 glen almond,NA,own vehicle,event bus,6,comrie,502,80,1,excellent,excellent,good,NA,average,good,yes,yes,good,other uk,NA
 gargunnock,740,own vehicle,own vehicle,other,comrie,600,200,22,average,average,not interested in social programme,good,good,good,yes,yes,average,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,comrie,150,150,3,excellent,excellent,good,NA,average,good,no,yes,average,other uk,NA
-perth,47430,own vehicle,event bus,4,comrie,195,70,13,good,excellent,good,good,excellent,excellent,some days,no,NA,scotland,edinburgh
+perth,47430,own vehicle,event bus,4,comrie,195,70,13,good,excellent,good,good,excellent,excellent,some days,no,NA,scotland,city of edinburgh
 moneydie,NA,own vehicle,own vehicle,other,self catering,1200,100,7,excellent,excellent,good,NA,excellent,excellent,yes,yes,good,other europe,NA
 stirling,37610,own vehicle,shared private vehicle,other,self catering,357,450,5,excellent,good,not interested in social programme,NA,excellent,good,no,no,NA,other uk,NA
 multiple,NA,hired vehicle,hired vehicle,other,camping/caravan,700,other,10,excellent,good,not interested in social programme,good,good,excellent,yes,no,NA,other uk,NA
@@ -507,7 +507,7 @@ aberfeldy,1950,own vehicle,own vehicle,other,camping/caravan,176,100,12,excellen
 auchterarder,5120,own vehicle,own vehicle,other,self catering,400,50,2,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other europe,NA
 comrie,NA,own vehicle,event bus,5,comrie,250,150,1,good,good,excellent,good,average,average,some days,no,NA,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,self catering,270,60,3,good,good,good,good,good,excellent,some days,no,NA,other uk,NA
-other,NA,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,good,scotland,edinburgh
+other,NA,own vehicle,own vehicle,other,self catering,500,30,4,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,good,scotland,city of edinburgh
 stanley,1410,own vehicle,own vehicle,other,self catering,450,250,1,excellent,excellent,not interested in social programme,NA,good,good,some days,yes,good,scotland,highland
 aberfeldy,1950,own vehicle,own vehicle,other,self catering,1800,60,14,excellent,excellent,not interested in social programme,good,good,good,yes,no,NA,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,self catering,1e+21,1e+21,1e+21,good,average,not interested in social programme,average,good,good,no,no,NA,other uk,NA
@@ -517,7 +517,7 @@ comrie,NA,rail,own vehicle,other,self catering,700,other,10,excellent,excellent,
 aberfeldy,1950,air,hired vehicle,other,self catering,450,250,1,excellent,good,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,scotland,east renfrewshire
 comrie,NA,own vehicle,own vehicle,other,friends/relatives,60,60,6,excellent,excellent,excellent,excellent,excellent,good,some days,no,NA,other uk,NA
 multiple,NA,own vehicle,shared private vehicle,other,self catering,1200,100,7,excellent,excellent,not interested in social programme,NA,excellent,good,some days,yes,good,rest of the world,NA
-crieff,7430,own vehicle,own vehicle,other,camping/caravan,80,70,2,excellent,good,good,NA,good,good,yes,no,NA,scotland,edinburgh
+crieff,7430,own vehicle,own vehicle,other,camping/caravan,80,70,2,excellent,good,good,NA,good,good,yes,no,NA,scotland,city of edinburgh
 birnam,NA,own vehicle,own vehicle,other,self catering,1000,1000,2,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,good,other uk,NA
 comrie,NA,own vehicle,own vehicle,1,comrie,260,100,8,excellent,good,excellent,excellent,excellent,excellent,no,no,NA,other uk,NA
 perth,47430,air,hired vehicle,other,self catering,700,other,10,good,good,not interested in social programme,good,average,good,yes,yes,good,other europe,NA
@@ -531,14 +531,14 @@ lochearnhead,NA,own vehicle,shared private vehicle,other,self catering,800,50,4,
 scone,5050,own vehicle,own vehicle,other,camping/caravan,215,50,20,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other europe,NA
 comrie,NA,own vehicle,own vehicle,other,camping/caravan,70,6,other,good,average,not interested in social programme,NA,average,poor,yes,no,NA,other uk,NA
 multiple,NA,local,event bus,4,camping/caravan,372,200,other,good,average,not interested in social programme,NA,good,good,some days,yes,average,other uk,NA
-england,NA,own vehicle,own vehicle,other,camping/caravan,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,scotland,edinburgh
+england,NA,own vehicle,own vehicle,other,camping/caravan,500,30,4,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,other uk,edinburgh city
 scone,5050,own vehicle,own vehicle,other,hotel,70,6,other,excellent,good,not interested in social programme,good,good,good,yes,no,NA,other uk,NA
 killin,770,own vehicle,own vehicle,other,comrie,30,100,5,good,good,average,NA,good,good,no,yes,average,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,self catering,1800,60,14,excellent,good,not interested in social programme,NA,excellent,average,some days,no,NA,other uk,NA
 crieff,7430,rail,event bus,6,comrie,150,150,3,excellent,excellent,good,NA,good,good,some days,yes,good,scotland,moray
 luncarty,1650,own vehicle,own vehicle,other,self catering,450,250,1,good,good,not interested in social programme,good,good,good,yes,no,NA,other europe,NA
 comrie,NA,own vehicle,own vehicle,other,self catering,700,other,10,good,good,good,good,good,good,yes,no,NA,other uk,NA
-comrie,NA,shared private vehicle,shared private vehicle,other,self catering,1000,1000,2,excellent,excellent,good,average,excellent,excellent,some days,yes,excellent,scotland,edinburgh
+comrie,NA,shared private vehicle,shared private vehicle,other,self catering,1000,1000,2,excellent,excellent,good,average,excellent,excellent,some days,yes,excellent,scotland,city of edinburgh
 crieff,7430,air,hired vehicle,other,self catering,other,75,7,excellent,excellent,not interested in social programme,average,excellent,excellent,yes,no,NA,other uk,NA
 england,NA,own vehicle,own vehicle,other,at home,760,120,6,excellent,excellent,good,good,good,excellent,some days,no,NA,other uk,NA
 tibbermore,NA,own vehicle,shared private vehicle,other,comrie,290,50,7,excellent,excellent,not interested in social programme,good,excellent,excellent,yes,yes,excellent,other uk,NA
@@ -552,14 +552,14 @@ gleneagles,NA,own vehicle,own vehicle,other,self catering,2000,100,14,excellent,
 perth,47430,own vehicle,own vehicle,other,friends/relatives,50,50,4,excellent,excellent,excellent,excellent,excellent,good,some days,no,NA,other uk,NA
 comrie,NA,own vehicle,event bus,5,camping/caravan,700,other,10,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,other uk,NA
 loch tay,NA,own vehicle,own vehicle,other,comrie,70,6,other,excellent,excellent,good,NA,excellent,excellent,no,no,NA,scotland,moray
-st fillans,NA,own vehicle,cycle,other,camping/caravan,500,30,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,good,scotland,edinburgh
+st fillans,NA,own vehicle,cycle,other,camping/caravan,500,30,4,excellent,good,not interested in social programme,NA,good,good,some days,yes,good,scotland,city of edinburgh
 crieff,7430,military car,cycle,other,comrie,590,100,other,average,good,good,NA,good,good,yes,yes,good,other uk,NA
 amulree,NA,own vehicle,shared private vehicle,other,self catering,800,50,4,excellent,excellent,excellent,average,good,good,some days,yes,average,scotland,scottish borders
 killin,770,own vehicle,mix of private and public,other,comrie,other,75,7,excellent,good,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA
 killin,770,hired vehicle,hired vehicle,other,self catering,other,75,7,excellent,excellent,excellent,good,good,good,some days,no,NA,scotland,stirling
 callander,3160,own vehicle,shared private vehicle,other,hotel,100,40,3,excellent,excellent,not interested in social programme,NA,excellent,good,yes,no,NA,other uk,NA
 crieff,7430,air,hired vehicle,other,self catering,610,50,16,excellent,good,not interested in social programme,NA,excellent,excellent,yes,yes,excellent,other europe,NA
-comrie,NA,own vehicle,event bus,4,comrie,560,60,14,excellent,excellent,not interested in social programme,NA,excellent,good,yes,no,NA,scotland,edinburgh
+comrie,NA,own vehicle,event bus,4,comrie,560,60,14,excellent,excellent,not interested in social programme,NA,excellent,good,yes,no,NA,scotland,city of edinburgh
 dunkeld,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,good,average,NA,good,excellent,some days,yes,poor,other uk,NA
 dunning,970,own vehicle,mix of private and public,other,comrie,20,40,1,excellent,excellent,not interested in social programme,average,excellent,excellent,some days,no,NA,other uk,NA
 callander,3160,own vehicle,own vehicle,other,self catering,3600,other,10,excellent,good,not interested in social programme,good,average,average,no,no,NA,other uk,NA
@@ -590,7 +590,7 @@ crieff,7430,own vehicle,event bus,6,comrie,150,150,3,excellent,excellent,good,NA
 comrie,NA,hired vehicle,hired vehicle,other,hotel,100,40,3,good,average,good,NA,good,average,some days,yes,average,other uk,NA
 dunning,970,own vehicle,own vehicle,other,self catering,700,other,10,excellent,good,average,NA,good,excellent,some days,no,NA,rest of the world,NA
 perth,47430,"NA",hired vehicle,other,hotel,120,140,6,good,good,not interested in social programme,NA,good,average,some days,yes,good,other uk,NA
-comrie other,NA,own vehicle,own vehicle,other,at home,70,6,other,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,scotland,edinburgh
+comrie other,NA,own vehicle,own vehicle,other,at home,70,6,other,excellent,excellent,excellent,NA,excellent,excellent,some days,no,NA,scotland,city of edinburgh
 comrie,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,good,good,NA,good,average,some days,no,NA,scotland,clackmannanshire
 fortingall,NA,own vehicle,own vehicle,other,self catering,450,250,1,excellent,good,good,NA,excellent,good,yes,no,NA,other europe,NA
 comrie,NA,own vehicle,own vehicle,other,camping/caravan,other,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,yes,no,NA,other uk,NA
@@ -609,13 +609,13 @@ perth,47430,hired vehicle,mix of private and public,1,comrie,250,150,1,good,good
 stirling,37610,own vehicle,own vehicle,other,camping/caravan,120,140,6,excellent,good,not interested in social programme,NA,good,average,some days,no,NA,scotland,falkirk
 comrie,NA,own vehicle,own vehicle,other,comrie,100,40,3,good,good,good,NA,good,excellent,some days,no,NA,other uk,NA
 comrie,NA,own vehicle,own vehicle,other,self catering,350,60,5,excellent,excellent,excellent,good,excellent,excellent,yes,yes,excellent,other europe,NA
-edinburgh,488050,own vehicle,own vehicle,other,friends/relatives,650,150,14,excellent,excellent,excellent,NA,good,average,no,no,NA,scotland,stirling
+city of edinburgh,488050,own vehicle,own vehicle,other,friends/relatives,650,150,14,excellent,excellent,excellent,NA,good,average,no,no,NA,scotland,stirling
 comrie,NA,hired vehicle,hired vehicle,other,self catering,300,100,6,good,good,good,average,average,average,no,no,NA,other uk,NA
 killin,770,own vehicle,own vehicle,other,self catering,1200,100,7,excellent,excellent,excellent,good,excellent,average,no,no,NA,other uk,NA
 auchterarder,5120,hired vehicle,hired vehicle,other,self catering,other,75,7,excellent,excellent,not interested in social programme,NA,excellent,excellent,no,no,NA,other europe,NA
 comrie,NA,public and private,own vehicle,other,camping/caravan,300,100,6,excellent,excellent,not interested in social programme,NA,good,average,no,no,NA,other uk,NA
 other,NA,own vehicle,own vehicle,other,hostel,1300,60,15,excellent,excellent,excellent,NA,excellent,excellent,yes,yes,good,scotland,midlothian
-dunkeld,NA,own vehicle,own vehicle,other,camping/caravan,120,140,6,good,good,good,very poor,average,good,no,no,NA,scotland,edinburgh
+dunkeld,NA,own vehicle,own vehicle,other,camping/caravan,120,140,6,good,good,good,very poor,average,good,no,no,NA,scotland,city of edinburgh
 perth,47430,own vehicle,own vehicle,other,self catering,700,other,10,good,excellent,not interested in social programme,good,good,good,some days,yes,good,other uk,NA
 bridge of earn,2990,own vehicle,own vehicle,other,self catering,400,50,2,excellent,excellent,excellent,good,excellent,good,some days,yes,good,other uk,NA
 little dunkeld,NA,own vehicle,own vehicle,other,self catering,1500,1000,11,excellent,excellent,not interested in social programme,average,excellent,excellent,no,no,NA,other uk,NA
@@ -635,7 +635,7 @@ stirling,37610,hired vehicle,hired vehicle,other,self catering,272,60,1,excellen
 comrie,NA,own vehicle,event bus,3,comrie,800,50,4,good,poor,good,NA,average,average,yes,yes,average,other uk,NA
 perth,47430,own vehicle,own vehicle,other,comrie,360,150,3,good,good,not interested in social programme,NA,good,excellent,some days,no,NA,other uk,NA
 brig o'turk,NA,own vehicle,own vehicle,other,camping/caravan,200,90,20,excellent,excellent,excellent,NA,excellent,excellent,no,no,NA,scotland,aberdeenshire
-comrie,NA,own vehicle,own vehicle,2,comrie,other,75,7,excellent,good,good,NA,excellent,excellent,some days,no,NA,scotland,edinburgh
+comrie,NA,own vehicle,own vehicle,2,comrie,other,75,7,excellent,good,good,NA,excellent,excellent,some days,no,NA,scotland,city of edinburgh
 callander,3160,own vehicle,event bus,6,comrie,70,6,other,excellent,excellent,excellent,NA,excellent,average,no,no,NA,other uk,NA
 lawers,NA,air,hired vehicle,other,hotel,150,150,3,good,good,good,NA,average,good,some days,yes,good,scotland,scottish borders
 comrie,NA,own vehicle,own vehicle,other,at home,140,150,4,excellent,excellent,excellent,NA,excellent,excellent,yes,no,NA,other uk,NA
@@ -671,7 +671,7 @@ comrie,NA,own vehicle,own vehicle,other,comrie,60,60,6,excellent,excellent,good,
 loch tay,NA,own vehicle,shared private vehicle,other,hotel,400,50,2,good,good,good,good,excellent,excellent,some days,yes,average,other europe,NA
 gargunnock,740,own vehicle,own vehicle,other,self catering,1200,100,7,poor,good,not interested in social programme,good,excellent,good,yes,no,NA,other uk,NA
 dunkeld,NA,own vehicle,own vehicle,other,self catering,200,90,20,excellent,good,good,NA,excellent,excellent,yes,no,NA,other uk,NA
-edinburgh,488050,own vehicle,own vehicle,other,self catering,270,60,3,good,poor,good,poor,excellent,excellent,yes,no,NA,rest of the world,NA
+city of edinburgh,488050,own vehicle,own vehicle,other,self catering,270,60,3,good,poor,good,poor,excellent,excellent,yes,no,NA,rest of the world,NA
 perth,47430,own vehicle,own vehicle,other,self catering,600,200,22,average,excellent,good,good,good,good,no,no,NA,other uk,NA
 crieff,7430,hired vehicle,hired vehicle,other,comrie,200,90,20,excellent,good,good,NA,excellent,excellent,some days,no,NA,rest of the world,NA
 stirling,37610,air,hired vehicle,other,comrie,150,150,3,excellent,excellent,excellent,NA,good,good,yes,no,NA,scotland,perth and kinross
@@ -683,7 +683,7 @@ other,NA,own vehicle,event bus,6,comrie,other,75,7,excellent,average,excellent,N
 crieff,7430,own vehicle,own vehicle,other,self catering,570,65,13,good,good,good,good,excellent,excellent,yes,no,NA,other uk,NA
 stirling,37610,own vehicle,own vehicle,1,self catering,600,200,22,excellent,good,not interested in social programme,excellent,good,excellent,yes,no,NA,scotland,perth and kinross
 comrie,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,good,good,average,good,good,some days,no,NA,scotland,fife
-comrie,NA,own vehicle,own vehicle,other,self catering,800,50,4,excellent,excellent,excellent,NA,excellent,good,some days,yes,good,scotland,edinburgh
+comrie,NA,own vehicle,own vehicle,other,self catering,800,50,4,excellent,excellent,excellent,NA,excellent,good,some days,yes,good,scotland,city of edinburgh
 perth,47430,own vehicle,own vehicle,other,self catering,800,50,4,excellent,good,not interested in social programme,NA,good,average,some days,yes,good,other europe,NA
 auchterarder,5120,own vehicle,shared private vehicle,other,friends/relatives,900,100,5,excellent,good,not interested in social programme,NA,good,excellent,yes,no,NA,other uk,NA
 multiple,NA,own vehicle,own vehicle,other,at home,150,150,3,good,excellent,good,NA,excellent,excellent,no,no,NA,other uk,NA
@@ -694,9 +694,9 @@ ardeonaig,NA,own vehicle,own vehicle,other,self catering,600,200,22,excellent,ex
 comrie,NA,own vehicle,own vehicle,other,camping/caravan,70,6,other,good,average,not interested in social programme,NA,good,good,no,no,NA,other uk,NA
 crieff,7430,own vehicle,own vehicle,other,self catering,3000,720,13,excellent,good,not interested in social programme,NA,average,poor,no,no,NA,other europe,NA
 killin,770,local,own vehicle,other,at home,other,75,7,excellent,good,not interested in social programme,good,good,good,yes,yes,good,scotland,highland
-edinburgh,488050,own vehicle,own vehicle,other,self catering,800,50,4,excellent,excellent,excellent,good,excellent,excellent,some days,yes,excellent,rest of the world,NA
+city of edinburgh,488050,own vehicle,own vehicle,other,self catering,800,50,4,excellent,excellent,excellent,good,excellent,excellent,some days,yes,excellent,rest of the world,NA
 st fillans,NA,own vehicle,own vehicle,other,at home,155,150,3,excellent,excellent,excellent,good,good,good,some days,no,NA,other uk,NA
-edinburgh,488050,own vehicle,own vehicle,other,self catering,700,other,10,excellent,good,excellent,NA,good,average,some days,yes,excellent,other uk,NA
+city of edinburgh,488050,own vehicle,own vehicle,other,self catering,700,other,10,excellent,good,excellent,NA,good,average,some days,yes,excellent,other uk,NA
 dunkeld,NA,air,hired vehicle,other,self catering,350,60,5,good,good,not interested in social programme,average,good,good,no,no,NA,scotland,midlothian
 ayton,600,own vehicle,own vehicle,other,comrie,120,140,6,excellent,excellent,not interested in social programme,excellent,excellent,excellent,yes,yes,excellent,other europe,NA
 aberfeldy,1950,own vehicle,own vehicle,other,camping/caravan,100,40,3,excellent,excellent,not interested in social programme,NA,excellent,good,some days,yes,good,other uk,NA

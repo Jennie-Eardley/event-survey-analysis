@@ -18,6 +18,7 @@ location_data <- read_csv("data/location_distance_count.csv")
 ### Usual Residence of Attendees 
 
 ```{r, echo = FALSE, figures-side, fig.show = 'hold', out.width = "50%"}
+# positioning graphs side by side 
 survey_data %>% 
   select(residence) %>% 
   count(residence, sort = TRUE) %>% 
@@ -45,9 +46,8 @@ survey_data %>%
    theme(plot.title = element_text(hjust = 0.5)) +
     theme_classic(base_size = 15)
 ```
-### Travel 
-Analysis here
 
+### The organisers are interested in reducing single car use are were interested in knowing about methods of travel both to and during the event
 ```{r, echo = FALSE, fig.show = 'hold', out.width = "50%"}
 survey_data %>% 
   count(travel_method, sort = TRUE) %>% 
@@ -56,7 +56,7 @@ survey_data %>%
   geom_col(aes(x = travel_method, y = n), fill = "#008b8b") +
   coord_flip() +
   labs(title = "Travel to Event",
-       x = "Travel Method,",
+       x = "Travel Method",
        y = "Count") +
   theme(plot.title = element_text(hjust = 0.5)) +
     theme_classic(base_size = 15)
@@ -67,11 +67,189 @@ survey_data %>%
   geom_col(aes(x = event_travel, y = n),fill = "#008b8b") +
   coord_flip() +
   labs(title = "Travel During Event",
-       x = "Travel Method,",
+       x = "Travel Method",
        y = "Count") +
   theme(plot.title = element_text(hjust = 0.5)) +
     theme_classic(base_size = 15)
 ```
+- It is evident that car use is the most popular method of travel
+- The relatively remote location of the event may have prevented attendees from using public transport 
+
+### Accommodation 
+
+```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
+# splitting distances gained from the google map distance API into categories
+hundred_and_over <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 100) %>% 
+  nrow()
+
+ninety_to_hundred <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 90 & miles < 100) %>% 
+  nrow()
+
+eighty_to_ninety <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 80 & miles < 90) %>% 
+  nrow()
+
+seventy_to_eighty <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 70 & miles < 80) %>% 
+  nrow()
+
+sixty_to_seventy <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 60 & miles < 70) %>% 
+  nrow()
+
+fifty_to_sixty <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 50 & miles < 60) %>% 
+  nrow()
+
+forty_to_fifty <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 40 & miles < 50) %>% 
+  nrow()
+
+thirty_to_forty <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 30 & miles < 40) %>% 
+  nrow()
+
+twenty_to_thirty <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 20 & miles < 30) %>% 
+  nrow()
+
+ten_to_twenty <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 10 & miles < 20) %>% 
+  nrow()
+
+under_ten <- location_data %>% 
+  arrange(desc(miles)) %>% 
+  filter(miles >= 1 & miles < 10) %>% 
+  nrow()
+# reversing factor levels as graph will be rotated
+distance_levels <- rev(c("under ten", "ten to twenty", "twenty to thirty", "thirty to forty", "forty to fifty", "fifty to sixty", "sixty to seventy", "seventy to eighty", "eighty to ninety", "ninety to hundred", "hundred and over"))
+location_distance_tibble <- tibble(under_ten, ten_to_twenty, twenty_to_thirty, thirty_to_forty, forty_to_fifty, fifty_to_sixty, sixty_to_seventy, seventy_to_eighty, eighty_to_ninety, ninety_to_hundred, hundred_and_over) %>% 
+  pivot_longer(cols = (under_ten: hundred_and_over), 
+               names_to = "number_that_stayed",
+               values_to = "count") %>% 
+ mutate_all(str_replace_all, "_", " ") %>%
+  mutate(name = factor(number_that_stayed, (levels = distance_levels))) %>% 
+  mutate(count = as.numeric(count)) %>% 
+   ggplot() +
+  geom_col(aes(x = name, y = count),fill = "#008b8b") +
+  coord_flip() +
+  theme_classic(base_size = 15) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  labs(
+    title = "Driving Distance to Event",
+    x = "Distance (miles)",
+    y = "Count"
+  ) 
+location_distance_tibble
+```
+- Respondents stayed in 88 different cities, towns and villages in Scotland
+- The most popular locations were: Comrie, Crieff and Perth
+- 56% of respondents stayed in places with populations of under 500
+
+```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
+survey_data %>% 
+  count(accommodation_type, sort = TRUE) %>% 
+  filter(n > 5) %>% 
+  mutate(name = factor(accommodation_type, levels = c("self catering", "multiple", "hotel", "hostel", "guest house/b+b", "friends/relatives", "comrie", "camping/caravan", "at home"))) %>% 
+ggplot() +
+  geom_col(aes(x = name, y = n),fill = "#008b8b") +
+ coord_flip() +
+  labs(title = "Accommodation Types",
+    x = "Accommodation Types",
+      y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme_classic(base_size = 15)
+```
+- 49% of respondents stayed in self catering accommodation, they spent an average of £882 on accommodation
+- 18% stayed at the event campsite - Comrie Croft, they spent an average of £194 on accommodation
+
+### Digital Interaction with Event
+
+```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
+# sorting the livestream responses into categories depending on which type(s) of the livestream they interacted with
+all_livestreams <- livestream_data %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(livestream_races == "1") %>% 
+  nrow()
+after_event_and_competition <- livestream_data %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(is.na(livestream_races)) %>% 
+  nrow()
+after_event_and_races <- livestream_data %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(livestream_races == "1") %>% 
+  filter(is.na(livestream_competition)) %>% 
+  nrow()
+competition_and_races <- livestream_data %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(livestream_races == "1") %>% 
+  filter(is.na(livestream_after_event)) %>% 
+  nrow()
+races <- livestream_data %>% 
+  filter(is.na(livestream_after_event)) %>% 
+  filter(livestream_races == "1") %>% 
+  filter(is.na(livestream_competition)) %>% 
+  nrow()
+after_event <- livestream_data %>% 
+  filter(is.na(livestream_races)) %>% 
+  filter(livestream_after_event == "1") %>% 
+  filter(is.na(livestream_competition)) %>% 
+  nrow()
+competition <- livestream_data %>% 
+  filter(is.na(livestream_after_event)) %>% 
+  filter(livestream_competition == "1") %>% 
+  filter(is.na(livestream_races)) %>% 
+  nrow()
+
+# graph showing the types of livestream watched 
+livestream_tibble <- tibble(races, after_event, competition, competition_and_races, after_event_and_races, after_event_and_competition, all_livestreams) %>% 
+  pivot_longer(cols = (races: all_livestreams), 
+               names_to = "watched_livestream",
+               values_to = "count") %>% 
+  mutate_all(str_replace_all,"_", " ") %>%
+  mutate(name = factor(watched_livestream, (levels = c("all livestreams", "competition and races", "after event and races", "after event and competition", "races", "competition", "after event")))) %>% 
+  mutate(count = as.numeric(count)) %>% 
+   ggplot() +
+  geom_col(aes(x = name, y = count),fill = "#008b8b") +
+  coord_flip() +
+  theme_classic(base_size = 15) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  labs(
+    title = "Type of Livestream Watched",
+    x = "Type of Livestream",
+    y = "Count"
+  ) 
+livestream_tibble
+```
+```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
+survey_data %>%
+  filter(!is.na(facebook_twitter_rating)) %>% 
+  count(facebook_twitter_rating, sort = TRUE) %>% 
+ mutate(name = factor(facebook_twitter_rating, levels = c("excellent", "good", "average", "poor"))) %>%  
+  ggplot() +
+  geom_col(aes(x = name, y = n), fill = "#008b8b") +
+  labs(x = "Rating", 
+      y = "Number of Ratings", 
+      title = "Facebook and Twitter Ratings") +
+ theme_classic(base_size = 15) +
+   theme(plot.title = element_text(hjust = 0.5)) 
+```
+- 34% of participants followed the event on Twitter and/or Facebook
+- 85% of those who engaged rated the quality as excellent or good 
 
 ### Actionable Points
 

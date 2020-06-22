@@ -41,7 +41,6 @@ survey_data <- survey_data %>%
   replacement_function("mid lothian", "midlothian") %>% 
   replacement_function("dont know", "unknown") %>% 
   replacement_function("aberdeenshie", "aberdeenshire") %>% 
-  replacement_function("edinburgh city", "city of edinburgh") %>%
   replacement_function("tayside", "unknown") %>% 
   replacement_function("perth&kinross", "perth and kinross") %>% 
   replacement_function("scottish borders council", "scottish borders") %>% 
@@ -166,7 +165,7 @@ survey_data %>%
 
 ```{r}
 # a list of where people stayed overnight 
-locations <- c("comrie", "crieff", "perth", "aberfeldy", "auchterarder", "stirling", "bridge of allan", "scone", "dunkeld", "dundee", "killin", "glasgow", "edinburgh", "gleneagles", "broughty ferry", "dollar", "callander", "blair atholl", "lochearnhead", "st fillans", "monzie", "bridge of earn", "polmont", "tulchan", "scone", "strathearn", "kenmore", "dunblane", "pitlochry", "blair drummond", "galashiels", "methven", "rumbling bridge", "coupar angus", "bankfoot", "doune", "braco", "england", "dunning", "loch tay", "inchture", "abernyte", "multiple", "forgandenny", "glen almond", "barry buddon", "balerno", "balquhidder", "muthill", "kinkell bridge", "fowlis wester", "other", "birnam", "acharn", "blackford", "garrow", "tigh mor", "luncarty", "amulree", "gauldry", "dull", "lawers", "lochlane", "moneydie", "ayton", "brig o'turk", "glenfarg", "fearnan", "gargunnock", "faskally", "logierait", "juniper green", "fortingall", "blairgowrie", "monzie", "loch earn", "menstrie", "glenartney", "dunira", "butterstone", "gilmerton", "loch katrine", "weem", "sma glen", "strathyre", "buchanty", "ardeonaig", "little dunkeld", "madderty", "ballinluig", "new fowlis", "glen artney", "glendevon", "tibbermore", "abernyte", "between crieff and perth", "stanley", "comrie other", "dunira", "local")
+locations <- c("comrie", "crieff", "perth", "aberfeldy", "auchterarder", "stirling", "bridge of allan", "scone", "dunkeld", "dundee", "killin", "glasgow", "city of edinburgh", "gleneagles", "broughty ferry", "dollar", "callander", "blair atholl", "lochearnhead", "st fillans", "monzie", "bridge of earn", "polmont", "tulchan", "scone", "strathearn", "kenmore", "dunblane", "pitlochry", "blair drummond", "galashiels", "methven", "rumbling bridge", "coupar angus", "bankfoot", "doune", "braco", "england", "dunning", "loch tay", "inchture", "abernyte", "multiple", "forgandenny", "glen almond", "barry buddon", "balerno", "balquhidder", "muthill", "kinkell bridge", "fowlis wester", "other", "birnam", "acharn", "blackford", "garrow", "tigh mor", "luncarty", "amulree", "gauldry", "dull", "lawers", "lochlane", "moneydie", "ayton", "brig o'turk", "glenfarg", "fearnan", "gargunnock", "faskally", "logierait", "juniper green", "fortingall", "blairgowrie", "monzie", "loch earn", "menstrie", "glenartney", "dunira", "butterstone", "gilmerton", "loch katrine", "weem", "sma glen", "strathyre", "buchanty", "ardeonaig", "little dunkeld", "madderty", "ballinluig", "new fowlis", "glen artney", "glendevon", "tibbermore", "abernyte", "between crieff and perth", "stanley", "comrie other", "dunira", "local")
 sort(locations)
 ```
 ```{r}
@@ -193,6 +192,7 @@ survey_data <- survey_data %>%
   replacement_function("^comrie croft and at home in edinburgh$", "multiple") %>% 
   replacement_function("^comrie croft, dunkeld, faskally \\(pitlochry\\)$","multiple") %>% 
   replacement_function("^crieff blair atholl$", "multiple") %>% 
+  replacement_function("^edinburgh$", "city of edinburgh") %>% 
   replacement_function("^comrie \\(event campsite, and also friends' house in comrie\\)$", "multiple") %>%   replacement_function("^comrie croft, perth$", "multiple") %>% 
   replacement_function("^comrie, dunkeld & pitlochry	", "multiple") %>% 
   replacement_function("^st fillans \\(and birnam 1 night b&b\\)", "multiple") %>% 
@@ -406,7 +406,7 @@ $", "other") %>%
   replacement_function("^new county hotel in perth$", "perth") %>% 
   replacement_function("^crieff, dunkeld$", "multiple") %>% 
   replacement_function("^crieff, other$", "multiple") %>% 
-  replacement_function("^city of edinburgh$", "edinburgh")
+  replacement_function("^edinburgh$", "city of edinburgh")
 ```
 
 ```{r}

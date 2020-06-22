@@ -29,32 +29,52 @@ local_authority_vector_rev <- rev(local_authority_vector)
 ```
 
 ```{r}
-# 
+# sorting and counting data by local authority (for respondents resident in Scotland)
 survey_data %>% 
  filter(residence == "scotland") %>% 
   filter(local_authority != "unknown") %>% 
   count(local_authority, sort = TRUE) %>% 
-    mutate(name = factor(local_authority, levels = local_authority_vector_rev)) %>%
+    mutate(name = factor(local_authority, levels = local_authority_vector_rev)) %>% 
   ggplot() +
   geom_col(aes(x = name, y = n), fill = "#008b8b") +
   coord_flip() +
   labs(title = "Respondents in Scotland by Local Authority",
-       x = "Local Authority", y = "Count") +
+      x = "Local Authority", y = "Count") +
    theme(plot.title = element_text(hjust = 0.5)) +
     theme_classic(base_size = 15)
 ```
 
 ```{r}
+# graph of types of transport used to travel to the event
 survey_data %>% 
-  count(travel_method, sort = TRUE)
+  count(event_travel, sort = TRUE) %>% 
+  filter(n >= 5) %>% 
+  ggplot() +
+  geom_col(aes(x = event_travel, y = n),fill = "#008b8b") +
+  coord_flip() +
+  labs(title = "Travel During Event",
+       x = "Travel Method,",
+       y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+    theme_classic(base_size = 15)
 ```
 ```{r}
+# graph of types of transport used during the event
 survey_data %>% 
-  count(event_travel, sort = TRUE)
+  count(event_travel, sort = TRUE) %>% 
+  filter(n >= 5) %>% 
+  ggplot() +
+  geom_col(aes(x = event_travel, y = n),fill = "#008b8b") +
+  coord_flip() +
+  labs(title = "Travel During Event",
+       x = "Travel Method",
+       y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+    theme_classic(base_size = 15)
 ```
 
 ```{r}
-# splitting distances gained from the google map distance API into groups
+# splitting distances gained from the google map distance API into categories
 hundred_and_over <- location_data %>% 
   arrange(desc(miles)) %>% 
   filter(miles >= 100) %>% 
@@ -109,7 +129,7 @@ under_ten <- location_data %>%
   arrange(desc(miles)) %>% 
   filter(miles >= 1 & miles < 10) %>% 
   nrow()
-# reversing as graph will be rotated
+# reversing factor levels as graph will be rotated
 distance_levels <- rev(c("under ten", "ten to twenty", "twenty to thirty", "thirty to forty", "forty to fifty", "fifty to sixty", "sixty to seventy", "seventy to eighty", "eighty to ninety", "ninety to hundred", "hundred and over"))
 location_distance_tibble <- tibble(under_ten, ten_to_twenty, twenty_to_thirty, thirty_to_forty, forty_to_fifty, fifty_to_sixty, sixty_to_seventy, seventy_to_eighty, eighty_to_ninety, ninety_to_hundred, hundred_and_over) %>% 
   pivot_longer(cols = (under_ten: hundred_and_over), 
@@ -130,6 +150,21 @@ location_distance_tibble <- tibble(under_ten, ten_to_twenty, twenty_to_thirty, t
   ) 
 location_distance_tibble
 ```
+```{r}
+# a graph showing accommodation types (where more than 5 respondents stayed)
+survey_data %>% 
+  count(accommodation_type, sort = TRUE) %>% 
+  filter(n > 5) %>% 
+  mutate(name = factor(accommodation_type, levels = c("self catering", "multiple", "hotel", "hostel", "guest house/b+b", "friends/relatives", "comrie", "camping/caravan", "at home"))) %>% 
+ggplot() +
+  geom_col(aes(x = name, y = n),fill = "#008b8b") +
+ coord_flip() +
+  labs(title = "Accommodation Types",
+    x = "Accommodation Types",
+      y = "Count") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme_classic(base_size = 25)
+```
 
 ```{r}
 # creating a dataframe that splits data up by population size
@@ -149,12 +184,12 @@ location_data
 ```{r}
 # calculating how many respondents stayed in a location with a population of under 500
 under_500_TRUE <- population_df %>% 
-  filter(under_500 == TRUE) 
-sum(under_500_TRUE$n)
+  filter(under_500 == TRUE) %>% 
+  nrow()
 ``` 
 ```{r}
 # calculating the percentage of respondents that stayed in a location with a population of under 500
-sum(under_500_TRUE$n)/nrow(survey_data)
+under_500_TRUE/nrow(survey_data)
 ```
 ```{r}
 # calculating the percentage that engaged with facebook or twitter
@@ -167,12 +202,23 @@ yes <- survey_data %>%
 yes/(yes+no)
 ```
 ```{r}
+# calculating the percentage of respondents who rated the Facebook and Twitter communication as "excellent" or "good"
 survey_data %>%
   count(facebook_twitter_rating, sort = TRUE) %>% 
-  filter(facebook_twitter_rating == "good" | facebook_twitter_rating == "excellent") 
+  filter(facebook_twitter_rating == "excellent" | facebook_twitter_rating == "good") 
 (107 + 97)/yes
 ```
 ```{r}
+printed_programme_total <- survey_data %>% 
+  filter(!is.na(printed_programme_rating)) %>% 
+  nrow() 
+survey_data %>% 
+  count(printed_programme_rating, sort = TRUE)
+(364 + 241)/printed_programme_total
+```
+
+```{r}
+# sorting the livestream responses into categories depending on which type(s) of the livestream they interacted with
 all_livestreams <- livestream_data %>% 
   filter(livestream_after_event == "1") %>% 
   filter(livestream_competition == "1") %>% 
@@ -223,6 +269,7 @@ competition <- livestream_data %>%
 ```
 
 ```{r}
+# graph showing the types of livestream watched 
 livestream_tibble <- tibble(races, after_event, competition, competition_and_races, after_event_and_races, after_event_and_competition, all_livestreams) %>% 
   pivot_longer(cols = (races: all_livestreams), 
                names_to = "watched_livestream",
