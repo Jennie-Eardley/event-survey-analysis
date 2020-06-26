@@ -11,6 +11,7 @@ library(tidyverse)
 livestream_data <- read_csv("data/synthesised_livestream.csv")
 survey_data <- read_csv("data/clean_survey_data.csv")
 location_data <- read_csv("data/location_distance_count.csv")
+rating_data <- read_csv("data/rating_data.csv")
 ```
 
 ### Analysis of the results of a survey about a sporting event held in Scotland. 
@@ -43,8 +44,8 @@ survey_data %>%
   coord_flip() +
   labs(title = "Respondents in Scotland by Local Authority",
        x = "Local Authority", y = "Count") +
-   theme(plot.title = element_text(hjust = 0.5)) +
-    theme_classic(base_size = 15)
+  theme_classic(base_size = 15) +
+   theme(plot.title = element_text(hjust = 0.5))
 ```
 
 ### The organisers are interested in reducing single car use are were interested in knowing about methods of travel both to and during the event
@@ -58,8 +59,8 @@ survey_data %>%
   labs(title = "Travel to Event",
        x = "Travel Method",
        y = "Count") +
-  theme(plot.title = element_text(hjust = 0.5)) +
-    theme_classic(base_size = 15)
+  theme_classic(base_size = 15) +
+  theme(plot.title = element_text(hjust = 0.5))
 survey_data %>% 
   count(event_travel, sort = TRUE) %>% 
   filter(n >= 5) %>% 
@@ -69,8 +70,8 @@ survey_data %>%
   labs(title = "Travel During Event",
        x = "Travel Method",
        y = "Count") +
-  theme(plot.title = element_text(hjust = 0.5)) +
-    theme_classic(base_size = 15)
+  theme_classic(base_size = 15) +
+  theme(plot.title = element_text(hjust = 0.5)) 
 ```
 - It is evident that car use is the most popular method of travel
 - The relatively remote location of the event may have prevented attendees from using public transport 
@@ -169,8 +170,9 @@ ggplot() +
   labs(title = "Accommodation Types",
     x = "Accommodation Types",
       y = "Count") +
-  theme(plot.title = element_text(hjust = 0.5)) +
-  theme_classic(base_size = 15)
+  theme_classic(base_size = 15) +
+  theme(plot.title = element_text(hjust = 0.5)) 
+  
 ```
 - 49% of respondents stayed in self catering accommodation, they spent an average of £882 on accommodation
 - 18% stayed at the event campsite - Comrie Croft, they spent an average of £194 on accommodation
@@ -235,20 +237,24 @@ livestream_tibble <- tibble(races, after_event, competition, competition_and_rac
   ) 
 livestream_tibble
 ```
-```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
-survey_data %>%
-  filter(!is.na(facebook_twitter_rating)) %>% 
-  count(facebook_twitter_rating, sort = TRUE) %>% 
- mutate(name = factor(facebook_twitter_rating, levels = c("excellent", "good", "average", "poor"))) %>%  
+```{r}
+rating_data %>% 
+   mutate(name = factor(rating, levels = c("excellent", "good", "average", "poor", "very poor"))) %>% 
   ggplot() +
-  geom_col(aes(x = name, y = n), fill = "#008b8b") +
-  labs(x = "Rating", 
-      y = "Number of Ratings", 
-      title = "Facebook and Twitter Ratings") +
- theme_classic(base_size = 15) +
-   theme(plot.title = element_text(hjust = 0.5)) 
+  geom_bar(aes(x = name, fill = media_type), position = "dodge") +
+  scale_fill_manual(values = c("#004c4c", "#008080", "#66b2b2", "#b2d8d8"), name = "Media Type", 
+                                        labels = c("Facebook and Twitter",
+                                                    "Printed Programme", 
+                                                    "Social Programme",
+                                                    "Website Info")) +
+  theme_classic(base_size = 15) +
+   theme(plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Satisfaction Levels", 
+       x = "Rating", 
+       y = "Count") 
 ```
-- 34% of participants followed the event on Twitter and/or Facebook
+
+- 34% of respondents followed the event on Twitter and/or Facebook
 - 85% of those who engaged rated the quality as excellent or good 
 
 ### Actionable Points

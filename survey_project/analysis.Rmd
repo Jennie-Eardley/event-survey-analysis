@@ -6,6 +6,7 @@ library(tidyverse)
 livestream_data <- read_csv("data/synthesised_livestream.csv")
 survey_data <- read_csv("data/clean_survey_data.csv")
 location_data <- read_csv("data/location_distance_count.csv")
+rating_data <- read_csv("data/rating_data.csv")
 ```
 
 ```{r}
@@ -288,5 +289,43 @@ livestream_tibble <- tibble(races, after_event, competition, competition_and_rac
     y = "Count"
   ) 
 livestream_tibble
+```
+```{r}
+survey_data %>%
+  select(facebook_twitter_rating, quality_rating_livestream) %>% 
+  filter(!is.na(facebook_twitter_rating)) %>% 
+  filter(!is.na(quality_rating_livestream)) %>% 
+  count(facebook_twitter_rating, sort = TRUE) %>% 
+ mutate(name = factor(facebook_twitter_rating, levels = c("excellent", "good", "average", "poor"))) %>%  
+  ggplot() +
+  geom_col(aes(x = name, y = n), fill = "#008b8b") +
+  labs(x = "Rating", 
+      y = "Number of Ratings", 
+      title = "Facebook and Twitter Ratings") +
+ theme_classic(base_size = 15) +
+   theme(plot.title = element_text(hjust = 0.5)) 
+```
+```{r}
+survey_data %>%
+  select(facebook_twitter_rating, quality_rating_livestream) %>% 
+  filter(!is.na(facebook_twitter_rating)) %>% 
+  count(facebook_twitter_rating, sort = TRUE) %>% 
+  filter(!is.na(quality_rating_livestream)) %>% 
+  count(quality_rating_livestream, sort = TRUE) %>% 
+ mutate(name = factor(facebook_twitter_rating, levels = c("excellent", "good", "average", "poor")))
+```
+```{r}
+survey_data %>% 
+  select(quality_rating_livestream) %>% 
+  filter(!is.na(quality_rating_livestream)) %>% 
+  count(quality_rating_livestream, sort = TRUE)
+```
+
+```{r}
+survey_data %>% 
+select(accommodation_cost, transport_cost) %>% 
+dplyr::filter(accommodation_cost != "other") %>% 
+  dplyr::filter(transport_cost != "other") %>% 
+  as.numeric(accommodation_cost)
 ```
 

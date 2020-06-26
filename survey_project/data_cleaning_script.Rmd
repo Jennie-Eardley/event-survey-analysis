@@ -548,6 +548,17 @@ write_csv(location_distance_count_data, "/Users/jennie/git_projects/survey_analy
 ```
 
 ```{r}
+# pivoting data so that ratings can easily be compared in one graph 
+pivoted_rating_data <- survey_data %>% 
+  select(social_programme_rating, facebook_twitter_rating, website_info_rating, printed_programme_rating) %>% 
+  pivot_longer(cols = c("social_programme_rating", "facebook_twitter_rating", "website_info_rating", "printed_programme_rating"),
+    names_to = "media_type",
+    values_to = "rating") %>% 
+  filter(rating != "not interested in social programme") %>% 
+  filter(!is.na(rating))
+```
 
+```{r}
+write_csv(pivoted_rating_data, "/Users/jennie/git_projects/survey_analysis/event-survey-analysis/survey_project/data/rating_data.csv")
 ```
 
