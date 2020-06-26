@@ -18,7 +18,7 @@ Accessing the API requires a key which can be set up using the link above. I hav
 
 # Project Outline 
 
-The project brief highlighted a number of areas that they wanted insight into:
+The project brief highlighted a number of areas that the organisers of the event wanted insight into:
 
 - Where attendees were travelling from
 - How they travelled to the event (they are particularly interested in reducing single occupancy car use)
