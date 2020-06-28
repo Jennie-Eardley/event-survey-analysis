@@ -1,7 +1,7 @@
 ---
-title: "Survey Event Analysis Markdown"
-author: "Jennie Eardley"
-date: "06/06/2020"
+title: <center> <h1>Survey Event Analysis Report</h1> </center>
+author: <center> <h5>Jennie Eardley</h5> </center>
+date: <center> <h5>06/06/2020</h5> </center>
 output: html_document
 ---
 
@@ -14,7 +14,7 @@ location_data <- read_csv("data/location_distance_count.csv")
 rating_data <- read_csv("data/rating_data.csv")
 ```
 
-### Analysis of the results of a survey about a sporting event held in Scotland. 
+##### Analysis of the results of a survey about a sporting event which was held in Scotland. 
 
 ### Usual Residence of Attendees 
 
@@ -48,6 +48,8 @@ survey_data %>%
    theme(plot.title = element_text(hjust = 0.5))
 ```
 
+- Despite the event being held in Scotland, most of the respondents reported travelling from outwith Scotland. 
+- The only further detail of locations in the data relates to Scottish local authorities. 
 ### The organisers are interested in reducing single car use are were interested in knowing about methods of travel both to and during the event
 ```{r, echo = FALSE, fig.show = 'hold', out.width = "50%"}
 survey_data %>% 
@@ -73,7 +75,8 @@ survey_data %>%
   theme_classic(base_size = 15) +
   theme(plot.title = element_text(hjust = 0.5)) 
 ```
-- It is evident that car use is the most popular method of travel
+
+- The vast majority of respondents travelled to the event using their own vehicles
 - The relatively remote location of the event may have prevented attendees from using public transport 
 
 ### Accommodation 
@@ -155,6 +158,7 @@ location_distance_tibble <- tibble(under_ten, ten_to_twenty, twenty_to_thirty, t
   ) 
 location_distance_tibble
 ```
+
 - Respondents stayed in 88 different cities, towns and villages in Scotland
 - The most popular locations were: Comrie, Crieff and Perth
 - 56% of respondents stayed in places with populations of under 500
@@ -174,11 +178,13 @@ ggplot() +
   theme(plot.title = element_text(hjust = 0.5)) 
   
 ```
+
 - 49% of respondents stayed in self catering accommodation, they spent an average of £882 on accommodation
 - 18% stayed at the event campsite - Comrie Croft, they spent an average of £194 on accommodation
 
 ### Digital Interaction with Event
 
+The survey recorded different types of interaction with the livestream of the event. Respondents were asked to state if they had watched the livestream after the event, during the competition or during the races. Some respondents watched the livestream for two or more different categories. 
 ```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
 # sorting the livestream responses into categories depending on which type(s) of the livestream they interacted with
 all_livestreams <- livestream_data %>% 
@@ -237,6 +243,10 @@ livestream_tibble <- tibble(races, after_event, competition, competition_and_rac
   ) 
 livestream_tibble
 ```
+
+- Most people only watched one type of livestream
+- In the free text comments, unreliable wifi was frequently mentioned and some respondents stated that this prevented them from watching the livestream during the event
+
 ```{r}
 rating_data %>% 
    mutate(name = factor(rating, levels = c("excellent", "good", "average", "poor", "very poor"))) %>% 
@@ -267,8 +277,8 @@ rating_data %>%
 
 ### Recommendations for Future Surveys
 
-- Ask for more specific areas in other UK
-- Supply more options for the respondents to select from drop down lists
-- Ask about Twitter and Facebook separately
-- Ask for ratings by day of event
+- Ask for more specific areas in other UK, if there are particularly popular areas, promoting shared transport in these areas could be promoted
+- Supply more options for the respondents to select from drop down lists to allow for more efficient categorisation
+- Ask about Twitter and Facebook separately to allow for analysis of popularity of different social media approaches
+- Ask for ratings by day of event to enable the organisers to know which type of events are the most popular
 
