@@ -14,9 +14,9 @@ location_data <- read_csv("data/location_distance_count.csv")
 rating_data <- read_csv("data/rating_data.csv")
 ```
 
-##### Analysis of the results of a survey about a sporting event which was held in Scotland. 
+<center><h5>Analysis of the results of a survey about a sporting event which was held in Scotland</h5></center> 
 
-### Usual Residence of Attendees 
+### Usual Residence of Respondents  
 
 ```{r, echo = FALSE, figures-side, fig.show = 'hold', out.width = "50%"}
 # positioning graphs side by side 
@@ -48,9 +48,11 @@ survey_data %>%
    theme(plot.title = element_text(hjust = 0.5))
 ```
 
-- Despite the event being held in Scotland, most of the respondents reported travelling from outwith Scotland. 
-- The only further detail of locations in the data relates to Scottish local authorities. 
-### The organisers are interested in reducing single car use are were interested in knowing about methods of travel both to and during the event
+- Despite the event being held in Scotland, most of the respondents reported travelling from outwith Scotland, particularly the rest of the UK
+- If the respondent travelled from Scotland, they were also asked to provide their local authority 
+
+
+### Transport
 ```{r, echo = FALSE, fig.show = 'hold', out.width = "50%"}
 survey_data %>% 
   count(travel_method, sort = TRUE) %>% 
@@ -76,10 +78,14 @@ survey_data %>%
   theme(plot.title = element_text(hjust = 0.5)) 
 ```
 
-- The vast majority of respondents travelled to the event using their own vehicles
-- The relatively remote location of the event may have prevented attendees from using public transport 
 
-### Accommodation 
+- The organisers are interested in reducing single car use and were interested in knowing about methods of travel both to and during the event
+- The vast majority of respondents travelled to the event using their own vehicles
+- The relatively remote location of the event may have prevented respondents from using public transport to travel there - this is perhaps something that could be considered when planning the next event
+- Although the organisers organised a bus for the event, the take-up was not particularly high. It is possible that this could be attributed to the number of people who had already brought their own transport to the event
+
+
+### Driving Distance
 
 ```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
 # splitting distances gained from the google map distance API into categories
@@ -159,9 +165,12 @@ location_distance_tibble <- tibble(under_ten, ten_to_twenty, twenty_to_thirty, t
 location_distance_tibble
 ```
 
-- Respondents stayed in 88 different cities, towns and villages in Scotland
-- The most popular locations were: Comrie, Crieff and Perth
-- 56% of respondents stayed in places with populations of under 500
+- Organisers wanted to know how far away from the event people are willing to stay
+- The vast majority stayed no more than 40 miles away from the event
+- The distances are Google's estimated driving distances 
+
+
+### Accommodation
 
 ```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
 survey_data %>% 
@@ -179,12 +188,15 @@ ggplot() +
   
 ```
 
-- 49% of respondents stayed in self catering accommodation, they spent an average of £882 on accommodation
-- 18% stayed at the event campsite - Comrie Croft, they spent an average of £194 on accommodation
+- Respondents stayed in 88 different cities, towns and villages in Scotland
+- The most popular locations were: Comrie, Crieff and Perth
+- 56% of respondents stayed in places with populations of under 500
+- 49% of respondents stayed in self catering accommodation, spending an average of £882 on accommodation
+- 18% stayed at the event campsite - Comrie Croft,spending an average of £194 on accommodation
+
 
 ### Digital Interaction with Event
 
-The survey recorded different types of interaction with the livestream of the event. Respondents were asked to state if they had watched the livestream after the event, during the competition or during the races. Some respondents watched the livestream for two or more different categories. 
 ```{r, echo = FALSE, out.width = "75%", fig.align = "center"}
 # sorting the livestream responses into categories depending on which type(s) of the livestream they interacted with
 all_livestreams <- livestream_data %>% 
@@ -244,6 +256,9 @@ livestream_tibble <- tibble(races, after_event, competition, competition_and_rac
 livestream_tibble
 ```
 
+- The survey recorded different types of interaction with the livestream of the event
+- Respondents were asked to state if they had watched the livestream after the event, during the competition or during the races 
+- Some respondents watched the livestream for two or more different categories
 - Most people only watched one type of livestream
 - In the free text comments, unreliable wifi was frequently mentioned and some respondents stated that this prevented them from watching the livestream during the event
 
@@ -264,13 +279,12 @@ rating_data %>%
        y = "Count") 
 ```
 
-- 34% of respondents followed the event on Twitter and/or Facebook
-- 85% of those who engaged rated the quality as excellent or good 
+- Information about the events were disseminated to the attendees in a variety of different ways
+- In the free text comments, many people mentioned that they missed the more detailed newsletter that was available at previous events
 
 ### Actionable Points
 
-- Consider alternative transport options 
-- Investigate increasing the availability of water
+- Investigate increasing the availability of water during and after the event
 - Review wifi availability 
 - Consider accessibility of public transport to social events 
 
