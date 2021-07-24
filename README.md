@@ -2,7 +2,7 @@
 
 # Introduction
 
-This project analyses 716 responses to a survey conducted by an organisation who organised an event held in Scotland. The survey was conducted after the event and seeks to understand the background of attendees and their experience of all aspects of the event. For client privacy purposes, I have used the Synthpop package to synthesise all of the data. 
+This project analyses 716 responses to a survey conducted by an organisation who organised an event held in Scotland. The survey was conducted after the event and seeks to understand the background of attendees and their experience of all aspects of the event. For client privacy purposes, I have used the Synthpop package to synthesise all of the data.
 
 # Requirements
 
@@ -28,3 +28,7 @@ The project brief highlighted a number of areas that the organisers of the event
 - Digital media ratings
 - Analysis of free text comments 
 - Potential areas of improvement both for the event and for subsequent surveys 
+
+# Free Text Analysis
+
+Due to the anonymisation requirements of this projects, I have separately analysed the free text using n-grams. I have added my findings and recommendations to the markdown report. 
